@@ -416,7 +416,6 @@ function setMapStyle(name) {
   for (const k in tiles) map.removeLayer(tiles[k]);
   baseLayers.forEach(l => map.removeLayer(l));
   if (name === "simple") baseLayers.forEach(l => l.addTo(map)); else tiles[name].addTo(map);
-  baseLayers.forEach(l => l.bringToBack());
   document.querySelectorAll(".styles button").forEach(b => b.setAttribute("aria-checked", String(b.dataset.style === name)));
   try { localStorage.setItem("tx-hosp-map-style", name); } catch (e) { /* storage blocked: style just isn't remembered */ }
   readTokens();
@@ -469,11 +468,12 @@ function setupMap(base) {
   L.control.zoom({ position: "topright" }).addTo(map);
   L.control.scale({ imperial: true, metric: false, position: "bottomleft" }).addTo(map);
   L.control.attribution({ prefix: false, position: "bottomright" }).addAttribution("Data: CMS, TDLR TABS, U.S. Census").addTo(map);
-  const baseRenderer = L.canvas({ padding: 0.5 });
+  map.createPane("base").style.zIndex = 250;   // the hand-drawn map sits under the markers (overlay pane is 400)
+  const baseRenderer = L.canvas({ padding: 0.5, pane: "base" });
   baseLayers = [
-    L.geoJSON({ type: "FeatureCollection", features: base.neighbors }, { renderer: baseRenderer, interactive: false }),
-    L.geoJSON({ type: "FeatureCollection", features: base.counties }, { renderer: baseRenderer, interactive: false }),
-    L.geoJSON({ type: "FeatureCollection", features: base.roads }, { renderer: baseRenderer, interactive: false }),
+    L.geoJSON({ type: "FeatureCollection", features: base.neighbors }, { renderer: baseRenderer, pane: "base", interactive: false }),
+    L.geoJSON({ type: "FeatureCollection", features: base.counties }, { renderer: baseRenderer, pane: "base", interactive: false }),
+    L.geoJSON({ type: "FeatureCollection", features: base.roads }, { renderer: baseRenderer, pane: "base", interactive: false }),
   ];
   map.on("zoomend", () => { if (mapStyle === "simple") styleBase(); draw(); });
   map.on("moveend", () => { if ($("detail").hidden && !query) refreshList(); });
