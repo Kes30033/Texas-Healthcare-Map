@@ -1,0 +1,700 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Map of every acute care hospital and ambulatory surgery center in Texas, with renovations, expansions, construction underway and new facilities filed with the state.">
+<title>Texas Hospital Construction Map</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Public+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
+<style>
+/* Layout: a panel beside a full-height map of Texas; on phones the map sits on top and the panel scrolls below. */
+:root {
+  --water: #dce8ec;
+  --land: #f7f8f6;
+  --neighbor: #e9ece9;
+  --county: #c9d0cd;
+  --road-1: #cdbf9f;
+  --road-2: #ddd4c0;
+  --panel: #ffffff;
+  --panel-2: #f2f4f3;
+  --ink: #13191c;
+  --ink-2: #4a5357;
+  --muted: #737c80;
+  --line: #e1e5e4;
+  --halo: rgba(247, 248, 246, 0.92);
+  --hosp: #2a78d6;
+  --asc: #1baf7a;
+  --uc: #eb6834;
+  --filed: #8a4fd8;
+  --ann: #b08a2e;
+  --focus: #2a78d6;
+  --font-display: "Bricolage Grotesque", "Public Sans", system-ui, sans-serif;
+  --font-ui: "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --water: #0e1316; --land: #1f2427; --neighbor: #181c1f; --county: #3a4347;
+    --road-1: #5a5546; --road-2: #3e3d36; --panel: #14181a; --panel-2: #1b2023;
+    --ink: #edf1f0; --ink-2: #b8c0c2; --muted: #879094; --line: #293134; --halo: rgba(31, 36, 39, 0.92);
+    --hosp: #4b93ea; --asc: #2cc28c; --uc: #f07a47; --filed: #a578ee; --ann: #d2ab4b; --focus: #4b93ea;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --water: #0e1316; --land: #1f2427; --neighbor: #181c1f; --county: #3a4347;
+  --road-1: #5a5546; --road-2: #3e3d36; --panel: #14181a; --panel-2: #1b2023;
+  --ink: #edf1f0; --ink-2: #b8c0c2; --muted: #879094; --line: #293134; --halo: rgba(31, 36, 39, 0.92);
+  --hosp: #4b93ea; --asc: #2cc28c; --uc: #f07a47; --filed: #a578ee; --ann: #d2ab4b; --focus: #4b93ea;
+  color-scheme: dark;
+}
+
+html, body { height: 100%; margin: 0; }
+body { background: var(--panel); color: var(--ink); font-family: var(--font-ui); font-size: 14px; line-height: 1.45; }
+* { box-sizing: border-box; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+[hidden] { display: none !important; }
+button, input, select { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+
+.app { height: 100%; display: grid; grid-template-columns: minmax(0, 420px) minmax(0, 1fr); }
+.panel { min-width: 0; overflow-y: auto; border-right: 1px solid var(--line); background: var(--panel); display: flex; flex-direction: column; }
+.panel > * { padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: 20px; }
+#map { min-width: 0; height: 100%; background: var(--water); }
+
+.masthead { padding-block: 20px 12px; display: grid; gap: 4px; }
+.masthead h1 { margin: 0; font-family: var(--font-display); font-weight: 800; font-size: 25px; letter-spacing: -0.01em; line-height: 1.1; text-wrap: balance; }
+.masthead p { margin: 0; color: var(--ink-2); font-size: 13px; }
+.tally { font-variant-numeric: tabular-nums; color: var(--ink); font-weight: 600; }
+
+.views { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; padding-block: 4px 12px; }
+.view { text-align: left; border: 1px solid var(--line); background: var(--panel); border-radius: 10px; padding: 9px 11px; cursor: pointer; display: grid; gap: 2px; }
+.view:hover { border-color: var(--ink-2); }
+.view b { font-size: 13.5px; }
+.view span { font-size: 12px; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+.view[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--panel); }
+.view[aria-pressed="true"] span { color: var(--panel); opacity: .8; }
+
+.search { padding-block: 0 12px; }
+.search form { display: flex; gap: 8px; }
+.search input { flex: 1; min-width: 0; height: 40px; padding: 0 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--panel-2); font-size: 16px; }
+.search input::placeholder { color: var(--muted); }
+.btn { height: 40px; padding: 0 14px; border-radius: 8px; border: 1px solid var(--ink); background: var(--ink); color: var(--panel); font-weight: 600; cursor: pointer; }
+.btn.ghost { background: transparent; color: var(--ink); border-color: var(--line); height: 32px; padding: 0 10px; font-size: 13px; font-weight: 500; }
+.btn.ghost:hover { border-color: var(--ink-2); }
+.status { font-size: 13px; color: var(--ink-2); display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-top: 8px; }
+.status:empty { display: none; }
+
+.filters { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.filters > summary { list-style: none; cursor: pointer; padding-block: 12px; display: flex; justify-content: space-between; align-items: center; font-weight: 600; }
+.filters > summary::-webkit-details-marker { display: none; }
+.filters > summary .chev { transition: transform .15s; color: var(--muted); }
+.filters[open] > summary .chev { transform: rotate(180deg); }
+.filter-body { display: grid; gap: 12px; padding-bottom: 16px; }
+.eyebrow { font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin: 0 0 6px; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { border: 1px solid var(--line); background: var(--panel); border-radius: 999px; padding: 5px 11px 5px 9px; font-size: 13px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; }
+.chip:hover { border-color: var(--ink-2); }
+.chip[aria-pressed="true"] { background: var(--panel-2); border-color: var(--ink); font-weight: 600; }
+.chip[aria-pressed="false"] { color: var(--muted); }
+.chip[aria-pressed="false"] .key { opacity: .35; }
+.chip .n { font-variant-numeric: tabular-nums; color: var(--muted); font-weight: 500; font-size: 12px; }
+.row { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.row label { display: inline-flex; gap: 7px; align-items: center; cursor: pointer; font-size: 13px; }
+select { height: 32px; border: 1px solid var(--line); border-radius: 8px; background: var(--panel); padding: 0 8px; font-size: 13px; }
+input[type="checkbox"] { width: 16px; height: 16px; margin: 0; accent-color: var(--ink); }
+.hint { font-size: 12px; color: var(--muted); margin: 0; }
+
+/* map keys: the same marks the map draws */
+.key { width: 14px; height: 14px; border-radius: 50%; display: inline-block; flex: none; position: relative; }
+.key.hosp { background: var(--hosp); } .key.asc { background: var(--asc); }
+.key.ring { background: transparent; border: 3px solid; }
+.key.ring.uc { border-color: var(--uc); } .key.ring.filed { border-color: var(--filed); } .key.ring.ann { border-color: var(--ann); border-style: dashed; }
+.key.kindk { width: 11px; height: 11px; border-radius: 3px; background: var(--ink-2); }
+.key.kindk.ren { background: transparent; border: 2px solid var(--ink-2); }
+.key.newk { background: var(--panel); border: 3px solid var(--ink-2); }
+.key.newk::after { content: ""; position: absolute; inset: 2px; border-radius: 50%; background: var(--ink-2); }
+
+.results { padding-block: 14px 8px; flex: 1; display: flex; flex-direction: column; gap: 8px; }
+.results-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.results-head h2 { margin: 0; font-size: 15px; font-weight: 700; }
+.count { font-variant-numeric: tabular-nums; color: var(--muted); font-size: 12px; }
+.list { list-style: none; margin: 0; padding: 0; display: grid; }
+.list li + li { border-top: 1px solid var(--line); }
+.item { width: 100%; text-align: left; background: none; border: 0; padding: 10px 6px; display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 3px 10px; cursor: pointer; border-radius: 6px; }
+.item:hover { background: var(--panel-2); }
+.item .key { margin-top: 3px; }
+.item .t { font-weight: 600; overflow-wrap: anywhere; }
+.item .c { font-variant-numeric: tabular-nums; font-weight: 600; font-size: 13px; text-align: right; }
+.item .s { grid-column: 2 / -1; color: var(--ink-2); font-size: 12.5px; overflow-wrap: anywhere; }
+.empty { color: var(--ink-2); background: var(--panel-2); border-radius: 8px; padding: 14px; margin: 0; }
+.more { align-self: start; }
+
+.detail { padding-block: 14px 20px; display: grid; gap: 14px; align-content: start; }
+.detail h2 { margin: 0; font-family: var(--font-display); font-weight: 800; font-size: 22px; line-height: 1.15; text-wrap: balance; overflow-wrap: anywhere; }
+.kind { display: flex; gap: 8px; align-items: center; font-weight: 600; }
+.facts { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 7px 14px; margin: 0; }
+.facts dt { color: var(--muted); font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.06em; font-weight: 700; padding-top: 2px; }
+.facts dd { margin: 0; overflow-wrap: anywhere; }
+.note { font-size: 12.5px; color: var(--ink-2); background: var(--panel-2); padding: 10px 12px; border-radius: 8px; margin: 0; }
+.actions { display: flex; flex-wrap: wrap; gap: 6px 14px; }
+.actions a, .proj a, .source a { color: var(--ink); font-weight: 600; text-underline-offset: 3px; }
+.proj { border: 1px solid var(--line); border-radius: 10px; padding: 12px; display: grid; gap: 8px; }
+.proj h3 { margin: 0; font-size: 15px; line-height: 1.3; overflow-wrap: anywhere; }
+.proj .meta { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.pill { border-radius: 999px; padding: 2px 9px; font-size: 12px; font-weight: 600; border: 1px solid var(--line); background: var(--panel-2); }
+.pill.uc { background: var(--uc); border-color: var(--uc); color: #fff; }
+.pill.filed { background: var(--filed); border-color: var(--filed); color: #fff; }
+.pill.ann { background: transparent; border: 1.5px dashed var(--ann); color: var(--ink); }
+.proj .scope { margin: 0; color: var(--ink-2); font-size: 13px; }
+.proj .facts { gap: 5px 12px; font-size: 13px; }
+.proj .facts dt { font-size: 10.5px; }
+.links { display: flex; flex-wrap: wrap; gap: 4px 12px; font-size: 13px; }
+
+.source { padding-block: 12px 18px; font-size: 12px; color: var(--muted); border-top: 1px solid var(--line); display: grid; gap: 6px; }
+.source p { margin: 0; }
+
+/* map chrome */
+.leaflet-container { background: var(--water); font-family: var(--font-ui); }
+.leaflet-bar a, .leaflet-bar a:hover { background: var(--panel); color: var(--ink); border-bottom-color: var(--line); }
+.leaflet-bar { border: 1px solid var(--line) !important; box-shadow: none !important; }
+.leaflet-control-scale-line { background: var(--halo); color: var(--ink-2); border-color: var(--ink-2); }
+.leaflet-control-attribution { background: var(--halo) !important; color: var(--ink-2); }
+.styles { display: flex; gap: 2px; padding: 3px; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; }
+.styles button { border: 0; background: none; padding: 5px 10px; border-radius: 6px; font-size: 12.5px; font-weight: 600; color: var(--ink-2); cursor: pointer; }
+.styles button:hover { color: var(--ink); }
+.styles button[aria-checked="true"] { background: var(--ink); color: var(--panel); }
+.legend { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 8px 10px; font-size: 12px; display: grid; gap: 5px; color: var(--ink); }
+.legend div { display: flex; gap: 7px; align-items: center; }
+.legend .key { width: 12px; height: 12px; }
+.legend .key.ring { border-width: 2.5px; }
+.tip { position: absolute; z-index: 800; pointer-events: none; background: var(--panel); color: var(--ink); border: 1px solid var(--line); border-radius: 8px; padding: 6px 10px; font-size: 12.5px; max-width: 280px; box-shadow: 0 4px 14px rgba(0,0,0,.12); }
+.tip b { display: block; }
+.tip span { color: var(--ink-2); }
+.loading { position: absolute; z-index: 900; left: 50%; top: 16px; transform: translateX(-50%); background: var(--panel); border: 1px solid var(--line); border-radius: 999px; padding: 7px 14px; font-size: 13px; font-weight: 600; box-shadow: 0 4px 14px rgba(0,0,0,.12); white-space: nowrap; }
+
+@media (max-width: 760px) {
+  .app { grid-template-columns: minmax(0, 1fr); grid-template-rows: 50% minmax(0, 1fr); }
+  #map { grid-row: 1; }
+  .panel { grid-row: 2; border-right: 0; border-top: 1px solid var(--line); }
+  .panel > * { padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+  .masthead { padding-block: 14px 8px; }
+  .masthead h1 { font-size: 21px; }
+  .legend { display: none; }
+  .leaflet-control-attribution { max-width: calc(100vw - 110px); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; cursor: pointer; }
+  .leaflet-control-attribution:hover, .leaflet-control-attribution:focus-within { white-space: normal; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<div class="app">
+  <aside class="panel" id="panel" aria-label="Facilities and projects">
+    <header class="masthead">
+      <h1>Texas Hospital &amp; Surgery Center Construction</h1>
+      <p>Every acute care hospital and ambulatory surgery center in Texas, and the construction filed at each. <span class="tally" id="tally">Loading…</span></p>
+    </header>
+
+    <div class="views" id="views" role="group" aria-label="Quick views">
+      <button class="view" type="button" data-view="all" aria-pressed="true"><b>Everything</b><span id="vAll">…</span></button>
+      <button class="view" type="button" data-view="reno" aria-pressed="false"><b>Renovating / expanding</b><span id="vReno">…</span></button>
+      <button class="view" type="button" data-view="uc" aria-pressed="false"><b>Under construction</b><span id="vUc">…</span></button>
+      <button class="view" type="button" data-view="works" aria-pressed="false"><b>In the works</b><span id="vWorks">…</span></button>
+    </div>
+
+    <div class="search">
+      <form id="searchForm" role="search">
+        <input id="q" type="search" autocomplete="off" placeholder="Name, city, county or ZIP" aria-label="Search by name, city, county or ZIP code">
+        <button class="btn" type="submit">Search</button>
+      </form>
+      <div class="status" id="status" aria-live="polite"></div>
+    </div>
+
+    <details class="filters" id="filters">
+      <summary>Filters <svg class="chev" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 5l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></summary>
+      <div class="filter-body">
+        <div><p class="eyebrow">Facility type</p><div class="chips" id="chipType"></div></div>
+        <div><p class="eyebrow">Construction stage</p><div class="chips" id="chipStage"></div></div>
+        <div><p class="eyebrow">Kind of project</p><div class="chips" id="chipKind"></div></div>
+        <div class="row">
+          <label for="minCost">Project cost at least</label>
+          <select id="minCost">
+            <option value="0">Any amount</option><option value="500000">$500K</option><option value="1000000">$1M</option>
+            <option value="5000000">$5M</option><option value="10000000">$10M</option><option value="50000000">$50M</option>
+            <option value="100000000">$100M</option>
+          </select>
+        </div>
+        <div class="row"><label><input type="checkbox" id="showQuiet" checked> Also show facilities with no matching projects</label></div>
+        <div class="row" style="justify-content:space-between">
+          <button class="btn ghost" type="button" id="csv">Download this list (CSV)</button>
+          <button class="btn ghost" type="button" id="reset">Reset</button>
+        </div>
+      </div>
+    </details>
+
+    <section class="results" id="results">
+      <p class="sr-only" id="listAnnounce" aria-live="polite"></p>
+      <div class="results-head"><h2 id="resultsTitle" tabindex="-1">In view</h2><span class="count" id="resultsCount"></span></div>
+      <ul class="list" id="list"></ul>
+      <p class="empty" id="empty" hidden></p>
+      <button class="btn ghost more" type="button" id="more" hidden>Show more</button>
+    </section>
+
+    <section class="detail" id="detail" hidden></section>
+
+    <footer class="source">
+      <p><b>Facilities:</b> CMS Provider of Services files (Medicare-certified hospitals and surgery centers, active as of the July 2026 quarter) and CMS Care Compare for VA and military hospitals.</p>
+      <p><b>Projects:</b> Texas Department of Licensing and Regulation (TDLR) TABS registry, searched Oct 22, 2026. Texas requires every building project of $50,000 or more to be registered there, with its owner, design firm, cost and estimated start and finish dates, before construction. Stages come from those estimated dates, so a project can run behind its filing. “Announced” projects come from news reports and have no state filing yet.</p>
+      <p><a href="https://github.com/Kes30033/Texas-Healthcare-Map">Data, methods and spreadsheet on GitHub</a></p>
+    </footer>
+  </aside>
+  <div id="map" role="application" aria-label="Map of Texas hospitals and surgery centers"><div class="loading" id="loading">Loading…</div></div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+<script>
+(() => {
+"use strict";
+const TILES = /*TILES*/true;   // false in the Claude artifact build, where outside map images are blocked
+const ESRI = "https://server.arcgisonline.com/ArcGIS/rest/services/";
+const PAGE = 120;
+const STAGES = [
+  { k: "uc", label: "Under construction" },
+  { k: "filed", label: "Filed, not started" },
+  { k: "ann", label: "Announced" },
+];
+const KINDS = [
+  { k: "new", label: "New hospital or surgery center" },
+  { k: "exp", label: "Expansion / addition" },
+  { k: "ren", label: "Renovation" },
+];
+const TYPES = [{ k: "hosp", label: "Hospitals" }, { k: "asc", label: "Surgery centers" }];
+const VIEWS = {
+  all: { stage: ["uc", "filed", "ann"], kind: ["new", "exp", "ren"], quiet: true },
+  reno: { stage: ["uc", "filed", "ann"], kind: ["exp", "ren"], quiet: false },
+  uc: { stage: ["uc"], kind: ["new", "exp", "ren"], quiet: false },
+  // in the works = new facilities where nothing has started yet (a later phase filed doesn't count)
+  works: { stage: ["filed", "ann"], kind: ["new"], quiet: false, notStarted: true },
+};
+const STAGE_RANK = { uc: 0, filed: 1, ann: 2 };
+
+const $ = id => document.getElementById(id);
+const fmt = n => n.toLocaleString("en-US");
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const money = n => !n ? "" : n >= 1e9 ? "$" + (n / 1e9).toFixed(n >= 1e10 ? 0 : 1).replace(/\.0$/, "") + "B"
+  : n >= 1e6 ? "$" + (n / 1e6).toFixed(n >= 1e8 ? 0 : 1).replace(/\.0$/, "") + "M" : "$" + Math.round(n / 1e3) + "K";
+const monthYear = d => { if (!d) return ""; const [y, m] = d.split("-"); return new Date(+y, +m - 1, 1).toLocaleString("en-US", { month: "short", year: "numeric" }); };
+
+let D, map, renderer, markers = [], tip;
+let F = { type: new Set(["hosp", "asc"]), stage: new Set(VIEWS.all.stage), kind: new Set(VIEWS.all.kind), min: 0, quiet: true, notStarted: false };
+let view = "all", query = null;   // query: set of site indexes matching a search
+let visible = [];                 // per site: { on, projects: [matching project idx] }
+let listIdx = [], shown = 0, selected = -1, back = null;
+
+let T = {};
+function readTokens() {
+  const cs = getComputedStyle(document.documentElement);
+  for (const k of ["water", "land", "neighbor", "county", "road-1", "road-2", "ink", "ink-2", "muted", "panel", "hosp", "asc", "uc", "filed", "ann"])
+    T[k] = cs.getPropertyValue("--" + k).trim();
+  if (mapStyle !== "simple") Object.assign(T, { hosp: "#2a78d6", asc: "#1baf7a", uc: "#eb6834", filed: "#8a4fd8", ann: "#b08a2e", panel: "#ffffff", "ink-2": "#4a5357" });
+}
+
+// ---------- data ----------
+const siteType = s => D.types[s.t].group;               // "hosp" | "asc"
+const isNew = s => s.k === 1;
+function projectPasses(p) {
+  return F.stage.has(p.stage) && F.kind.has(p.kind) && (p.cost || 0) >= F.min;
+}
+const started = s => s.pj.some(j => D.projects[j].stage === "uc");
+function compute() {
+  visible = D.sites.map((s, i) => {
+    if (!F.type.has(siteType(s)) || (query && !query.has(i))) return { on: false, projects: [] };
+    if (F.notStarted && isNew(s) && started(s)) return { on: false, projects: [] };
+    const projects = s.pj.filter(j => projectPasses(D.projects[j]));
+    const on = projects.length > 0 || (F.quiet && !isNew(s));
+    return { on, projects };
+  });
+}
+function best(i) {   // most advanced stage among a site's matching projects
+  let b = null;
+  for (const j of visible[i].projects) { const st = D.projects[j].stage; if (b === null || STAGE_RANK[st] < STAGE_RANK[b]) b = st; }
+  return b;
+}
+const total = i => visible[i].projects.reduce((a, j) => a + (D.projects[j].cost || 0), 0);
+
+// ---------- counts ----------
+function viewCounts() {
+  const count = v => {
+    const c = VIEWS[v]; let sites = 0, projects = 0;
+    D.sites.forEach(s => {
+      if (!F.type.has(siteType(s)) || (c.notStarted && isNew(s) && started(s))) return;
+      const n = s.pj.filter(j => { const p = D.projects[j]; return c.stage.includes(p.stage) && c.kind.includes(p.kind) && (p.cost || 0) >= F.min; }).length;
+      if (n) { sites++; projects += n; }
+    });
+    return [sites, projects];
+  };
+  const [rs] = count("reno"), [us, up] = count("uc"), [ws] = count("works");
+  const fac = D.sites.filter(s => !isNew(s) && F.type.has(siteType(s))).length;
+  $("vAll").textContent = `${fmt(fac)} facilities`;
+  $("vReno").textContent = `${fmt(rs)} facilities`;
+  $("vUc").textContent = `${fmt(up)} projects at ${fmt(us)} sites`;
+  $("vWorks").textContent = `${fmt(ws)} new facilities`;
+}
+function chipCounts() {
+  const by = { uc: 0, filed: 0, ann: 0, new: 0, exp: 0, ren: 0, hosp: 0, asc: 0 };
+  D.sites.forEach((s, i) => {
+    if (!visible[i].on) return;
+    by[siteType(s)]++;
+    for (const j of visible[i].projects) { by[D.projects[j].stage]++; by[D.projects[j].kind]++; }
+  });
+  for (const k in by) { const el = $("n-" + k); if (el) el.textContent = fmt(by[k]); }
+}
+
+// ---------- filters ----------
+function chip(container, item, set, keyClass) {
+  const b = document.createElement("button");
+  b.type = "button"; b.className = "chip"; b.setAttribute("aria-pressed", String(set.has(item.k)));
+  b.innerHTML = `<span class="key ${keyClass}"></span>${esc(item.label)} <span class="n" id="n-${item.k}"></span>`;
+  b.addEventListener("click", () => {
+    set.has(item.k) ? set.delete(item.k) : set.add(item.k);
+    b.setAttribute("aria-pressed", String(set.has(item.k)));
+    setView(null); apply();
+  });
+  container.appendChild(b);
+}
+function buildFilters() {
+  TYPES.forEach(t => chip($("chipType"), t, F.type, t.k));
+  STAGES.forEach(s => chip($("chipStage"), s, F.stage, "ring " + s.k));
+  KINDS.forEach(k => chip($("chipKind"), k, F.kind, k.k === "new" ? "newk" : "kindk " + k.k));
+  $("minCost").addEventListener("change", e => { F.min = +e.target.value; apply(); });
+  $("showQuiet").addEventListener("change", e => { F.quiet = e.target.checked; setView(null); apply(); });
+  $("reset").addEventListener("click", () => { F.type = new Set(["hosp", "asc"]); F.min = 0; $("minCost").value = "0"; setView("all", true); });
+  $("csv").addEventListener("click", downloadCsv);
+  document.querySelectorAll(".view").forEach(b => b.addEventListener("click", () => setView(b.dataset.view, true)));
+}
+function syncChips() {
+  const sync = (id, set) => $(id).querySelectorAll(".chip").forEach((b, n) => {
+    const k = (id === "chipType" ? TYPES : id === "chipStage" ? STAGES : KINDS)[n].k;
+    b.setAttribute("aria-pressed", String(set.has(k)));
+  });
+  sync("chipType", F.type); sync("chipStage", F.stage); sync("chipKind", F.kind);
+  $("showQuiet").checked = F.quiet;
+}
+function setView(v, applyNow) {
+  view = v;
+  F.notStarted = !!(v && VIEWS[v].notStarted);
+  document.querySelectorAll(".view").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.view === v)));
+  if (v && applyNow) {
+    F.stage = new Set(VIEWS[v].stage); F.kind = new Set(VIEWS[v].kind); F.quiet = VIEWS[v].quiet;
+    syncChips(); apply();
+  }
+}
+function apply() {
+  compute(); chipCounts(); viewCounts(); draw();
+  const sites = visible.filter(v => v.on).length, projects = visible.reduce((a, v) => a + v.projects.length, 0);
+  $("tally").textContent = `Showing ${fmt(sites)} places and ${fmt(projects)} projects.`;
+  if ($("detail").hidden) refreshList();
+}
+
+// ---------- map ----------
+let mapStyle = "simple", baseLayers = [];
+const tiles = {};
+function makeTiles() {
+  tiles.streets = L.tileLayer(ESRI + "World_Street_Map/MapServer/tile/{z}/{y}/{x}", { maxZoom: 19, maxNativeZoom: 18,
+    attribution: 'Map &copy; Esri, HERE, Garmin, USGS, &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' });
+  tiles.satellite = L.layerGroup([
+    L.tileLayer(ESRI + "World_Imagery/MapServer/tile/{z}/{y}/{x}", { maxZoom: 19, maxNativeZoom: 18, attribution: "Imagery &copy; Esri, Maxar, Earthstar Geographics" }),
+    L.tileLayer(ESRI + "Reference/World_Transportation/MapServer/tile/{z}/{y}/{x}", { maxZoom: 19, maxNativeZoom: 18 }),
+    L.tileLayer(ESRI + "Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}", { maxZoom: 19, maxNativeZoom: 18 }),
+  ]);
+}
+function styleBase() {
+  const [nb, co, rd] = baseLayers;
+  nb.setStyle({ fillColor: T.neighbor, fillOpacity: 1, color: T.county, weight: 1 });
+  co.setStyle({ fillColor: T.land, fillOpacity: 1, color: T.county, weight: 0.8 });
+  const z = map.getZoom();
+  rd.setStyle(f => f.properties.kind === "primary" ? { color: T["road-1"], weight: z >= 9 ? 2.6 : 1.8, opacity: 1 }
+    : z >= 8 ? { color: T["road-2"], weight: z >= 10 ? 1.8 : 1.1, opacity: 1 } : { opacity: 0, weight: 0 });
+}
+function setMapStyle(name) {
+  mapStyle = name;
+  for (const k in tiles) map.removeLayer(tiles[k]);
+  baseLayers.forEach(l => map.removeLayer(l));
+  if (name === "simple") baseLayers.forEach(l => l.addTo(map)); else tiles[name].addTo(map);
+  baseLayers.forEach(l => l.bringToBack());
+  document.querySelectorAll(".styles button").forEach(b => b.setAttribute("aria-checked", String(b.dataset.style === name)));
+  try { localStorage.setItem("tx-hosp-map-style", name); } catch (e) { /* storage blocked: style just isn't remembered */ }
+  readTokens();
+  if (name === "simple") styleBase();
+  draw();
+}
+function radius(i) {
+  const z = map.getZoom(), s = D.sites[i];
+  const base = z < 7 ? 3 : z < 9 ? 4 : z < 11 ? 5 : 6;
+  return isNew(s) ? base + 1 : visible[i].projects.length ? base + 1 : base - (siteType(s) === "asc" ? 0.5 : 0);
+}
+function draw() {
+  if (!map || !visible.length) return;
+  const z = map.getZoom();
+  markers.forEach(m => m && m.remove());
+  markers = [];
+  // quiet facilities first, then facilities with projects, then new sites, so activity sits on top
+  const order = D.sites.map((_, i) => i).filter(i => visible[i].on)
+    .sort((a, b) => (visible[a].projects.length > 0) - (visible[b].projects.length > 0) || isNew(D.sites[a]) - isNew(D.sites[b]));
+  for (const i of order) {
+    const s = D.sites[i], st = best(i), r = radius(i), type = siteType(s);
+    const fill = T[type], ring = st ? T[st] : null, group = [];
+    if (isNew(s)) {
+      group.push(L.circleMarker([s.lat, s.lng], { renderer, radius: r + 2, color: ring, weight: 3.5, fillColor: T.panel, fillOpacity: 1, dashArray: st === "ann" ? "3 3" : null }));
+      group.push(L.circleMarker([s.lat, s.lng], { renderer, radius: Math.max(2, r - 2.5), stroke: false, fillColor: fill, fillOpacity: 1, interactive: false }));
+    } else {
+      if (ring) group.push(L.circleMarker([s.lat, s.lng], { renderer, radius: r + 4, color: ring, weight: 3, fill: false, dashArray: st === "ann" ? "3 3" : null }));
+      group.push(L.circleMarker([s.lat, s.lng], { renderer, radius: r, color: T.panel, weight: 1.2, fillColor: fill, fillOpacity: ring ? 1 : 0.85 }));
+    }
+    if (i === selected) group.push(L.circleMarker([s.lat, s.lng], { renderer, radius: r + 8, color: T.ink, weight: 2.5, fill: false, interactive: false }));
+    const lg = L.featureGroup(group).addTo(map);
+    lg.on("click", () => select(i, false));
+    lg.on("mouseover", e => showTip(i, e)); lg.on("mouseout", () => { tip.hidden = true; });
+    markers.push(lg);
+  }
+}
+function showTip(i, e) {
+  if (!matchMedia("(hover: hover)").matches) return;
+  const s = D.sites[i], n = visible[i].projects.length;
+  tip.innerHTML = `<b>${esc(s.n)}</b><span>${esc(D.types[s.t].label)} · ${esc(s.city)}${n ? ` · ${n} project${n > 1 ? "s" : ""}, ${money(total(i))}` : ""}</span>`;
+  tip.hidden = false;
+  const p = e.containerPoint, sz = map.getSize();
+  tip.style.left = Math.min(p.x + 14, sz.x - 290) + "px"; tip.style.top = Math.max(p.y - 46, 8) + "px";
+}
+function setupMap(base) {
+  map = L.map("map", { zoomControl: false, attributionControl: false, minZoom: 5, maxZoom: 18, zoomSnap: 0.5, preferCanvas: true,
+    maxBounds: [[24, -110], [38.5, -91]], maxBoundsViscosity: 0.7 });
+  map.fitBounds([[25.8, -106.7], [36.5, -93.5]]);
+  renderer = L.canvas({ padding: 0.5, tolerance: 4 });
+  L.control.zoom({ position: "topright" }).addTo(map);
+  L.control.scale({ imperial: true, metric: false, position: "bottomleft" }).addTo(map);
+  L.control.attribution({ prefix: false, position: "bottomright" }).addAttribution("Data: CMS, TDLR TABS, U.S. Census").addTo(map);
+  const baseRenderer = L.canvas({ padding: 0.5 });
+  baseLayers = [
+    L.geoJSON({ type: "FeatureCollection", features: base.neighbors }, { renderer: baseRenderer, interactive: false }),
+    L.geoJSON({ type: "FeatureCollection", features: base.counties }, { renderer: baseRenderer, interactive: false }),
+    L.geoJSON({ type: "FeatureCollection", features: base.roads }, { renderer: baseRenderer, interactive: false }),
+  ];
+  map.on("zoomend", () => { if (mapStyle === "simple") styleBase(); draw(); });
+  map.on("moveend", () => { if ($("detail").hidden && !query) refreshList(); });
+  const Legend = L.Control.extend({ onAdd() {
+    const d = L.DomUtil.create("div", "legend");
+    d.innerHTML = `<div><span class="key hosp"></span>Hospital</div><div><span class="key asc"></span>Surgery center</div>
+      <div><span class="key ring uc"></span>Under construction</div><div><span class="key ring filed"></span>Filed, not started</div>
+      <div><span class="key ring ann"></span>Announced</div><div><span class="key newk"></span>New facility (not open yet)</div>`;
+    return d;
+  } });
+  new Legend({ position: "bottomright" }).addTo(map);
+  let saved = null;
+  try { saved = localStorage.getItem("tx-hosp-map-style"); } catch (e) { /* storage blocked */ }
+  if (TILES) {
+    makeTiles();
+    const StyleControl = L.Control.extend({ onAdd() {
+      const d = L.DomUtil.create("div", "styles");
+      d.setAttribute("role", "radiogroup"); d.setAttribute("aria-label", "Map style");
+      d.innerHTML = [["streets", "Streets"], ["satellite", "Satellite"], ["simple", "Simple"]]
+        .map(([k, label]) => `<button type="button" role="radio" aria-checked="false" data-style="${k}">${label}</button>`).join("");
+      L.DomEvent.disableClickPropagation(d);
+      d.addEventListener("click", e => { const b = e.target.closest("button"); if (b) setMapStyle(b.dataset.style); });
+      return d;
+    } });
+    new StyleControl({ position: "topleft" }).addTo(map);
+  }
+  tip = document.createElement("div"); tip.className = "tip"; tip.hidden = true; $("map").appendChild(tip);
+  setMapStyle(TILES ? (["streets", "satellite", "simple"].includes(saved) ? saved : "streets") : "simple");
+}
+
+// ---------- list ----------
+function sortKey(i) { return [visible[i].projects.length ? 0 : 1, -total(i), D.sites[i].n]; }
+function cmp(a, b) { const x = sortKey(a), y = sortKey(b); return x[0] - y[0] || x[1] - y[1] || x[2].localeCompare(y[2]); }
+function refreshList() {
+  let ids;
+  if (query) { ids = [...query].filter(i => visible[i].on); $("resultsTitle").textContent = "Search results"; }
+  else {
+    const b = map.getBounds();
+    ids = D.sites.map((_, i) => i).filter(i => visible[i].on && b.contains([D.sites[i].lat, D.sites[i].lng]));
+    $("resultsTitle").textContent = "In view";
+  }
+  ids.sort(cmp);
+  listIdx = ids; shown = 0;
+  const active = ids.filter(i => visible[i].projects.length).length;
+  $("resultsCount").textContent = `${fmt(ids.length)} places${active ? `, ${fmt(active)} with projects` : ""}`;
+  $("listAnnounce").textContent = `${ids.length} places listed`;
+  $("list").innerHTML = "";
+  $("empty").hidden = ids.length > 0;
+  if (!ids.length) $("empty").textContent = "Nothing here matches. Zoom out, pick another view, or reset the filters.";
+  renderMore();
+}
+function itemKey(i) {
+  const s = D.sites[i], st = best(i);
+  if (isNew(s)) return `<span class="key newk" style="border-color:${T[st] || T["ink-2"]}"></span>`;
+  return `<span class="key ${siteType(s)}" ${st ? `style="box-shadow:0 0 0 2px var(--panel),0 0 0 4.5px var(--${st})"` : ""}></span>`;
+}
+function renderMore() {
+  const slice = listIdx.slice(shown, shown + PAGE), frag = document.createDocumentFragment();
+  for (const i of slice) {
+    const s = D.sites[i], n = visible[i].projects.length, li = document.createElement("li");
+    const sub = n ? `${n} project${n > 1 ? "s" : ""} · ${projectSummary(i)}` : `${D.types[s.t].label} · ${s.city}`;
+    li.innerHTML = `<button class="item" type="button">${itemKey(i)}<span class="t">${esc(s.n)}</span><span class="c">${n ? money(total(i)) : ""}</span><span class="s">${esc(sub)}${n ? " · " + esc(s.city) : ""}</span></button>`;
+    li.firstChild.addEventListener("click", () => select(i, true));
+    frag.appendChild(li);
+  }
+  $("list").appendChild(frag);
+  shown += slice.length;
+  $("more").hidden = shown >= listIdx.length;
+  $("more").textContent = `Show ${fmt(Math.min(PAGE, listIdx.length - shown))} more`;
+}
+function projectSummary(i) {
+  const ps = visible[i].projects.map(j => D.projects[j]);
+  const st = best(i), kinds = new Set(ps.map(p => p.kind));
+  const stage = STAGES.find(x => x.k === st).label.toLowerCase();
+  const kind = kinds.has("new") ? "new facility" : kinds.has("exp") ? "expansion" : "renovation";
+  return `${kind}, ${stage}`;
+}
+
+// ---------- detail ----------
+function projectCard(j) {
+  const p = D.projects[j], stage = STAGES.find(x => x.k === p.stage), kind = KINDS.find(x => x.k === p.kind);
+  const dates = p.start || p.end ? `${monthYear(p.start) || "?"} – ${monthYear(p.end) || "?"}` : "";
+  const facts = [
+    ["Cost", p.cost ? "$" + fmt(p.cost) + (p.costNote ? ` (${p.costNote})` : "") : ""],
+    ["Schedule", dates + (p.opens ? `${dates ? "; " : ""}opens ${p.opens}` : "")],
+    ["Size", p.sqft ? fmt(p.sqft) + " sq ft" : ""],
+    ["Work type", p.work || ""],
+    ["Owner", p.owner || ""], ["Tenant", p.tenant || ""],
+    ["Architect", p.designer || ""], ["Builder", p.builder || ""],
+    ["Filed", p.reg ? `${p.reg}${p.status ? " · " + p.status : ""}` : ""],
+    ["Address", p.addr || ""],
+  ].filter(([, v]) => v);
+  const links = [];
+  if (p.num) links.push(`<a href="https://www.tdlr.texas.gov/TABS/Search/Project/${encodeURIComponent(p.num)}" target="_blank" rel="noopener">State filing ${esc(p.num)}</a>`);
+  for (const [t, u] of p.news || []) links.push(`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(t)}</a>`);
+  const late = p.stage === "uc" && p.end && p.end < D.updated;
+  return `<article class="proj">
+    <h3>${esc(p.name)}</h3>
+    <div class="meta"><span class="pill ${p.stage}">${esc(stage.label)}</span><span class="pill">${esc(kind.label)}</span></div>
+    ${p.scope ? `<p class="scope">${esc(p.scope)}</p>` : ""}
+    ${late ? `<p class="note">The estimated finish in the filing has passed, but the project hasn't been closed or inspected yet. It may be finishing up or already done.</p>` : ""}
+    ${p.stage === "ann" ? `<p class="note">Announced in the news; no state construction filing found yet.</p>` : ""}
+    <dl class="facts">${facts.map(([k, v]) => `<dt>${k}</dt><dd>${esc(v)}</dd>`).join("")}</dl>
+    ${links.length ? `<div class="links">${links.join("")}</div>` : ""}
+  </article>`;
+}
+function select(i, fly) {
+  if (!$("results").hidden) back = { scroll: $("panel").scrollTop };
+  selected = i;
+  const s = D.sites[i], ty = D.types[s.t], ps = s.pj.slice().sort((a, b) => STAGE_RANK[D.projects[a].stage] - STAGE_RANK[D.projects[b].stage] || (D.projects[b].cost || 0) - (D.projects[a].cost || 0));
+  const shownSet = new Set(visible[i].projects), hidden = ps.filter(j => !shownSet.has(j));
+  const facts = [
+    ["Address", [s.addr, `${s.city}, TX ${s.zip || ""}`.trim()].filter(Boolean).join(", ") + (s.county ? ` (${s.county} County)` : "")],
+    ["Phone", s.phone || ""], ["Beds", s.beds || ""], ["Operating rooms", s.ors || ""],
+    ["Surgery types", s.spec || ""], ["Ownership", s.own || ""], ["Medicare since", s.since || ""],
+    ["CMS number", s.id || ""],
+  ].filter(([, v]) => v);
+  const addr = [s.addr, s.city, "TX"].filter(Boolean).join(", ");
+  $("detail").innerHTML = `
+    <div><button class="btn ghost" type="button" id="back">← Back to list</button></div>
+    <h2>${esc(s.n)}</h2>
+    <div class="kind"><span class="key ${isNew(s) ? "newk" : siteType(s)}"></span>${esc(ty.label)}</div>
+    ${isNew(s) ? `<p class="note">Not open yet: this is a planned or under-construction ${siteType(s) === "asc" ? "surgery center" : "hospital"}.</p>` : ""}
+    ${s.note ? `<p class="note">${esc(s.note)}.</p>` : ""}
+    <dl class="facts">${facts.map(([k, v]) => `<dt>${k}</dt><dd>${esc(v)}</dd>`).join("")}</dl>
+    ${s.approx ? `<p class="note">The address couldn't be matched exactly, so the dot sits near the center of its city or ZIP code.</p>` : ""}
+    <div class="actions"><a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(s.n + ", " + addr)}" target="_blank" rel="noopener">Open in Google Maps</a></div>
+    <div><p class="eyebrow">${ps.length ? `Projects (${ps.length})` : "Projects"}</p>
+      ${ps.length ? "" : `<p class="note">No active construction filings found for this address since 2021.</p>`}
+      <div style="display:grid;gap:10px">${visible[i].projects.slice().sort((a, b) => ps.indexOf(a) - ps.indexOf(b)).map(projectCard).join("")}</div>
+      ${hidden.length ? `<details style="margin-top:10px"><summary class="hint" style="cursor:pointer">${hidden.length} more project${hidden.length > 1 ? "s" : ""} hidden by your filters</summary><div style="display:grid;gap:10px;margin-top:10px">${hidden.map(projectCard).join("")}</div></details>` : ""}
+    </div>`;
+  $("results").hidden = true; $("detail").hidden = false;
+  $("back").addEventListener("click", closeDetail);
+  $("panel").scrollTop = 0;
+  $("back").focus({ preventScroll: true });
+  if (fly || map.getZoom() < 12) map.setView([s.lat, s.lng], Math.max(map.getZoom(), 14));
+  draw();
+}
+function closeDetail() {
+  selected = -1;
+  $("detail").hidden = true; $("results").hidden = false;
+  refreshList();
+  if (back) $("panel").scrollTop = back.scroll;
+  back = null;
+  draw();
+  $("resultsTitle").focus({ preventScroll: true });
+}
+
+// ---------- search ----------
+const norm = s => String(s || "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+function setStatus(html, clear) {
+  $("status").innerHTML = html ? `<span>${html}</span>${clear ? '<button class="btn ghost" type="button" id="clear">Clear search</button>' : ""}` : "";
+  const c = $("clear"); if (c) c.addEventListener("click", () => { $("q").value = ""; query = null; setStatus(""); apply(); });
+}
+function search(q) {
+  q = q.trim();
+  if (!q) { query = null; setStatus(""); apply(); return; }
+  const n = norm(q), words = n.split(" ");
+  const hits = new Set();
+  D.sites.forEach((s, i) => {
+    if (/^\d{5}$/.test(q)) { if (s.zip === q) hits.add(i); return; }
+    const hay = norm([s.n, s.city, s.county, s.county ? s.county + " county" : "", s.addr, ...s.pj.map(j => D.projects[j].name + " " + (D.projects[j].owner || ""))].join(" "));
+    if (words.every(w => hay.includes(w))) hits.add(i);
+  });
+  if (!$("detail").hidden) { selected = -1; $("detail").hidden = true; $("results").hidden = false; }
+  query = hits;
+  compute(); draw();
+  const shownHits = [...hits].filter(i => visible[i].on);
+  setStatus(hits.size ? `${fmt(shownHits.length)} of ${fmt(hits.size)} matches shown with your filters.` : `Nothing matches “${esc(q)}”.`, true);
+  if (shownHits.length) {
+    const b = L.latLngBounds(shownHits.map(i => [D.sites[i].lat, D.sites[i].lng]));
+    map.fitBounds(b, { padding: [40, 40], maxZoom: 14 });
+  }
+  chipCounts(); refreshList();
+}
+
+// ---------- CSV ----------
+function downloadCsv() {
+  const rows = [["Facility", "Facility type", "City", "County", "ZIP", "Project", "Stage", "Kind", "Cost", "Start", "Finish", "Owner", "Architect", "State filing", "Sources"]];
+  listIdx.forEach(i => {
+    const s = D.sites[i], base = [s.n, D.types[s.t].label, s.city, s.county || "", s.zip || ""];
+    if (!visible[i].projects.length) rows.push([...base, "", "", "", "", "", "", "", "", "", ""]);
+    for (const j of visible[i].projects) {
+      const p = D.projects[j];
+      rows.push([...base, p.name, STAGES.find(x => x.k === p.stage).label, KINDS.find(x => x.k === p.kind).label, p.cost || "",
+        p.start || "", p.end || "", p.owner || "", p.designer || "", p.num || "", (p.news || []).map(x => x[1]).join(" ")]);
+    }
+  });
+  const csv = rows.map(r => r.map(v => /[",\n]/.test(String(v)) ? `"${String(v).replace(/"/g, '""')}"` : v).join(",")).join("\r\n");
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob(["﻿" + csv], { type: "text/csv" }));
+  a.download = "texas-hospital-construction.csv";
+  document.body.appendChild(a); a.click(); a.remove();
+}
+
+// ---------- boot ----------
+async function boot() {
+  if (matchMedia("(max-width: 760px)").matches) $("filters").open = false;
+  let base;
+  try {
+    [base, D] = await Promise.all([fetch("data/basemap.json").then(r => r.json()), fetch("data/map.json").then(r => r.json())]);
+  } catch (e) { $("loading").textContent = "The map data didn't load. Refresh the page to try again."; return; }
+  $("loading").hidden = true;
+  if (!TILES) $("csv").hidden = true;   // the Claude artifact frame can't start downloads
+  readTokens();
+  buildFilters();
+  compute();
+  setupMap(base);
+  apply();
+  $("searchForm").addEventListener("submit", e => { e.preventDefault(); search($("q").value); });
+  $("more").addEventListener("click", renderMore);
+  const retheme = () => { readTokens(); if (mapStyle === "simple") styleBase(); draw(); };
+  matchMedia("(prefers-color-scheme: dark)").addEventListener("change", retheme);
+  new MutationObserver(retheme).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+}
+boot();
+})();
+</script>

@@ -1,0 +1,4 @@
+data/basemap/source/
+__pycache__/
+*.pyc
+data/tabs/search/*.log
