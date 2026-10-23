@@ -538,9 +538,11 @@ def attach_news(projects, rows, facilities, review):
         sources = [s.split("|", 1) for s in r["sources"].split(" ; ") if "|" in s]
         nums = r["tabs"].split()
         matched = [by_num[n] for n in nums if n in by_num]
+        built = set((r.get("builder_tabs") or "").split() or nums[:1])   # the filings the builder source covers
         for p in matched:
             p["news"] += [[t.strip(), u.strip()] for t, u in sources]
-            p["builder"] = p["builder"] or r["builder"]
+            if p["num"] in built:
+                p["builder"] = p["builder"] or r["builder"]
             p["opens"] = p["opens"] or r["opens"]
             if r["facility_name"]:
                 p["facility_name"] = r["facility_name"]

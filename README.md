@@ -124,4 +124,5 @@ python scripts/build_site.py                 # website in docs/ and the spreadsh
 
 The TABS searches remember finished queries (`data/tabs/search/*.done`); delete those files to search again
 from scratch. `python scripts/suggest_news_matches.py` lists TABS filings that may match the news projects in
-data/research/news_projects.csv, so their filing numbers can be added to its `tabs` column.
+data/research/news_projects.csv, so their filing numbers can be added to its `tabs` column. A row's `builder`
+is credited to the first filing in `tabs` only, unless `builder_tabs` lists the filings the builder's source covers.
