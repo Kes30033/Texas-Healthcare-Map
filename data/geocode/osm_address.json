@@ -1,0 +1,4360 @@
+{
+"1 CARE CIRCLE|AMARILLO|79124": {
+"found": "ADC Endoscopy Specialists, 1, Care Circle, Legacy Square Professional Park, Amarillo, Potter County,",
+"lat": 35.190133,
+"lon": -101.92828
+},
+"1 MEDICAL PLAZA|PAMPA|79065": {
+"found": "Pampa Regional Medical Center 1 Medical Plaza Pampa 79065",
+"lat": 35.572822,
+"lon": -100.964461,
+"src": "photon"
+},
+"1 NORTH AVENUE N PO BOX 1117|HASKELL|79521": {
+"tried": "nominatim, photon (any street type)"
+},
+"100 A ALTON GLOOR|BROWNSVILLE|78526": {
+"tried": "nominatim, photon (any street type)"
+},
+"100 BOURLAND RD|KELLER|76248": {
+"tried": "nominatim, photon (any street type)"
+},
+"100 HILLCREST MEDICAL BLVD|WACO|76712": {
+"found": "Baylor Scott & White Medical Center \u2013 Hillcrest, 100, Hillcrest Medical Boulevard, Waco, McLennan Co",
+"lat": 31.488905,
+"lon": -97.157075
+},
+"100 MEDICAL DRIVE|BORGER|79007": {
+"found": "Golden Plains Community Hospital, 100, Medical Drive, Borger, Hutchinson County, Texas, 79007, Unite",
+"lat": 35.654849,
+"lon": -101.408872
+},
+"100 MEDICAL DRIVE|LAKE JACKSON|77566": {
+"found": "St. Luke's Health - Brazosport Hospital, 100, Medical Drive, Lake Jackson, Brazoria County, Texas, 7",
+"lat": 29.029823,
+"lon": -95.452616
+},
+"100 PARK ROAD|NOCONA|76255": {
+"found": "Nocona General Hospital, 100, Park Road, Nocona, Montague County, Texas, 76255, United States",
+"lat": 33.777612,
+"lon": -97.732428
+},
+"100 WEST CROSS STREET|MADISONVILLE|77864": {
+"found": "CHI Saint Joseph Health Madison Hospital, 100, West Cross Street, Madisonville, Madison County, Texa",
+"lat": 30.942522,
+"lon": -95.911121
+},
+"1000 SOUTH BECKHAM AVE|TYLER|75701": {
+"found": "East Texas Medical Center - Tyler, 1000, South Beckham Avenue, Tyler, Smith County, Texas, 75701, Un",
+"lat": 32.338277,
+"lon": -95.290323
+},
+"1000 SOUTH MAIN STREET|SHAMROCK|79079": {
+"found": "Shamrock General Hospital, 1000, South Main Street, Shamrock, Wheeler County, Texas, 79079, United S",
+"lat": 35.198641,
+"lon": -100.248208
+},
+"1001 SARA SWAMY DRIVE SUITE 200|SHERMAN|75090": {
+"found": "1001, Sara Swamy Drive, Sherman Commons, Sherman, Grayson County, Texas, 75090, United States",
+"lat": 33.678084,
+"lon": -96.604054
+},
+"1001 SURREY LANE|FLOWER MOUND|75022": {
+"found": "1001, Surrey Lane, Lakeside, Flower Mound, Denton County, Texas, 75022, United States",
+"lat": 32.998591,
+"lon": -97.067632
+},
+"1001 WALDROP SUITE 705|ARLINGTON|76012": {
+"found": "1001, North Waldrop Drive, Arlington, Tarrant County, Texas, 76012, United States",
+"lat": 32.748327,
+"lon": -97.117553
+},
+"1001 WATER STREET BLDG C|KERRVILLE|78028": {
+"found": "1001, Water Street, Kerrville, Kerr County, Texas, 78028, United States",
+"lat": 30.042526,
+"lon": -99.137249
+},
+"101 CIRCLE DRIVE|HILLSBORO|76645": {
+"found": "101 Circle Drive Hillsboro 76645",
+"lat": 32.013142,
+"lon": -97.099,
+"src": "photon"
+},
+"101 E RIDGE RD|MCALLEN|78503": {
+"found": "Rio Grande Regional Hospital, 101, East Ridge Road, McAllen, Hidalgo County, Texas, 78503, United St",
+"lat": 26.18658,
+"lon": -98.22126
+},
+"101 YMCA DRIVE|WAXAHACHIE|75165": {
+"found": "Reagan Eye Center, 101, YMCA Drive, Waxahachie, Ellis County, Texas, 75165, United States",
+"lat": 32.427257,
+"lon": -96.840296
+},
+"1010 SOUTH COULTER STREET|AMARILLO|79106": {
+"tried": "nominatim, photon (any street type)"
+},
+"1011 NORTH GALLOWAY AVENUE|MESQUITE|75149": {
+"found": "Dallas Regional Medical Center, 1011, North Galloway Avenue, Mesquite, Dallas County, Texas, 75149, ",
+"lat": 32.778618,
+"lon": -96.60128
+},
+"1013 15TH ST|WELLINGTON|79095": {
+"found": "Collingsworth General Hospital, 1013, 15th Street, Wellington, Collingsworth County, Texas, 79095, U",
+"lat": 34.848782,
+"lon": -100.211985
+},
+"1013 S WELLS|EDNA|77957": {
+"found": "Jackson County Hospital, 1013, South Wells Street, Edna, Jackson County, Texas, 77957, United States",
+"lat": 28.968677,
+"lon": -96.635551
+},
+"1015 MEDICAL CENTER BLVD, SUITE 1200|WEBSTER|77598": {
+"found": "1015, Medical Center Boulevard, Webster, Harris County, Texas, 77598, United States",
+"lat": 29.535167,
+"lon": -95.133324
+},
+"1018 E WHEATLAND RD|DUNCANVILLE|75116": {
+"found": "1018, East Wheatland Road, Duncanville, Dallas County, Texas, 75237, United States",
+"lat": 32.647037,
+"lon": -96.887144
+},
+"102 NORTH US HIGHWAY 277|ELDORADO|76936": {
+"found": "Schleicher County Medical Center 102 North US Highway 277 Eldorado 76936",
+"lat": 30.870593,
+"lon": -100.591814,
+"src": "photon"
+},
+"1020 S 4TH ST|CANADIAN|79014": {
+"found": "Hemphill County Hospital, 1020, South 4th Street, Canadian, Hemphill County, Texas, 79014, United St",
+"lat": 35.903649,
+"lon": -100.38817
+},
+"1020 SOUTH STATE HIGHWAY 16|FREDERICKSBURG|78624": {
+"found": "Methodist Hospital Hill Country, 1020, South State Highway 16, Fredericksburg, Gillespie County, Tex",
+"lat": 30.262139,
+"lon": -98.881724
+},
+"10201 HWY 16|COMANCHE|76442": {
+"found": "Comanche County Medical Center 10201 TX 16 Comanche 76442",
+"lat": 31.984892,
+"lon": -98.561487,
+"src": "photon"
+},
+"1021 HOLDEN STREET|GLEN ROSE|76043": {
+"found": "Glen Rose Medical Center, 1021, Holden Street, Glen Rose, Somervell County, Texas, 76043, United Sta",
+"lat": 32.242218,
+"lon": -97.746261
+},
+"1025 GARNER FIELD ROAD|UVALDE|78801": {
+"found": "Uvalde Memorial Hospital, 1025, Garner Field Road, Uvalde, Uvalde County, Texas, 78801, United State",
+"lat": 29.214205,
+"lon": -99.768307
+},
+"1025 MORGAN AVENUE|CORPUS CHRISTI|78404": {
+"found": "1025, Morgan Avenue, Downtown, Corpus Christi, Nueces County, Texas, 78404, United States",
+"lat": 27.77874,
+"lon": -97.400861
+},
+"103 PARKING WAY|LAKE JACKSON|77566": {
+"tried": "nominatim, photon (any street type)"
+},
+"104 7TH STREET|BAY CITY|77414": {
+"found": "Matagorda Regional Medical Center, 104, 7th Street, Bay City, Matagorda County, Texas, 77414, United",
+"lat": 28.980166,
+"lon": -95.991546
+},
+"1040 W JEFFERSON ST|BROWNSVILLE|78520": {
+"found": "Valley Baptist Medical Center \u2014 Brownsville, 1040, West Jefferson Street, Riverside, Brownsville, Ca",
+"lat": 25.917246,
+"lon": -97.510155
+},
+"10425 HUFFMEISTER ROAD, SUITE 100|HOUSTON|77065": {
+"tried": "nominatim, photon (any street type)"
+},
+"10496 KATY FWY, STE 105|HOUSTON|77043": {
+"found": "10496, Katy Freeway, Spring Branch, Town & Country / CityCentre, Houston, Harris County, Texas, 7704",
+"lat": 29.785183,
+"lon": -95.558625
+},
+"105 JAMES COLEMAN DRIVE|VICTORIA|77904": {
+"found": "105, James Coleman Drive, Victoria, Victoria County, Texas, 77904, United States",
+"lat": 28.856027,
+"lon": -97.023396
+},
+"1050 GEMINI STREET, SUITE 101|HOUSTON|77058": {
+"found": "1050, Gemini Street, Clear Lake City, Houston, Harris County, Texas, 77058, United States",
+"lat": 29.553943,
+"lon": -95.115079
+},
+"10622 STATE HWY 151 #114|SAN ANTONIO|78251": {
+"tried": "nominatim, photon (any street type)"
+},
+"107 SWIFT STREET|REFUGIO|78377": {
+"found": "Refugio County Memorial Hospital, 107, Swift Street, Refugio, Refugio County, Texas, 78377, United S",
+"lat": 28.306566,
+"lon": -97.280127
+},
+"10700 MCPHERSON ROAD|LAREDO|78041": {
+"found": "Doctors Hospital of Laredo, 10700, McPherson Road, San Isidro Ranch, Laredo, Webb County, Texas, 780",
+"lat": 27.606655,
+"lon": -99.477925
+},
+"10740 NORTH CENTRAL EXPRESSWAY|DALLAS|75231": {
+"found": "10740, North Central Expressway, Gifford, Dallas, Dallas County, Texas, 75231, United States",
+"lat": 32.893878,
+"lon": -96.768633
+},
+"108 DENVER TRAIL|AZLE|76020": {
+"found": "Texas Health Harris Methodist Hospital Azle, 108, Denver Trail, Azle, Tarrant County, Texas, 76020, ",
+"lat": 32.880159,
+"lon": -97.532854
+},
+"10840 TEXAS HEALTH TRAIL SUITE 100|FORT WORTH|76244": {
+"found": "10840, Texas Health Trail, Fort Worth, Tarrant County, Texas, 76244, United States",
+"lat": 32.9308,
+"lon": -97.309666
+},
+"10847 KUYKENDAHL RD, STE 150|THE WOODLANDS|77382": {
+"found": "10847, Kuykendahl Road, Indian Springs, The Woodlands, Montgomery County, Texas, 77382, United State",
+"lat": 30.177426,
+"lon": -95.538462
+},
+"10847 KUYKENDAHL RD, SUITE 150|SPRING|77382": {
+"found": "10847 Kuykendahl Road The Woodlands 77382",
+"lat": 30.177426,
+"lon": -95.538462,
+"src": "photon"
+},
+"10864 TEXAS HEALTH TRAIL|FORT WORTH|76244": {
+"found": "Emergency Room Entrance, 10864, Texas Health Trail, Fort Worth, Tarrant County, Texas, 76244, United",
+"lat": 32.930362,
+"lon": -97.309258
+},
+"109 PARKING WAY|LAKE JACKSON|77566": {
+"found": "Bushwhackers Salon 109 North Parking Place Lake Jackson 77566",
+"lat": 29.042197,
+"lon": -95.448672,
+"src": "photon"
+},
+"10900 FOUNDERS WAY SUITE 100|FORT WORTH|76244": {
+"found": "10900, Founders Way, Fort Worth, Tarrant County, Texas, 76244, United States",
+"lat": 32.933259,
+"lon": -97.311793
+},
+"10918 EAST FREEWAY|HOUSTON|77029": {
+"found": "East Side Surgery Center, 10918, East Freeway, North Shore, Houston, Harris County, Texas, 77013, Un",
+"lat": 29.772859,
+"lon": -95.236783
+},
+"110 MEMORIAL HOSPITAL DRIVE|HUNTSVILLE|77340": {
+"found": "Huntsville Memorial Hospital, 110, Memorial Hospital Drive, Huntsville, Walker County, Texas, 77340,",
+"lat": 30.69835,
+"lon": -95.559032
+},
+"110 MENGER SPRINGS|BOERNE|78006": {
+"found": "110, Menger Springs, Boerne, Kendall County, Texas, 78006, United States",
+"lat": 29.770815,
+"lon": -98.728731
+},
+"110 SHULT DR|COLUMBUS|78934": {
+"found": "Columbus Community Hospital, 110, Shult Drive, Columbus, Colorado County, Texas, 78934, United State",
+"lat": 29.694862,
+"lon": -96.543113
+},
+"1100 ALLIED DRIVE|PLANO|75093": {
+"found": "Baylor Scott & White The Heart Hospital - Plano, 1100, Allied Drive, Plano, Collin County, Texas, 75",
+"lat": 33.014781,
+"lon": -96.789958
+},
+"1100 E LOOP 304|CROCKETT|75835": {
+"tried": "nominatim, photon (any street type)"
+},
+"1100 NORTH MAIN AVENUE|SAN ANTONIO|78212": {
+"found": "Braverman-Terry-Oei Eye Associates, 1100, North Main Avenue, San Antonio, Bexar County, Texas, 78215",
+"lat": 29.438934,
+"lon": -98.493809
+},
+"1100 WEST BLUFF|WOODVILLE|75979": {
+"found": "Tyler County Hospital, 1100, West Bluff Street, Woodville, Tyler County, Texas, 75979, United States",
+"lat": 30.775838,
+"lon": -94.427854
+},
+"1101 WOLF LAKE DR, STE 150|GEORGETOWN|78628": {
+"tried": "nominatim, photon (any street type)"
+},
+"1101 WOLF LAKES DR SUITE 150|GEORGETOWN|78628": {
+"tried": "nominatim, photon (any street type)"
+},
+"1101 WOODSON DRIVE|CALDWELL|77836": {
+"found": "CHI Saint Joseph Health Burleson Hospital, 1101, Woodson Drive, Caldwell, Burleson County, Texas, 77",
+"lat": 30.520041,
+"lon": -96.716416
+},
+"1102 W TRENTON ROAD|EDINBURG|78539": {
+"found": "Edinburg Regional Medical Center, 1102, West Trenton Road, Borderland Retreat Colonia, Edinburg, Hid",
+"lat": 26.261289,
+"lon": -98.181793
+},
+"1105 CENTRAL EXPRESSWAY NORTH|ALLEN|75013": {
+"found": "Texas Health Allen, 1105, Central Expressway North, Allen, Collin County, Texas, 75013, United State",
+"lat": 33.115902,
+"lon": -96.67282
+},
+"111 DALLAS STREET|SAN ANTONIO|78205": {
+"found": "Baptist Medical Center, 111, Dallas Street, Downtown, San Antonio, Bexar County, Texas, 78205, Unite",
+"lat": 29.43366,
+"lon": -98.492593
+},
+"111 VISION PARK BLVD, STE 200|SHENANDOAH|77384": {
+"found": "111, Vision Park Boulevard, Shenandoah, Montgomery County, Texas, 77384, United States",
+"lat": 30.191159,
+"lon": -95.457407
+},
+"111 VISION PARK BOULEVARD SUITE 160|THE WOODLANDS|77384": {
+"tried": "nominatim, photon (any street type)"
+},
+"1110 E STATE HWY 114 SUITE 150|SOUTHLAKE|76092": {
+"tried": "nominatim, photon (any street type)"
+},
+"1110 NORTH SARAH DEWITT DRIVE|GONZALES|78629": {
+"found": "Gonzales Healthcare Systems, 1110, North Sarah Dewitt Drive, Gonzales, Gonzales County, Texas, 78629",
+"lat": 29.517569,
+"lon": -97.428901
+},
+"11100 SHADOW CREEK PARKWAY|PEARLAND|77584": {
+"found": "HCA Pearland, 11100, Shadow Creek Parkway, Shadow Creek Ranch, Pearland, Brazoria County, Texas, 775",
+"lat": 29.577917,
+"lon": -95.390525
+},
+"1111 RAINTREE CIRCLE SUITE 190|ALLEN|75013": {
+"found": "1111, Raintree Circle, Allen, Collin County, Texas, 75013, United States",
+"lat": 33.114195,
+"lon": -96.675874
+},
+"1111 SARA SWAMY DRIVE SUITE B|SHERMAN|75090": {
+"found": "1111, Sara Swamy Drive, Sherman Commons, Sherman, Grayson County, Texas, 75090, United States",
+"lat": 33.678158,
+"lon": -96.602281
+},
+"1111 WEST 34TH STREET|AUSTIN|78705": {
+"found": "1111, West 34th Street, Glen Ridge, Austin, Travis County, Texas, 78705, United States",
+"lat": 30.303382,
+"lon": -97.7467
+},
+"11111 RESEARCH BLVD, SUITE LL3|AUSTIN|78759": {
+"found": "11111, Research Boulevard, Quarry, Austin, Travis County, Texas, 78759, United States",
+"lat": 30.405681,
+"lon": -97.745885
+},
+"11113 RESEARCH BOULEVARD|AUSTIN|78759": {
+"found": "11113, Research Boulevard, Quarry, Austin, Travis County, Texas, 78759, United States",
+"lat": 30.405722,
+"lon": -97.74588
+},
+"11123 CHRISTUS HILLS|SAN ANTONIO|78251": {
+"tried": "nominatim, photon (any street type)"
+},
+"112 HERFF RD, 2ND FL|BOERNE|78006": {
+"tried": "nominatim, photon (any street type)"
+},
+"1120 BUSINESS CENTER DRIVE|HOUSTON|77043": {
+"tried": "nominatim, photon (any street type)"
+},
+"1120 RAINTREE CIRCLE SUITE 100|ALLEN|75013": {
+"found": "1120, Raintree Circle, Allen, Collin County, Texas, 75013, United States",
+"lat": 33.116141,
+"lon": -96.675249
+},
+"1125 RAINTREE CIRCLE SUITE 200|ALLEN|75013": {
+"found": "1125, Raintree Circle, Allen, Collin County, Texas, 75013, United States",
+"lat": 33.114783,
+"lon": -96.676422
+},
+"1125 TEXAS AVE SUITE 502|EL PASO|79901": {
+"found": "1125, Texas Avenue, Downtown, El Paso, El Paso County, Texas, 79901, United States",
+"lat": 31.764275,
+"lon": -106.478876
+},
+"11250 FALLBROOK|HOUSTON|77065": {
+"found": "Cy-Fair Surgery Center, 11250, Fallbrook Drive, Houston, Harris County, Texas, 77065, United States",
+"lat": 29.925838,
+"lon": -95.588064
+},
+"1126 SLIDE ROAD SUITE #1|LUBBOCK|79416": {
+"found": "Ace Hardware, 1126, Slide Road, Pheasant Ridge, Lubbock, Lubbock County, Texas, 79416, United States",
+"lat": 33.585187,
+"lon": -101.924209
+},
+"1139 E SONTERRA BLVD,|SAN ANTONIO|78258": {
+"found": "Methodist Stone Oak Hospital, 1139, East Sonterra Boulevard, San Antonio, Bexar County, Texas, 78258",
+"lat": 29.615997,
+"lon": -98.474677
+},
+"11411 E NORTHWEST HIGHWAY SUITE 220|DALLAS|75218": {
+"found": "11411, East Northwest Highway, Dallas, Dallas County, Texas, 75218, United States",
+"lat": 32.865122,
+"lon": -96.681396
+},
+"11442 N. CENTRAL EXPRESSWAY|DALLAS|75243": {
+"found": "11442, North Central Expressway, Gifford, Dallas, Dallas County, Texas, 75243, United States",
+"lat": 32.904369,
+"lon": -96.769524
+},
+"115 AIRPORT RD|SULPHUR SPRINGS|75482": {
+"found": "CHRISTUS Mother Frances Hospital - Sulphur Springs, 115, Airport Road, Sulphur Springs, Hopkins Coun",
+"lat": 33.157273,
+"lon": -95.599981
+},
+"11555 UNIVERSITY BLVD|SUGAR LAND|77478": {
+"tried": "nominatim, photon (any street type)"
+},
+"11601 TOEPPERWEIN RD, SUITE 2020|LIVE OAK|78233": {
+"tried": "nominatim, photon (any street type)"
+},
+"117 WINNSBORO STREET|QUITMAN|75783": {
+"found": "UT Health Quitman, 117, North Winnsboro Street, Quitman, Wood County, Texas, 75783, United States",
+"lat": 32.797041,
+"lon": -95.443011
+},
+"11801 SOUTH FREEWAY|BURLESON|76028": {
+"found": "Texas Health Huguley Hospital Fort Worth South, 11801, South Freeway, Burleson, Tarrant County, Texa",
+"lat": 32.586159,
+"lon": -97.316618
+},
+"11937 US HIGHWAY 271|TYLER|75708": {
+"found": "11937, US Highway 271, Tyler, Smith County, Texas, 75708, United States",
+"lat": 32.425929,
+"lon": -95.21323
+},
+"11970 N CENTRAL EXPRESSWAY SUITE 610|DALLAS|75243": {
+"found": "11970, North Central Expressway, Bouchard, Dallas, Dallas County, Texas, 75243, United States",
+"lat": 32.914707,
+"lon": -96.767167
+},
+"120 E HARRIS AVE.|SAN ANGELO|76903": {
+"found": "Shannon Medical Center, 120, East Harris Avenue, Downtown, San Angelo, Tom Green County, Texas, 7690",
+"lat": 31.464761,
+"lon": -100.433858
+},
+"120 JIMMA DRIVE|WILLOW PARK|76087": {
+"tried": "nominatim, photon (any street type)"
+},
+"1200 BINZ STREET, SUITE 101|HOUSTON|77004": {
+"found": "Bodegas Taco Shop, 1200, Binz Street, Museum District, Houston, Harris County, Texas, 77004, United ",
+"lat": 29.723667,
+"lon": -95.387727
+},
+"1200 CARL RAMERT DRIVE|YOAKUM|77995": {
+"found": "Yoakum Community Hospital, 1200, Carl Ramert Drive, Yoakum, Lavaca County, Texas, 77995, United Stat",
+"lat": 29.307465,
+"lon": -97.129599
+},
+"1200 E SAVANNAH SUITE 15|MCALLEN|78503": {
+"tried": "nominatim, photon (any street type)"
+},
+"1200 SOLDIERS FIELD DR SUITE 101|SUGAR LAND|77479": {
+"found": "1200, Soldiers Field Drive, Sugar Land, Fort Bend County, Texas, 77479, United States",
+"lat": 29.601906,
+"lon": -95.637043
+},
+"12001 S FREEWAY - STE 101|BURLESON|76028": {
+"tried": "nominatim, photon (any street type)"
+},
+"1201 E HIGHWAY 287|MIDLOTHIAN|76065": {
+"found": "Methodist Midlothian Medical Center 1201 East Us Highway 287 Service Road Midlothian 76065",
+"lat": 32.468956,
+"lon": -96.982002,
+"src": "photon"
+},
+"1201 HILL RD ATTN: FIN DIR|SMITHVILLE|78957": {
+"tried": "nominatim, photon (any street type)"
+},
+"1201 W 38TH ST|AUSTIN|78705": {
+"found": "Ascension Seton Medical Center, 1201, West 38th Street, Glen Ridge, Austin, Travis County, Texas, 78",
+"lat": 30.305199,
+"lon": -97.745461
+},
+"1201 WEST FRANK STREET|LUFKIN|75901": {
+"found": "CHI Saint Luke's Health-Memorial Lufkin 1201 West Frank Avenue Lufkin 75904",
+"lat": 31.336586,
+"lon": -94.742158,
+"src": "photon"
+},
+"1203 ST CLAIRE BLVD UNIT 13B|MISSION|78572": {
+"tried": "nominatim, photon (any street type)"
+},
+"1204 MOUND ST|NACOGDOCHES|75961": {
+"found": "Nacogdoches Memorial Hospital, 1204, North Mound Street, Nacogdoches, Nacogdoches County, Texas, 759",
+"lat": 31.612515,
+"lon": -94.648684
+},
+"1207 S BAILEY STREET|ELECTRA|76360": {
+"found": "Electra Memorial Hospital, 1207, South Bailey Street, Electra, Wichita County, Texas, 76360, United ",
+"lat": 34.01822,
+"lon": -98.924745
+},
+"12141 RICHMOND AVE|HOUSTON|77082": {
+"found": "West Houston Medical Center, 12141, Richmond Avenue, Briar Forest, Houston, Harris County, Texas, 77",
+"lat": 29.728781,
+"lon": -95.594428
+},
+"1215 E COURT ST|SEGUIN|78155": {
+"found": "Guadalupe Regional Medical Center, 1215, East Court Street, Seguin, Guadalupe County, Texas, 78155, ",
+"lat": 29.568297,
+"lon": -97.946682
+},
+"1220 KELLER PARKWAY|KELLER|76248": {
+"tried": "nominatim, photon (any street type)"
+},
+"12200 RENFERT WAY, SUITE G-2|AUSTIN|78758": {
+"found": "12200, Renfert Way, The Centrum, Austin, Travis County, Texas, 78758, United States",
+"lat": 30.410608,
+"lon": -97.70462
+},
+"12201 RENFERT WAY SUITE 100|AUSTIN|78758": {
+"found": "Medical Oaks Pavilion I, 12201, Renfert Way, The Centrum, Austin, Travis County, Texas, 78758, Unite",
+"lat": 30.409653,
+"lon": -97.70465
+},
+"12221 MOPAC EXPRESSWAY NORTH|AUSTIN|78758": {
+"found": "Saint David's North Austin Medical Center, 12221, North Mopac Expressway, The Centrum, Austin, Travi",
+"lat": 30.411795,
+"lon": -97.706364
+},
+"12228 NORTH CENTRAL EXPRESSWAY|DALLAS|75243": {
+"found": "12228, North Central Expressway, Dallas, Dallas County, Texas, 75243, United States",
+"lat": 32.916244,
+"lon": -96.76661
+},
+"12230 COIT ROAD SUITE 200|DALLAS|75251": {
+"found": "12230, Coit Road, Bouchard, Dallas, Dallas County, Texas, 75251, United States",
+"lat": 32.91614,
+"lon": -96.768758
+},
+"123 NORTH LOOP 1604 EAST SUITE 107|SAN ANTONIO|78232": {
+"found": "Tesla Supercharger, 123, North Loop 1604 East, San Antonio, Bexar County, Texas, 78232, United State",
+"lat": 29.61049,
+"lon": -98.48859
+},
+"1240 CLEAR LAKE CITY BLVD, SUITE 100|HOUSTON|77062": {
+"found": "1240, Clear Lake City Boulevard, Houston, Harris County, Texas, 77062, United States",
+"lat": 29.582464,
+"lon": -95.153275
+},
+"12400 N DALLAS PARKWAY|FRISCO|75033": {
+"found": "Texas Health Frisco, 12400, Dallas Parkway, Emerson Estates, Frisco, Collin County, Texas, 75033, Un",
+"lat": 33.18131,
+"lon": -96.837152
+},
+"1249 AMBLER SUITE 100|ABILENE|79601": {
+"found": "1249, East Ambler Avenue, Abilene, Taylor County, Texas, 79601, United States",
+"lat": 32.475315,
+"lon": -99.70318
+},
+"125 WEST CASTELLANO|EL PASO|79912": {
+"tried": "nominatim, photon (any street type)"
+},
+"12500 SOUTH FREEWAY SUITE 100|BURLESON|76028": {
+"found": "Baylor Emergency Medical Center, 12500, South Freeway, Burleson, Tarrant County, Texas, 76028, Unite",
+"lat": 32.575535,
+"lon": -97.321147
+},
+"12505 LEBANON ROAD|FRISCO|75035": {
+"found": "Baylor Scott & White Medical Center \u2013 Centennial, 12505, Lebanon Road, Frisco, Collin County, Texas,",
+"lat": 33.114377,
+"lon": -96.770482
+},
+"1275 MARVIN HANCOCK DRIVE|JASPER|75951": {
+"found": "CHRISTUS Southeast Texas - Jasper Memorial, 1275, Marvin Hancock Drive, Jasper, Jasper County, Texas",
+"lat": 30.908208,
+"lon": -94.009594
+},
+"128 N FM RD 3167|RIO GRANDE CITY|78582": {
+"found": "Starr County Memorial Hospital 128 North FM 3167 Rio Grande City 78582",
+"lat": 26.377229,
+"lon": -98.858477,
+"src": "photon"
+},
+"12838 VISTA DEL NORTE|SAN ANTONIO|78216": {
+"tried": "nominatim, photon (any street type)"
+},
+"12850 TOEPPERWEIN RD|LIVE OAK|78233": {
+"tried": "nominatim, photon (any street type)"
+},
+"12950 EAST FREEWAY, SUITE 100|HOUSTON|77015": {
+"found": "Advanced Diagnostics East Hospital & 24 Hour Emergency Center, 12950, East Freeway, North Shore, Hou",
+"lat": 29.770726,
+"lon": -95.200452
+},
+"12951 SOUTH FWY, STE 200|HOUSTON|77047": {
+"found": "12951, South Freeway, Houston, Harris County, Texas, 77047, United States",
+"lat": 29.609002,
+"lon": -95.386187
+},
+"130 HAYS STREET|LULING|78648": {
+"found": "Seton Edgar B. Davis Hospital, 130, Hays Street, Luling, Caldwell County, Texas, 78468, United State",
+"lat": 29.673046,
+"lon": -97.654682
+},
+"130 JIMMA DRIVE|WILLOW PARK|76087": {
+"tried": "nominatim, photon (any street type)"
+},
+"1300 MURCHISON DRIVE SUITE 180|EL PASO|79902": {
+"found": "Bueno Vista Eye Care, 1300, Murchison Drive, El Paso, El Paso County, Texas, 79902, United States",
+"lat": 31.778135,
+"lon": -106.486631
+},
+"1300 MURCHISON SUITE 200|EL PASO|79902": {
+"found": "Bueno Vista Eye Care, 1300, Murchison Drive, El Paso, El Paso County, Texas, 79902, United States",
+"lat": 31.778135,
+"lon": -106.486631
+},
+"1300 N MAIN AVENUE|BIG LAKE|76932": {
+"found": "Reagan Hospital District, 1300, North Main Avenue, Big Lake, Reagan County, Texas, 76932, United Sta",
+"lat": 31.203527,
+"lon": -101.461219
+},
+"13009 GULF COMMERCE DR, STE 201|HOUSTON|77034": {
+"tried": "nominatim, photon (any street type)"
+},
+"13009 GULF COMMERCE DRIVE, SUITE 202|HOUSTON|77034": {
+"tried": "nominatim, photon (any street type)"
+},
+"1301 BARBARA JORDAN BLVD, SUITE 100|AUSTIN|78723": {
+"found": "Central Texas Pediatric Orthopedics, 1301, Barbara Jordan Boulevard, Austin, Travis County, Texas, 7",
+"lat": 30.305486,
+"lon": -97.707264
+},
+"1301 MONTGOMERY ROAD|GRAHAM|76450": {
+"found": "Graham Regional Medical Center, 1301, Montgomery Road, Graham, Young County, Texas, 76450, United St",
+"lat": 33.089291,
+"lon": -98.583631
+},
+"1301 PENNSYLVANIA AVENUE|FORT WORTH|76104": {
+"found": "1301, Pennsylvania Avenue, Fort Worth, Tarrant County, Texas, 76104, United States",
+"lat": 32.73723,
+"lon": -97.339267
+},
+"1301 WEST 38TH ST, SUITE 109|AUSTIN|78705": {
+"found": "Medical Park Tower, 1301, West 38th Street, Glen Ridge, Austin, Travis County, Texas, 78705, United ",
+"lat": 30.305503,
+"lon": -97.746687
+},
+"1301 WONDER WORLD DRIVE|SAN MARCOS|78666": {
+"found": "Christus Santa Rosa Hospital, 1301, East Wonder World Drive, San Marcos, Hays County, Texas, 78666, ",
+"lat": 29.852769,
+"lon": -97.945681
+},
+"1305 AIRPORT FREEWAY SUITE 123|BEDFORD|76021": {
+"found": "1305, Airport Freeway, Bedford, Tarrant County, Texas, 76021, United States",
+"lat": 32.838523,
+"lon": -97.147788
+},
+"1305 WONDER WORLD DRIVE SUITE 105|SAN MARCOS|78666": {
+"found": "1305, East Wonder World Drive, San Marcos, Hays County, Texas, 78666, United States",
+"lat": 29.85138,
+"lon": -97.946477
+},
+"1306 W FRANK AVENUE|LUFKIN|75904": {
+"found": "1306, West Frank Avenue, Lufkin, Angelina County, Texas, 75904, United States",
+"lat": 31.336888,
+"lon": -94.744103
+},
+"1307 CLEVELAND STREET|FRIONA|79035": {
+"found": "Parmer Medical Center 1307 Cleveland Avenue Friona 79035",
+"lat": 34.644103,
+"lon": -102.721569,
+"src": "photon"
+},
+"1309 RIDGE ROAD SUITE 3|MCALLEN|78503": {
+"found": "1309, East Ridge Road, McAllen, Hidalgo County, Texas, 78503, United States",
+"lat": 26.183758,
+"lon": -98.209452
+},
+"1310 PALUXY RD|GRANBURY|76048": {
+"found": "Lake Granbury Medical Center, 1310, Paluxy Road, Wright-Henderson-Duncan House, Granbury, Hood Count",
+"lat": 32.43277,
+"lon": -97.803832
+},
+"1310 S ALFORD ST|CRANE|79731": {
+"found": "Crane Memorial Hospital, 1310, South Alford Street, Bosmans Addition, Crane, Crane County, Texas, 79",
+"lat": 31.389962,
+"lon": -102.349463
+},
+"1311 GENERAL CAVAZOS BLVD|KINGSVILLE|78363": {
+"found": "CHRISTUS Spohn Hospital - Kleberg, 1311, East General Cavazos Boulevard, Kingsville, Kleberg County,",
+"lat": 27.489831,
+"lon": -97.85087
+},
+"13114 FM 1960 RD W, SUITE 118|HOUSTON|77065": {
+"found": "13114 FM 1960 Rd W Ste 102 Houston 77065",
+"lat": 29.919106,
+"lon": -95.612045,
+"src": "photon"
+},
+"1313 HERMANN DR|HOUSTON|77004": {
+"found": "Park Plaza Hospital, 1313, Hermann Drive, Museum District, Houston, Harris County, Texas, 77004, Uni",
+"lat": 29.723458,
+"lon": -95.387018
+},
+"1317 LAKE POINTE PARKWAY|SUGAR LAND|77478": {
+"found": "CHI Saint Luke's Health\u2013Sugar Land Hospital, 1317, Lake Pointe Parkway, Paynes, Sugar Land, Fort Ben",
+"lat": 29.605117,
+"lon": -95.620183
+},
+"1324 BROWN ST STE 600|WAXAHACHIE|75165": {
+"found": "Regional Orthopaedic & Sports Medicine Center, 1324, Brown Street, W B Reinmiller House, Waxahachie,",
+"lat": 32.409932,
+"lon": -96.832859
+},
+"135 BUNTON CREEK RD|KYLE|78640": {
+"found": "Hays Surgical Center, 135, Bunton Creek Road, Kyle, Hays County, Texas, 78640, United States",
+"lat": 30.009462,
+"lon": -97.860219
+},
+"13525 CENTERBROOK SUITE 100|UNIVERSAL CITY|78148": {
+"found": "13525, Centerbrook, Live Oak, Bexar County, Texas, 78148, United States",
+"lat": 29.564726,
+"lon": -98.326117
+},
+"1353 N TRAVIS ST|LIBERTY|77575": {
+"found": "Liberty - Dayton Regional Medical Center, 1353, North Travis Street, Liberty, Liberty County, Texas,",
+"lat": 30.069031,
+"lon": -94.79884
+},
+"13600 HORIZON STREET, SUITE 100|HORIZON CITY|79928": {
+"found": "The Hospitals Of Providence Horizon City Campus 13600 Horizon Boulevard Horizon City 79928",
+"lat": 31.682033,
+"lon": -106.207814,
+"src": "photon"
+},
+"1361 HERO WAY SUITE 100|LEANDER|78641": {
+"found": "Austin Gastroenterology, 1361, Hero Way, Leander, Williamson County, Texas, 78641, United States",
+"lat": 30.583476,
+"lon": -97.85089
+},
+"13617 CALDWELL DRIVE|AUSTIN|78750": {
+"found": "13617, Caldwell Drive, Woodland Village, Jollyville, Austin, Williamson County, Texas, 78750, United",
+"lat": 30.452695,
+"lon": -97.793052
+},
+"1367 DOMINION PLZ|TYLER|75703": {
+"found": "1367, Dominion Plaza, Tyler, Smith County, Texas, 75703, United States",
+"lat": 32.298137,
+"lon": -95.317085
+},
+"138 OLD SAN ANTONIO ROAD # 400|BOERNE|78006": {
+"found": "138, Old San Antonio Road, Boerne, Kendall County, Texas, 78006, United States",
+"lat": 29.760391,
+"lon": -98.707629
+},
+"14 HOSPITAL DRIVE SUITE B|ABILENE|79606": {
+"found": "14, Hospital Drive, Abilene, Taylor County, Texas, 79606, United States",
+"lat": 32.37521,
+"lon": -99.748636
+},
+"1400 COMMON DRIVE|EL PASO|79936": {
+"found": "1400, Common Drive, Vista Hills, East El Paso, El Paso, El Paso County, Texas, 79936, United States",
+"lat": 31.747407,
+"lon": -106.316535
+},
+"1400 CREEK WAY DR, SUITE 110A|SUGAR LAND|77478": {
+"found": "1400, Creek Way Drive, Paynes, Sugar Land, Fort Bend County, Texas, 77478, United States",
+"lat": 29.605813,
+"lon": -95.620094
+},
+"1400 E RIDGE ROAD SUITE 3|MC ALLEN|78503": {
+"tried": "nominatim, photon (any street type)"
+},
+"1400 EIGHTH AVE|FORT WORTH|76104": {
+"tried": "nominatim, photon (any street type)"
+},
+"1400 N COMMERCE CENTER ST STE 1.502|MCALLEN|78501": {
+"tried": "nominatim, photon (any street type)"
+},
+"1400 NORTH TEXANA STREET|HALLETTSVILLE|77964": {
+"found": "Lavaca Medical Center, 1400, North Texana Street, Hallettsville, Lavaca County, Texas, 77964, United",
+"lat": 29.457486,
+"lon": -96.938192
+},
+"1401 E TRINITY MILLS ROAD|CARROLLTON|75006": {
+"found": "Legent Orthopedic Hospital Carrollton, 1401, East Trinity Mills Road, New Koreatown, Carrollton, Dal",
+"lat": 32.985711,
+"lon": -96.898399
+},
+"1401 EAST EIGHT STREET|WESLACO|78596": {
+"tried": "nominatim, photon (any street type)"
+},
+"1401 MEDICAL PARKWAY|CEDAR PARK|78613": {
+"found": "Ascension Seton Cedar Park Hospital, 1401, Medical Parkway, Cedar Park, Williamson County, Texas, 78",
+"lat": 30.531987,
+"lon": -97.811786
+},
+"1401 ST. JOSEPH PARKWAY|HOUSTON|77002": {
+"found": "Saint Joseph Medical Center, 1401, Saint Joseph Parkway, Downtown, Houston, Harris County, Texas, 77",
+"lat": 29.747787,
+"lon": -95.366206
+},
+"1402 EAST 6TH STREET|WESLACO|78596": {
+"found": "1402, East 6th Street, Weslaco, Hidalgo County, Texas, 78596, United States",
+"lat": 26.155519,
+"lon": -97.976881
+},
+"1402 MEDICAL DRIVE|SULPHUR SPRINGS|75482": {
+"found": "1402, Medical Drive, Sulphur Springs, Hopkins County, Texas, 75482, United States",
+"lat": 33.159892,
+"lon": -95.597437
+},
+"1411 DENVER AVENUE|DALHART|79022": {
+"found": "Coon Memorial Hospital, 1411, Denver Avenue, Dalhart, Hartley County, Texas, 79022, United States",
+"lat": 36.051563,
+"lon": -102.520832
+},
+"1411 MEDICAL PARKWAY, STE. 100|CEDAR PARK|78613": {
+"found": "1411, Medical Parkway, Cedar Park, Williamson County, Texas, 78613, United States",
+"lat": 30.53147,
+"lon": -97.813576
+},
+"1419 B TRAVIS|SHERMAN|75092": {
+"tried": "nominatim, photon (any street type)"
+},
+"1434 W US HWY 287 BYPASS STE 100|WAXAHACHIE|75165": {
+"found": "1434, West US Highway 287 Bypass, Waxahachie, Ellis County, Texas, 75165, United States",
+"lat": 32.422885,
+"lon": -96.848975
+},
+"1441 NORTH BECKLEY AVENUE|DALLAS|75203": {
+"found": "Methodist Dallas Medical Center, 1441, North Beckley Avenue, Dallas, Dallas County, Texas, 75203, Un",
+"lat": 32.761253,
+"lon": -96.825046
+},
+"1441 WOODSTEAD CT, SUITE 100|THE WOODLANDS|77380": {
+"found": "1441, Woodstead Court, Grogan's Mill, The Woodlands, Montgomery County, Texas, 77380, United States",
+"lat": 30.154838,
+"lon": -95.459516
+},
+"14425 FALCONHEAD BLVD BLDG F SUITE 111|AUSTIN|78738": {
+"found": "Falconhead Surgery Center 14425 Falcon Head Boulevard Bldg F Austin 78738",
+"lat": 30.322024,
+"lon": -97.958069,
+"src": "photon"
+},
+"1475 FM 1960 BYPASS E|HUMBLE|77338": {
+"found": "24/7 Emergency Room 1475 FM 1960 Bypass Road East Humble 77338",
+"lat": 30.005131,
+"lon": -95.252673,
+"src": "photon"
+},
+"1480-B REDD RD|EL PASO|79911": {
+"tried": "nominatim, photon (any street type)"
+},
+"150 EAST SONTERRA BLVD SUITE 110|SAN ANTONIO|78258": {
+"found": "150, East Sonterra Boulevard, San Antonio, Bexar County, Texas, 78258, United States",
+"lat": 29.616141,
+"lon": -98.492712
+},
+"1500 9TH STREET|WICHITA FALLS|76301": {
+"found": "1500, 9th Street, Wichita Falls, Wichita County, Texas, 76301, United States",
+"lat": 33.905839,
+"lon": -98.500409
+},
+"1500 E HOUSTON HWY|BEEVILLE|78102": {
+"found": "CHRISTUS Spohn Hospital Beeville 1500 East Houston Highway Beeville 78102",
+"lat": 28.407366,
+"lon": -97.731416,
+"src": "photon"
+},
+"1500 S DALLAS PARKWAY|CELINA|75009": {
+"found": "1500, South Dallas Parkway, Celina, Collin County, Texas, 75009, United States",
+"lat": 33.306331,
+"lon": -96.812091
+},
+"1500 S MAIN ST|FORT WORTH|76104": {
+"found": "John Peter Smith Hospital, 1500, South Main Street, Fort Worth, Tarrant County, Texas, 76104, United",
+"lat": 32.727045,
+"lon": -97.327967
+},
+"1500 S SUNSET|LITTLEFIELD|79339": {
+"found": "Lamb Healthcare Center, 1500, South Sunset Avenue, Littlefield, Lamb County, Texas, 79339, United St",
+"lat": 33.911739,
+"lon": -102.344406
+},
+"1501 BURNET DR|BROWNWOOD|76801": {
+"found": "Hendrick Medical Center Brownwood 1501 Burnett Road Brownwood 76801",
+"lat": 31.6775,
+"lon": -98.993482,
+"src": "photon"
+},
+"1501 REDBUD BLVD|MCKINNEY|75069": {
+"found": "1501, North Redbud Boulevard, McKinney, Collin County, Texas, 75069, United States",
+"lat": 33.212176,
+"lon": -96.63493
+},
+"1501 RIVER POINT DRIVE SUITE 260|CONROE|77304": {
+"tried": "nominatim, photon (any street type)"
+},
+"1501 RIVER POINTE DRIVE, SUITE 200|CONROE|77304": {
+"found": "1501, River Pointe Drive, Conroe, Montgomery County, Texas, 77304, United States",
+"lat": 30.28232,
+"lon": -95.464109
+},
+"1501 S COULTER ST|AMARILLO|79106": {
+"found": "Northwest Children's Hospital, 1501, South Coulter Street, Amarillo, Potter County, Texas, 79106, Un",
+"lat": 35.200232,
+"lon": -101.920363
+},
+"15015 KIRBY DRIVE, SUITE 100|HOUSTON|77047": {
+"tried": "nominatim, photon (any street type)"
+},
+"1504 TAUB LOOP|HOUSTON|77030": {
+"found": "Ben Taub General Hospital, 1504, Taub Loop, Texas Medical Center, Houston, Harris County, Texas, 770",
+"lat": 29.710605,
+"lon": -95.393405
+},
+"1507 W MAIN STREET|GATESVILLE|76528": {
+"found": "Coryell Memorial Healthcare System, 1507, West Main Street, Gatesville, Coryell County, Texas, 76528",
+"lat": 31.434746,
+"lon": -97.779899
+},
+"15149 WALLISVILLE ROAD|HOUSTON|77049": {
+"tried": "nominatim, photon (any street type)"
+},
+"1515 HOLCOMBE BLVD|HOUSTON|77030": {
+"found": "University of Texas MD Anderson Cancer Center, 1515, Holcombe Boulevard, Texas Medical Center, Houst",
+"lat": 29.70767,
+"lon": -95.397844
+},
+"1515 NORTH ED CAREY DRIVE|HARLINGEN|78550": {
+"tried": "nominatim, photon (any street type)"
+},
+"1520 NORTH MESA|EL PASO|79902": {
+"found": "1520, North Mesa Street, Downtown Historic District, Downtown, El Paso, El Paso County, Texas, 79902",
+"lat": 31.768518,
+"lon": -106.495574
+},
+"1521 SOUTH STAPLES ST. STE 102|CORPUS CHRISTI|78404": {
+"found": "1521, South Staples Street, Marina Arts District, Downtown, Corpus Christi, Nueces County, Texas, 78",
+"lat": 27.776675,
+"lon": -97.401508
+},
+"15300 SOUTHWEST FREEWAY SUITE 100|SUGAR LAND|77478": {
+"found": "15300, Southwest Freeway Frontage Road, Paynes, Sugar Land, Fort Bend County, Texas, 77478, United S",
+"lat": 29.607033,
+"lon": -95.614632
+},
+"1545 E SOUTHLAKE BLVD|SOUTHLAKE|76092": {
+"found": "Texas Health Harris Methodist Hospital Southlake, 1545, East Southlake Boulevard, Southlake, Tarrant",
+"lat": 32.939658,
+"lon": -97.128114
+},
+"15655 CYPRESS WOODS MEDICAL DR, STE 100|HOUSTON|77014": {
+"tried": "nominatim, photon (any street type)"
+},
+"15775 PARK TEN PLACE|HOUSTON|77084": {
+"found": "15775, Park Ten Place, Addicks, Houston, Harris County, Texas, 77084, United States",
+"lat": 29.786637,
+"lon": -95.658743
+},
+"1600 11TH STREET|WICHITA FALLS|76301": {
+"found": "United Regional Health Care System, 1600, 11th Street, Wichita Falls, Wichita County, Texas, 76301, ",
+"lat": 33.902467,
+"lon": -98.501821
+},
+"1600 CENTRAL DRIVE SUITE 300|BEDFORD|76021": {
+"found": "1600, Central Drive, Bedford, Tarrant County, Texas, 76022, United States",
+"lat": 32.835873,
+"lon": -97.133348
+},
+"1600 HOSPITAL PARKWAY|BEDFORD|76022": {
+"found": "Texas Health Harris Methodist Hospital Bedford, 1600, Hospital Parkway, Bedford, Tarrant County, Tex",
+"lat": 32.835344,
+"lon": -97.122788
+},
+"1600 WALLACE BLVD|AMARILLO|79106": {
+"found": "Baptist Saint Anthony's Health System, 1600, Wallace Boulevard, Amarillo, Potter County, Texas, 7910",
+"lat": 35.196766,
+"lon": -101.919727
+},
+"16000 SOUTHWEST FREEWAY, SUITE 100|SUGAR LAND|77479": {
+"tried": "nominatim, photon (any street type)"
+},
+"1601 TRINITY ST. HTB BLDG. A|AUSTIN|78712": {
+"found": "Health Transformation Building 1601 Trinity Street Austin 78701",
+"lat": 30.277172,
+"lon": -97.735089,
+"src": "photon"
+},
+"1601 W 11TH PLACE|BIG SPRING|79720": {
+"tried": "nominatim, photon (any street type)"
+},
+"16030 PARK VALLEY, STE 100|ROUND ROCK|78681": {
+"found": "16030, Park Valley Drive, The Oaklands, Round Rock, Williamson County, Texas, 78681, United States",
+"lat": 30.51281,
+"lon": -97.713293
+},
+"1605 AIRPORT FREEWAY STE 100|BEDFORD|76021": {
+"found": "1605, Airport Freeway, Bedford, Tarrant County, Texas, 76021, United States",
+"lat": 32.837394,
+"lon": -97.141156
+},
+"16088 SAN PEDRO|SAN ANTONIO|78232": {
+"found": "16088, San Pedro Avenue, San Antonio, Bexar County, Texas, 78232, United States",
+"lat": 29.587607,
+"lon": -98.473484
+},
+"1611 SPUR 576|RANKIN|79778": {
+"found": "Rankin County Hospital District, 1611, Spur 576, Rankin, Upton County, Texas, 79731, United States",
+"lat": 31.233057,
+"lon": -101.935029
+},
+"1612 HURST TOWN CENTER DRIVE|HURST|76054": {
+"found": "Saint Camillus Medical Center, 1612, Hurst Town Center Drive, Hurst, Tarrant County, Texas, 76054, U",
+"lat": 32.843376,
+"lon": -97.188166
+},
+"1615 N US HIGHWAY 75|SHERMAN|75090": {
+"tried": "nominatim, photon (any street type)"
+},
+"1625 MEDICAL CENTER DR|EL PASO|79902": {
+"found": "Sierra Medical Center 1625 Medical Center Drive El Paso 79902",
+"lat": 31.778534,
+"lon": -106.480574,
+"src": "photon"
+},
+"1626 W BAKER ROAD|BAYTOWN|77521": {
+"found": "1626, West Baker Road, Baytown, Harris County, Texas, 77521, United States",
+"lat": 29.769865,
+"lon": -94.983016
+},
+"1631 NORTH LOOP WEST SUITE 300|HOUSTON|77008": {
+"tried": "nominatim, photon (any street type)"
+},
+"1635 NORTH LOOP WEST|HOUSTON|77008": {
+"found": "1635, North Loop West, Houston Heights, Houston, Harris County, Texas, 77008, United States",
+"lat": 29.810872,
+"lon": -95.42982
+},
+"1650 POINT WEST PARKWAY|AMARILLO|79124": {
+"found": "1650, Point West Parkway, Amarillo, Potter County, Texas, 79124, United States",
+"lat": 35.195273,
+"lon": -101.928813
+},
+"1650 W COLLEGE ST|GRAPEVINE|76051": {
+"found": "Baylor Scott & White Medical Center \u2013 Grapevine, 1650, West College Street, Grapevine, Tarrant Count",
+"lat": 32.933875,
+"lon": -97.094058
+},
+"16655 SOUTHWEST FREEWAY|SUGAR LAND|77479": {
+"found": "Houston Methodist Sugar Land Hospital, 16655, Southwest Freeway, Sugar Land, Fort Bend County, Texas",
+"lat": 29.589619,
+"lon": -95.630334
+},
+"16906 SOUTHWEST FREEWAY|SUGAR LAND|77479": {
+"found": "Memorial Hermann Surgical Hospital First Colony, 16906, Southwest Freeway, Sugar Land, Fort Bend Cou",
+"lat": 29.58991,
+"lon": -95.636102
+},
+"1700 COGDELL BLVD|SNYDER|79549": {
+"found": "Cogdell Memorial Hospital, 1700, Cogdell Boulevard, Snyder, Scurry County, Texas, 79549, United Stat",
+"lat": 32.687415,
+"lon": -100.917307
+},
+"1700 EAST SAUNDERS|LAREDO|78044": {
+"found": "Laredo Medical Center, 1700, East Saunders Street, Laredo, Webb County, Texas, 78041, United States",
+"lat": 27.533053,
+"lon": -99.478076
+},
+"17005 IH 35 NORTH|SCHERTZ|78154": {
+"found": "17005, Interstate 35 North, Schertz, Guadalupe County, Texas, 78154, United States",
+"lat": 29.59224,
+"lon": -98.290742
+},
+"1701 OHIO DRIVE|PLANO|75093": {
+"found": "1701, Ohio Drive, Plano, Collin County, Texas, 75093, United States",
+"lat": 33.021639,
+"lon": -96.78678
+},
+"1701 PARK PLACE AVE|BEDFORD|76022": {
+"found": "1701, Park Place Avenue, Bedford, Tarrant County, Texas, 76022, United States",
+"lat": 32.834167,
+"lon": -97.129087
+},
+"1701 WALTER HOLLIDAY DRIVE SUITE 100|CLEBURNE|76033": {
+"tried": "nominatim, photon (any street type)"
+},
+"1705 JACKSON ST|RICHMOND|77469": {
+"found": "OakBend Medical Center, 1705, Jackson Street, Richmond, Fort Bend County, Texas, 77469, United State",
+"lat": 29.576786,
+"lon": -95.770174
+},
+"17051 DALLAS PARKWAY SUITE 100|ADDISON|75001": {
+"found": "Medical Methodist Office Building, 17051, Dallas Parkway, Addison, Dallas County, Texas, 75001, Unit",
+"lat": 32.983934,
+"lon": -96.829337
+},
+"17080 RED OAK DRIVE|HOUSTON|77090": {
+"found": "TOPS Surgical Specialty Hospital, 17080, Red Oak Drive, Houston, Harris County, Texas, 77090, United",
+"lat": 30.018525,
+"lon": -95.444134
+},
+"17101 DALLAS PARKWAY|ADDISON|75001": {
+"found": "Methodist Hospital for Surgery, 17101, Dallas Parkway, Addison, Dallas County, Texas, 75001, United ",
+"lat": 32.984757,
+"lon": -96.829527
+},
+"1712 11TH ST|WICHITA FALLS|76301": {
+"found": "1712, 11th Street, Wichita Falls, Wichita County, Texas, 76301, United States",
+"lat": 33.901413,
+"lon": -98.504081
+},
+"1717 HWY 59 BYPASS|LIVINGSTON|77351": {
+"found": "CommonSpirit - St. Luke's Hospital - Livingston 1717 Highway 59 Bypass Livingston 77351",
+"lat": 30.730439,
+"lon": -94.939621,
+"src": "photon"
+},
+"1717 PALUXY ROAD|GRANBURY|76048": {
+"found": "1717, Paluxy Road, Wright-Henderson-Duncan House, Granbury, Hood County, Texas, 76048, United States",
+"lat": 32.430446,
+"lon": -97.804607
+},
+"1717 PRECINCT LINE ROAD SUITE 101|HURST|76054": {
+"found": "1717, Precinct Line Road, Hurst, Tarrant County, Texas, 76054, United States",
+"lat": 32.845674,
+"lon": -97.186274
+},
+"17177 PRESTON ROAD SUITE 180|DALLAS|75248": {
+"found": "17177, Preston Road, Dallas, Dallas County, Texas, 75248, United States",
+"lat": 32.984588,
+"lon": -96.803993
+},
+"17183 I 45 S, STE 360|SHENANDOAH|77385": {
+"tried": "nominatim, photon (any street type)"
+},
+"1719 MARTIN DRIVE|WEATHERFORD|76086": {
+"found": "1719, Martin Drive, Weatherford, Parker County, Texas, 76086, United States",
+"lat": 32.738209,
+"lon": -97.787834
+},
+"17200 ST LUKE'S WAY|THE WOODLANDS|77384": {
+"found": "CHI Saint Luke's Health\u2013The Woodlands Hospital, 17200, Saint Luke's Way, College Park, The Woodlands",
+"lat": 30.204583,
+"lon": -95.458042
+},
+"17201 INTERSTATE 45 SOUTH|THE WOODLANDS|77385": {
+"found": "Houston Methodist The Woodlands Hospital 17201 Interstate 45 South The Woodlands 77385",
+"lat": 30.205597,
+"lon": -95.452096,
+"src": "photon"
+},
+"17322 RED OAK|HOUSTON|77090": {
+"found": "17322 Red Oak Drive  77090",
+"lat": 30.02349,
+"lon": -95.44768,
+"src": "photon"
+},
+"1738 E COMMON STREET|NEW BRAUNFELS|78130": {
+"found": "1738, East Common Street, Gruene Courtyard, New Braunfels, Comal County, Texas, 78130, United States",
+"lat": 29.727441,
+"lon": -98.094999
+},
+"17400 RED OAK|HOUSTON|77090": {
+"tried": "nominatim, photon (any street type)"
+},
+"17400 ST LUKES WAY|THE WOODLANDS|77384": {
+"tried": "nominatim, photon (any street type)"
+},
+"17500 W GRAND PARKWAY SOUTH|SUGAR LAND|77479": {
+"found": "Memorial Hermann Sugar Land Hospital, 17500, West Grand Parkway South, Sugar Land, Fort Bend County,",
+"lat": 29.565238,
+"lon": -95.69031
+},
+"17510 WEST GRAND PARKWAY, SUITE 200|SUGAR LAND|77479": {
+"found": "17510, West Grand Parkway South, Sugar Land, Fort Bend County, Texas, 77479, United States",
+"lat": 29.565435,
+"lon": -95.688467
+},
+"17766 VERDE PARKWAY SUITE 100|SCHERTZ|78154": {
+"tried": "nominatim, photon (any street type)"
+},
+"17950 PRESTON ROAD SUITE 75|DALLAS|75252": {
+"found": "17950, Preston Road, Dallas, Collin County, Texas, 75252, United States",
+"lat": 32.996208,
+"lon": -96.797206
+},
+"17980 DALLAS PARKWAY SUITE 100|DALLAS|75287": {
+"found": "Texas Health Surgery Center, 17980, Dallas Parkway, Dallas, Collin County, Texas, 75287, United Stat",
+"lat": 32.994953,
+"lon": -96.827721
+},
+"180 BEAR CREEK PARKWAY|KELLER|76248": {
+"found": "180, Bear Creek Parkway, Keller, Tarrant County, Texas, 76248, United States",
+"lat": 32.927026,
+"lon": -97.252693
+},
+"1800 PARK PLACE AVENUE|FORT WORTH|76110": {
+"found": "Baylor Surgical Hospital at Fort Worth, 1800, Park Place Avenue, Fort Worth, Tarrant County, Texas, ",
+"lat": 32.727233,
+"lon": -97.346963
+},
+"1801 BINZ STREET, SUITE 200|HOUSTON|77004": {
+"found": "Barnaby\u2019s Cafe, 1801, Binz Street, Museum District, Houston, Harris County, Texas, 77004, United Sta",
+"lat": 29.721709,
+"lon": -95.382531
+},
+"1801 NORTH OREGON STREET|EL PASO|79902": {
+"found": "Las Palmas Medical Center, 1801, North Oregon Street, Downtown, El Paso, El Paso County, Texas, 7990",
+"lat": 31.769964,
+"lon": -106.498315
+},
+"1802 MOORES LANE SUITE 200|TEXARKANA|75503": {
+"found": "1802, Moores Lane, Texarkana, Bowie County, Texas, 75503, United States",
+"lat": 33.472684,
+"lon": -94.063348
+},
+"1814 ROSELAND BOULEVARD|TYLER|75701": {
+"found": "Baylor Scott & White Texas Spine & Joint Hospital, 1814, Roseland Boulevard, Tyler, Smith County, Te",
+"lat": 32.329506,
+"lon": -95.298509
+},
+"1815 10TH STREET|WICHITA FALLS|76301": {
+"found": "1815, 10th Street, Wichita Falls, Wichita County, Texas, 76301, United States",
+"lat": 33.902429,
+"lon": -98.506371
+},
+"1815 NORTH STANTON AVENUE|EL PASO|79902": {
+"tried": "nominatim, photon (any street type)"
+},
+"18220 STATE HIGHWAY 249|HOUSTON|77070": {
+"found": "Houston Methodist Willowbrook Hospital 18220 State Highway 249 Houston 77070",
+"lat": 29.967138,
+"lon": -95.55113,
+"src": "photon"
+},
+"18300 HOUSTON METHODIST DR|NASSAU BAY|77058": {
+"found": "18300, Houston Methodist Drive, Nassau Bay, Harris County, Texas, 77058, United States",
+"lat": 29.550598,
+"lon": -95.085645
+},
+"18400 KATY FWY, STE 330|HOUSTON|77094": {
+"found": "18400, Katy Freeway, Houston, Harris County, Texas, 77094, United States",
+"lat": 29.785592,
+"lon": -95.692898
+},
+"18414 US HIGHWAY 281 NORTH SUITE 114|SAN ANTONIO|78259": {
+"tried": "nominatim, photon (any street type)"
+},
+"18450 HIGHWAY 59 N, STE 101-B|HUMBLE|77338": {
+"tried": "nominatim, photon (any street type)"
+},
+"18500 KATY FREEWAY|HOUSTON|77094": {
+"found": "18500, Katy Freeway, Houston, Harris County, Texas, 77094, United States",
+"lat": 29.788457,
+"lon": -95.69792
+},
+"18511 HIGHLANDER MEDICS ST|EL PASO|79920": {
+"found": "William Beaumont Army Medical Center, 18511, Highlander Medics Street, El Paso County, Texas, 79918,",
+"lat": 31.832989,
+"lon": -106.325329
+},
+"18518 HARDY OAK BLVD, STE. 100|SAN ANTONIO|78258": {
+"found": "18518, Hardy Oak Boulevard, San Antonio, Bexar County, Texas, 78258, United States",
+"lat": 29.612444,
+"lon": -98.478331
+},
+"1854 LAKEPOINTE DRIVE|LEWISVILLE|75057": {
+"found": "1854, Lakepointe Drive, Lewisville, Denton County, Texas, 75057, United States",
+"lat": 33.017677,
+"lon": -96.978553
+},
+"18600 NORTH HARDY OAK BLVD|SAN ANTONIO|78258": {
+"found": "South Texas Spine and Surgical Hospital 18600 Hardy Oak Boulevard San Antonio 78258",
+"lat": 29.613875,
+"lon": -98.477644,
+"src": "photon"
+},
+"1872 NORWOOD DRIVE SUITE 100|HURST|76054": {
+"found": "1872, Norwood Drive, Hurst, Tarrant County, Texas, 76054, United States",
+"lat": 32.849798,
+"lon": -97.169168
+},
+"18833 EASTFIELD DRIVE|WEBSTER|77598": {
+"tried": "nominatim, photon (any street type)"
+},
+"18835 MCKAY DR, STE 100|HUMBLE|77338": {
+"found": "18835, McKay Drive, Humble, Harris County, Texas, 77338, United States",
+"lat": 29.99075,
+"lon": -95.27809
+},
+"18850 S MEMORIAL BLVD|HUMBLE|77338": {
+"tried": "nominatim, photon (any street type)"
+},
+"18951 MEMORIAL NORTH|HUMBLE|77338": {
+"found": "Memorial Hermann Northeast Hospital, 18951, North Memorial Drive, Humble, Harris County, Texas, 7733",
+"lat": 29.995301,
+"lon": -95.27657
+},
+"1900 COLLEGE AVE|LEVELLAND|79336": {
+"found": "Covenant Hospital Levelland, 1900, College Avenue, Levelland, Hockley County, Texas, 79336, United S",
+"lat": 33.573179,
+"lon": -102.36891
+},
+"1900 HOSPITAL BLVD|GAINESVILLE|76240": {
+"found": "North Texas Medical Center, 1900, Hospital Boulevard, Gainesville, Cooke County, Texas, 76240, Unite",
+"lat": 33.646314,
+"lon": -97.162534
+},
+"1900 NORTH LOOP FREEWAY WEST|HOUSTON|77018": {
+"tried": "nominatim, photon (any street type)"
+},
+"1900 NORTH LOOP WEST, SUITE 600|HOUSTON|77018": {
+"found": "1900, North Loop West, Houston, Harris County, Texas, 77018, United States",
+"lat": 29.812822,
+"lon": -95.432803
+},
+"1900 PINESTREET|ABILENE|79601": {
+"tried": "nominatim, photon (any street type)"
+},
+"1901 MEDI-PARK BUILDING C., SUITE 1|AMARILLO|79106": {
+"found": "Medi-Park Building C, 1901, Medi Park Drive, Amarillo, Potter County, Texas, 79106, United States",
+"lat": 35.193588,
+"lon": -101.914742
+},
+"1901 N MACARTHUR BLVD|IRVING|75061": {
+"found": "Baylor Scott & White Medical Center \u2013 Irving, 1901, North MacArthur Boulevard, Irving, Dallas County",
+"lat": 32.834911,
+"lon": -96.961019
+},
+"1901 VETERANS MEMORIAL DRIVE|TEMPLE|76504": {
+"found": "Olin E. Teague Veterans Medical Center, 1901, Veterans Memorial Drive, Temple, Bell County, Texas, 7",
+"lat": 31.077044,
+"lon": -97.345722
+},
+"19010 STONE OAK PARKWAY|SAN ANTONIO|78258": {
+"found": "19010, Stone Oak Parkway, San Antonio, Bexar County, Texas, 78258, United States",
+"lat": 29.617575,
+"lon": -98.493922
+},
+"1902 MOORES LANE STE B|TEXARKANA|75503": {
+"found": "1902, Moores Lane, Texarkana, Bowie County, Texas, 75503, United States",
+"lat": 33.472971,
+"lon": -94.064038
+},
+"1905 HWY 97 EAST|JOURDANTON|78026": {
+"found": "Methodist Hospital South 1905 Highway 97 East Jourdanton 78026",
+"lat": 28.933041,
+"lon": -98.525931,
+"src": "photon"
+},
+"19138 N US HWY 281 SUITE 300|SAN ANTONIO|78258": {
+"found": "19138, US Highway 281 North, San Antonio, Bexar County, Texas, 78258, United States",
+"lat": 29.619135,
+"lon": -98.465473
+},
+"1919 ROGERS ROAD SUITE 102|SAN ANTONIO|78251": {
+"found": "1919, Rogers Road, Westover Hills, San Antonio, Bexar County, Texas, 78251, United States",
+"lat": 29.453558,
+"lon": -98.68262
+},
+"1920 MOORES LN|TEXARKANA|75503": {
+"found": "1920, Moores Lane, Texarkana, Bowie County, Texas, 75503, United States",
+"lat": 33.472841,
+"lon": -94.0647
+},
+"19226 STONE HUE, SUITE 103|SAN ANTONIO|78258": {
+"tried": "nominatim, photon (any street type)"
+},
+"1935 MEDICAL DISTRICT DRIVE|DALLAS|75235": {
+"found": "Children's Medical Center of Dallas, 1935, Medical District Drive, Dallas, Dallas County, Texas, 752",
+"lat": 32.809478,
+"lon": -96.837547
+},
+"19502 MCKAY DRIVE, SUITE 101|HUMBLE|77338": {
+"found": "19502, McKay Drive, Humble, Harris County, Texas, 77338, United States",
+"lat": 29.997802,
+"lon": -95.27611
+},
+"1980 EAST STATE HIGHWAY 114|SOUTHLAKE|76092": {
+"tried": "nominatim, photon (any street type)"
+},
+"2 MEDICAL CENTER BLVD|LUFKIN|75904": {
+"found": "The Center for Sight, 2, Medical Center Boulevard, Lufkin, Angelina County, Texas, 75904, United Sta",
+"lat": 31.326463,
+"lon": -94.755234
+},
+"200 E ARIZONA|SWEETWATER|79556": {
+"found": "Rolling Plains Memorial Hospital, 200, East Arizona Avenue, Sweetwater, Nolan County, Texas, 79556, ",
+"lat": 32.453077,
+"lon": -100.397416
+},
+"200 HOSPITAL DRIVE|ANAHUAC|77514": {
+"found": "Bayside Community Hospital, 200, Hospital Drive, Anahuac, Chambers County, Texas, 77514, United Stat",
+"lat": 29.752614,
+"lon": -94.686779
+},
+"200 S IH 35|PEARSALL|78061": {
+"found": "Frio Regional Hospital 200 Interstate 35 South Pearsall 78061",
+"lat": 28.896449,
+"lon": -99.117069,
+"src": "photon"
+},
+"200 SOUTH GENEVA STREET|BRECKENRIDGE|76424": {
+"found": "Stephens Memorial Hospital, 200, South Geneva Street, Breckenridge, Stephens County, Texas, 76424, U",
+"lat": 32.754178,
+"lon": -98.887122
+},
+"200 STADIUM DRIVE|SEYMOUR|76380": {
+"found": "Seymour Hospital, 200, Stadium Drive, Seymour, Baylor County, Texas, 76380, United States",
+"lat": 33.590084,
+"lon": -99.248781
+},
+"200 W OLLIE|LLANO|78643": {
+"found": "Baylor Scott & White Medical Center \u2013 Llano 200 West Ollie Street Llano 78643",
+"lat": 30.742865,
+"lon": -98.677674,
+"src": "photon"
+},
+"2000 SOUTH MAYS STREET, SUITE 400|ROUND ROCK|78664": {
+"found": "2000, South Mays Street, Round Rock, Williamson County, Texas, 78664, United States",
+"lat": 30.491118,
+"lon": -97.675983
+},
+"2000 SOUTH PALESTINE ST|ATHENS|75751": {
+"found": "UT Health Athens, 2000, South Palestine Street, Athens, Henderson County, Texas, 75751, United State",
+"lat": 32.170581,
+"lon": -95.846322
+},
+"2000 TRANSMOUNTAIN RD|EL PASO|79911": {
+"tried": "nominatim, photon (any street type)"
+},
+"2001 COOPER STREET|FORT WORTH|76104": {
+"found": "2001, Cooper Street, Fort Worth, Tarrant County, Texas, 76102, United States",
+"lat": 32.736194,
+"lon": -97.347694
+},
+"2001 N JEFFERSON AVE|MOUNT PLEASANT|75455": {
+"found": "CHRISTUS Health Mount Pleasant, 2001, North Jefferson Avenue, Mount Pleasant, Titus County, Texas, 7",
+"lat": 33.175999,
+"lon": -94.971807
+},
+"2001 N OREGON ST|EL PASO|79902": {
+"found": "Providence Memorial Hospital, 2001, North Oregon Street, Downtown, El Paso, El Paso County, Texas, 7",
+"lat": 31.770339,
+"lon": -106.50097
+},
+"2001 W ROSEDALE|FORT WORTH|76104": {
+"found": "2001, West Rosedale Street, Fort Worth, Tarrant County, Texas, 76104, United States",
+"lat": 32.733564,
+"lon": -97.348534
+},
+"2002 HOLCOMBE BLVD.|HOUSTON|77030": {
+"found": "Michael E. DeBakey VA Medical Center, 2002, Holcombe Boulevard, Texas Medical Center, Houston, Harri",
+"lat": 29.701872,
+"lon": -95.388855
+},
+"2006 SOUTH LOOP 336 WEST, SUITE 500|CONROE|77304": {
+"found": "Aspire Hospital, 2006, South Loop 336 West, Conroe, Montgomery County, Texas, 77304, United States",
+"lat": 30.284628,
+"lon": -95.480116
+},
+"2008 NINE ROAD|BRADY|76825": {
+"found": "Heart Of Texas Memorial Hospital, 2008, Nine Road, Brady, McCulloch County, Texas, 76825, United Sta",
+"lat": 31.117307,
+"lon": -99.346964
+},
+"2009 NORTH JEFFERSON|MOUNT PLEASANT|75455": {
+"found": "2009, North Jefferson Avenue, Mount Pleasant, Titus County, Texas, 75455, United States",
+"lat": 33.176204,
+"lon": -94.970523
+},
+"201 SETON PARKWAY|ROUND ROCK|78664": {
+"found": "201, Seton Parkway, Round Rock, Williamson County, Texas, 78665, United States",
+"lat": 30.570424,
+"lon": -97.652422
+},
+"201 WALLS DRIVE|CLEBURNE|76033": {
+"found": "Texas Health Harris Methodist Hospital Cleburne, 201, Walls Drive, Cleburne, Johnson County, Texas, ",
+"lat": 32.332103,
+"lon": -97.438745
+},
+"2010 W KATHERINE P RAINES BLVD SUITE 100|CLEBURNE|76031": {
+"found": "Texas Health Surgery Center 2010 West Katherine P Raines Drive Cleburne 76032",
+"lat": 32.365762,
+"lon": -97.442267,
+"src": "photon"
+},
+"20171 CHASEWOOD PARK DRIVE|HOUSTON|77070": {
+"found": "CHI Saint Luke's Health - The Vintage Hospital, 20171, Chasewood Park Drive, Houston, Harris County,",
+"lat": 29.9893,
+"lon": -95.568315
+},
+"2026 S JACKSON STREET|JACKSONVILLE|75766": {
+"found": "CHRISTUS Mother Frances Hospital - Jacksonville, 2026, South Jackson Street, Jacksonville, Cherokee ",
+"lat": 31.938501,
+"lon": -95.247768
+},
+"205 E GRANT STREET|MORTON|79346": {
+"tried": "nominatim, photon (any street type)"
+},
+"209 NORTHWEST 8TH STREET|SEMINOLE|79360": {
+"found": "Memorial Hospital, 209, Northwest 8th Street, Russell Addition, Seminole, Gaines County, Texas, 7936",
+"lat": 32.722114,
+"lon": -102.655054
+},
+"21 SPURS LANE SL 100|SAN ANTONIO|78240": {
+"tried": "nominatim, photon (any street type)"
+},
+"210 DESERT PASS, BLDG A SUITE B|EL PASO|79912": {
+"tried": "nominatim, photon (any street type)"
+},
+"210 JUDSON ST|NAVASOTA|77868": {
+"found": "CHI Saint Joseph Health Grimes Hospital, 210, Judson Street, Navasota, Grimes County, Texas, 77868, ",
+"lat": 30.392585,
+"lon": -96.077794
+},
+"2101 PEASE ST|HARLINGEN|78550": {
+"found": "Valley Baptist Medical Center, 2101, Pease Street, Harlingen, Cameron County, Texas, 78550, United S",
+"lat": 26.175246,
+"lon": -97.670256
+},
+"2106 N MIDLAND DR STE 100|MIDLAND|79707": {
+"found": "2106, North Midland Drive, Rettig Place, Midland, Midland County, Texas, 79707, United States",
+"lat": 32.005749,
+"lon": -102.138062
+},
+"21155 SOUTHWEST FWY|RICHMOND|77469": {
+"tried": "nominatim, photon (any street type)"
+},
+"2120 ANTILLEY RD|ABILENE|79606": {
+"found": "Tesla Destination Charger, 2120, Antilley Road, Wylie, Abilene, Taylor County, Texas, 79606, United ",
+"lat": 32.373361,
+"lon": -99.749501
+},
+"2140 BABCOCK RD. STE 100|SAN ANTONIO|78229": {
+"found": "2140, Babcock Road, Medical Center, San Antonio, Bexar County, Texas, 78229, United States",
+"lat": 29.502662,
+"lon": -98.581771
+},
+"215 CHISHOLM TRAIL|JACKSBORO|76458": {
+"found": "Faith Community Hospital 215 Chisholm Trail Jacksboro 76458",
+"lat": 33.230983,
+"lon": -98.16672,
+"src": "photon"
+},
+"215 N SAN SABA, SUITE 201|SAN ANTONIO|78207": {
+"found": "215 North San Saba Street San Antonio 78207",
+"lat": 29.427053,
+"lon": -98.50045,
+"src": "photon"
+},
+"215 OAK DR SOUTH SUITE J|LAKE JACKSON|77566": {
+"found": "215, Oak Drive South, Lake Jackson, Brazoria County, Texas, 77566, United States",
+"lat": 29.031717,
+"lon": -95.454518
+},
+"21502 MERCHANTS WAY|KATY|77449": {
+"tried": "nominatim, photon (any street type)"
+},
+"21720 KINGSLAND BLVD - SUITE 101|KATY|77450": {
+"found": "Memorial Hermann Rehabilitation Hospital Katy, 21720, Kingsland Boulevard, Katy, Harris County, Texa",
+"lat": 29.775765,
+"lon": -95.745799
+},
+"21814 KATY FREEWAY, SUITE 100|KATY|77449": {
+"found": "Digestive Health Associates, 21814, Katy Freeway, Katy, Harris County, Texas, 77450, United States",
+"lat": 29.787105,
+"lon": -95.749229
+},
+"21848 HOLTZWARTH ROAD, SUITE 300|SPRING|77388": {
+"tried": "nominatim, photon (any street type)"
+},
+"219 OAK DRIVE SOUTH|LAKE JACKSON|77566": {
+"found": "219, Oak Drive South, Lake Jackson, Brazoria County, Texas, 77566, United States",
+"lat": 29.031691,
+"lon": -95.454585
+},
+"220 BLANCO ST|LUMBERTON|77657": {
+"tried": "nominatim, photon (any street type)"
+},
+"2200 N BRYAN AVE|LAMESA|79331": {
+"found": "Medical Arts Hospital, 2200, North Bryan Avenue, Lamesa, Dawson County, Texas, 79331, United States",
+"lat": 32.749676,
+"lon": -101.967963
+},
+"2200 PARK BEND DRIVE, BLDG 3|AUSTIN|78758": {
+"found": "Post Oak Center Bldg 3, 2200, Park Bend Drive, The Centrum, Austin, Travis County, Texas, 78758, Uni",
+"lat": 30.409947,
+"lon": -97.702855
+},
+"2200 PHYSICIANS BLVD STE A|ENNIS|75119": {
+"found": "2200, Physicians Boulevard, Ennis, Ellis County, Texas, 75119, United States",
+"lat": 32.303943,
+"lon": -96.638885
+},
+"2201 K AVENUE STE B 100|PLANO|75074": {
+"found": "2201, K Avenue, Plano, Collin County, Texas, 75074, United States",
+"lat": 33.02924,
+"lon": -96.700453
+},
+"2201 S CLEAR CREEK ROAD|KILLEEN|76542": {
+"found": "Metroplex Health System, 2201, South Clear Creek Road, Killeen, Bell County, Texas, 76549, United St",
+"lat": 31.11286,
+"lon": -97.80207
+},
+"2201 WEST LAMPASAS STREET|ENNIS|75119": {
+"found": "2201, West Lampasas Street, Ennis, Ellis County, Texas, 75119, United States",
+"lat": 32.30684,
+"lon": -96.641144
+},
+"2201 WESTGATE PLAZA|GRAPEVINE|76051": {
+"found": "2201, Westgate Plaza, Grapevine, Tarrant County, Texas, 76051, United States",
+"lat": 32.942192,
+"lon": -97.102637
+},
+"2206 E VILLA MARIA|BRYAN|77802": {
+"tried": "nominatim, photon (any street type)"
+},
+"2217 SOUTH DANVILLE DRIVE|ABILENE|79605": {
+"found": "2217, South Danville Drive, Abilene, Taylor County, Texas, 79605, United States",
+"lat": 32.421234,
+"lon": -99.782964
+},
+"2220 PEASE STREET|HARLINGEN|78550": {
+"found": "2220, Pease Street, Harlingen, Cameron County, Texas, 78550, United States",
+"lat": 26.173159,
+"lon": -97.670539
+},
+"22215 CYPRESSWOOD DR, STE 313|CYPRESS|77433": {
+"tried": "nominatim, photon (any street type)"
+},
+"2222 WELBORN STREET|DALLAS|75219": {
+"found": "Texas Scottish Rite Hospital for Children, 2222, Welborn Street, Dallas, Dallas County, Texas, 75219",
+"lat": 32.802122,
+"lon": -96.814937
+},
+"2232 INDIANA AVENUE SUITE 1|LUBBOCK|79410": {
+"found": "2232, Indiana Avenue, Lubbock, Lubbock County, Texas, 79410, United States",
+"lat": 33.573993,
+"lon": -101.888062
+},
+"224 E SECOND STREET|DUMAS|79029": {
+"tried": "nominatim, photon (any street type)"
+},
+"225 E SONTERRA BLVD SUITE 101|SAN ANTONIO|78258": {
+"found": "225, East Sonterra Boulevard, San Antonio, Bexar County, Texas, 78258, United States",
+"lat": 29.616168,
+"lon": -98.491355
+},
+"22999 US HWY 59|KINGWOOD|77325": {
+"found": "HCA Houston Healthcare Kingwood 22999 US Highway 59 North Kingwood 77339",
+"lat": 30.04952,
+"lon": -95.254923,
+"src": "photon"
+},
+"230 DEER RIDGE DR|ROUND ROCK|78681": {
+"found": "Brushy Creek Family Hospital 230 Deer Ridge Drive Round Rock 78681",
+"lat": 30.496196,
+"lon": -97.722908,
+"src": "photon"
+},
+"2300 LONE STAR ROAD|MANSFIELD|76063": {
+"found": "Texas Health Hospital Mansfield, 2300, Lone Star Road, Mansfield, Johnson County, Texas, 76063, Unit",
+"lat": 32.537461,
+"lon": -97.099559
+},
+"2300 WOLFLIN AVE|AMARILLO|79109": {
+"found": "2300, Wolflin Avenue, Sunnyside Addition, Amarillo, Potter County, Texas, 79109, United States",
+"lat": 35.192916,
+"lon": -101.862714
+},
+"2301 QUAKER AVENUE|LUBBOCK|79410": {
+"found": "2301, Quaker Avenue, Lubbock, Lubbock County, Texas, 79410, United States",
+"lat": 33.573072,
+"lon": -101.905204
+},
+"2302 CORNERSTONE BOULEVARD|EDINBURG|78539": {
+"found": "Connerstone Regional Hospital, 2302, Cornerstone Boulevard, Borderland Retreat Colonia, Edinburg, Hi",
+"lat": 26.262719,
+"lon": -98.198339
+},
+"2303 SE MILITARY DR P O BOX 23340|SAN ANTONIO|78223": {
+"tried": "nominatim, photon (any street type)"
+},
+"231 SOUTH COLLINS ROAD|SUNNYVALE|75182": {
+"found": "Baylor Scott & White Me\u200bdical Center \u2013 Sunnyvale, 231, South Collins Road, Sunnyvale, Dallas County,",
+"lat": 32.778787,
+"lon": -96.568654
+},
+"23330 HIGHWAY 59 N|KINGWOOD|77339": {
+"tried": "nominatim, photon (any street type)"
+},
+"2340 N GRAND PKWY W|SPRING|77389": {
+"tried": "nominatim, photon (any street type)"
+},
+"2349 MEDICAL DRIVE|PECOS|79772": {
+"found": "Reeves Regional Health, 2349, Medical Drive, Mann, Pecos, Reeves County, Texas, 79772, United States",
+"lat": 31.401654,
+"lon": -103.51709
+},
+"23900 KATY FREEWAY|KATY|77494": {
+"found": "Memorial Hermann Katy Hospital, 23900, Katy Freeway, Katy, Harris County, Texas, 77494, United State",
+"lat": 29.78751,
+"lon": -95.785244
+},
+"23920 KATY FREEWAY SUITE 200|HOUSTON|77098": {
+"tried": "nominatim, photon (any street type)"
+},
+"2394 H G MOSLEY PKWY|LONGVIEW|75604": {
+"found": "Heaton Eye Associates, 2394, H G Mosley Parkway, Longview, Gregg County, Texas, 75604, United States",
+"lat": 32.523037,
+"lon": -94.764107
+},
+"24 CARE CIRCLE|AMARILLO|79124": {
+"found": "Acute and Chronic Pain and Spine Center, 24, Care Circle, Legacy Square Professional Park, Amarillo,",
+"lat": 35.191001,
+"lon": -101.928289
+},
+"2400 MATLOCK ROAD|ARLINGTON|76015": {
+"found": "2400, Matlock Road, Arlington, Tarrant County, Texas, 76015, United States",
+"lat": 32.705337,
+"lon": -97.114775
+},
+"2400 N INTERSTATE HIGHWAY 35E|WAXAHACHIE|75165": {
+"found": "Baylor Scott & White Medical Center \u2013 Waxahachie 2400 North Interstate 35E Waxahachie 75165",
+"lat": 32.427325,
+"lon": -96.858022,
+"src": "photon"
+},
+"2400 ROUND ROCK AVE|ROUND ROCK|78681": {
+"found": "Saint David's Round Rock Medical Center, 2400, Round Rock Avenue, Round Rock, Williamson County, Tex",
+"lat": 30.510068,
+"lon": -97.714609
+},
+"2401 NORTH TREADAWAY BLVD,|ABILENE|79601": {
+"found": "2401, North Treadaway Boulevard, Abilene, Taylor County, Texas, 79601, United States",
+"lat": 32.477835,
+"lon": -99.728838
+},
+"2401 S 31ST ST|TEMPLE|76508": {
+"found": "Baylor Scott & White Medical Center - Temple, 2401, South 31st Street, Temple, Bell County, Texas, 7",
+"lat": 31.077858,
+"lon": -97.36273
+},
+"2425 BABCOCK ROAD SUITE 106|SAN ANTONIO|78229": {
+"found": "Premier Pharmacy, 2425, Babcock Road, Medical Center, San Antonio, Bexar County, Texas, 78229, Unite",
+"lat": 29.506665,
+"lon": -98.584891
+},
+"2448 E 5TH ST|TYLER|75701": {
+"tried": "nominatim, photon (any street type)"
+},
+"24500 NORTHWEST FWY|CYPRESS|77429": {
+"found": "Houston Methodist Cypress Hospital, 24500, Northwest Freeway, Houston, Harris County, Texas, 77429, ",
+"lat": 29.961261,
+"lon": -95.681779
+},
+"2459 S BRAESWOOD BLVD|HOUSTON|77030": {
+"found": "2459, South Braeswood Boulevard, Braeswood, Houston, Harris County, Texas, 77030, United States",
+"lat": 29.697356,
+"lon": -95.416337
+},
+"24727 TOMBALL PKWY SUITE 100|TOMBALL|77375": {
+"tried": "nominatim, photon (any street type)"
+},
+"250 KROGER DRIVE SUITE 110|FORNEY|75126": {
+"found": "250, Kroger Drive, Forney, Kaufman County, Texas, 75126, United States",
+"lat": 32.749529,
+"lon": -96.449164
+},
+"2500 E MAIN STREET|ALICE|78332": {
+"found": "CHRISTUS Spohn Hospital Alice, 2500, East Main Street, Alice, Jim Wells County, Texas, 78332, United",
+"lat": 27.764221,
+"lon": -98.04175
+},
+"2500 FONDREN SUITE 350|HOUSTON|77063": {
+"found": "2500, Fondren Road, Houston, Harris County, Texas, 77063, United States",
+"lat": 29.740104,
+"lon": -95.521413
+},
+"2500 HWY 305 SOUTH|MCCAMEY|79752": {
+"found": "McCamey County Hospital District 2500 South Highway 305 McCamey 79752",
+"lat": 31.114142,
+"lon": -102.210851,
+"src": "photon"
+},
+"2501 WEST WILLIAM CANNON DRIVE, SUITE 301|AUSTIN|78745": {
+"found": "2501, West William Cannon Drive, Stonegate, Austin, Travis County, Texas, 78745, United States",
+"lat": 30.206239,
+"lon": -97.813002
+},
+"2507 MEDICAL ROW STE 101|GRAND PRAIRIE|75051": {
+"found": "2507, Medical Row, Grand Prairie, Tarrant County, Texas, 75051, United States",
+"lat": 32.733365,
+"lon": -97.044635
+},
+"2510 AMBASSADOR DRIVE SUITE A|WACO|76712": {
+"tried": "nominatim, photon (any street type)"
+},
+"2515 SCRIPTURE STREET|DENTON|76201": {
+"found": "2515, Scripture Street, Denton, Denton County, Texas, 76201, United States",
+"lat": 33.218955,
+"lon": -97.164312
+},
+"252 MATLOCK ROAD SUITE 430|MANSFIELD|76063": {
+"tried": "nominatim, photon (any street type)"
+},
+"25230 KINGSLAND BLVD, STE 103|KATY|77494": {
+"found": "25230, Kingsland Boulevard, Katy, Fort Bend County, Texas, 77494, United States",
+"lat": 29.770665,
+"lon": -95.809599
+},
+"25440 INTERSTATE 45 NORTH|SPRING|77386": {
+"tried": "nominatim, photon (any street type)"
+},
+"25450 KUYKENDAHL RD, STE 110A|TOMBALL|77375": {
+"tried": "nominatim, photon (any street type)"
+},
+"2550 N ESPLANADE|CUERO|77954": {
+"found": "Cuero Regional Hospital, 2550, North Esplanade Street, Cuero, DeWitt County, Texas, 77954, United St",
+"lat": 29.112181,
+"lon": -97.283413
+},
+"2555 JIMMY JOHNSON BLVD|PORT ARTHUR|77640": {
+"found": "The Medical Center of Southeast Texas, 2555, Jimmy Johnson Boulevard, Port Arthur, Jefferson County,",
+"lat": 29.935626,
+"lon": -93.988945
+},
+"2600 EAST PFLUGERVILLE PARKWAY|PFLUGERVILLE|78660": {
+"found": "Baylor Scott And White Medical Center - Pflugerville, 2600, East Pflugerville Parkway, Pflugerville,",
+"lat": 30.451461,
+"lon": -97.591151
+},
+"2600 HIGHWAY 118 NORTH|ALPINE|79830": {
+"found": "Big Bend Regional Medical Center, 2600, North State Highway 118, Alpine, Brewster County, Texas, 798",
+"lat": 30.384136,
+"lon": -103.67033
+},
+"2600 LOCKWOOD STREET|TAHOKA|79373": {
+"found": "Lynn County Hospital District, 2600, Lockwood Street, Tahoka, Lynn County, Texas, 79373, United Stat",
+"lat": 33.167563,
+"lon": -101.816062
+},
+"2600 ST MICHAEL DR|TEXARKANA|75503": {
+"found": "CHRISTUS St. Michael Hospital, 2600, Saint Michael Drive, Texarkana, Bowie County, Texas, 75503, Uni",
+"lat": 33.464069,
+"lon": -94.075662
+},
+"2600 W UNIVERSITY DRIVE SUITE 200|MCKINNEY|75071": {
+"found": "2600, West University Drive, Buckner, McKinney, Collin County, Texas, 75069, United States",
+"lat": 33.218133,
+"lon": -96.650641
+},
+"2600 WEST PLEASANT RUN ROAD|LANCASTER|75146": {
+"found": "Crescent Medical Center Lancaster, 2600, West Pleasant Run Road, Lancaster, Dallas County, Texas, 75",
+"lat": 32.602412,
+"lon": -96.812748
+},
+"2601 DIMMITT RD|PLAINVIEW|79072": {
+"found": "Covenant Health Plainview, 2601, Dimmitt Road, Plainview, Hale County, Texas, 79072, United States",
+"lat": 34.206256,
+"lon": -101.73248
+},
+"2610 IH 35 SB|AUSTIN|78704": {
+"tried": "nominatim, photon (any street type)"
+},
+"2620 SPUR 139|PARIS|75462": {
+"found": "2620, Spur 139, Paris, Lamar County, Texas, 75462, United States",
+"lat": 33.679198,
+"lon": -95.527791
+},
+"2633 DALLAS PARKWAY # 100|PLANO|75093": {
+"tried": "nominatim, photon (any street type)"
+},
+"2633 DALLAS PARKWAY SUITE 202|PLANO|75093": {
+"tried": "nominatim, photon (any street type)"
+},
+"26710 I-45 N, STE B-100|SPRING|77386": {
+"tried": "nominatim, photon (any street type)"
+},
+"26791 HIGHWAY 380|AUBREY|76227": {
+"found": "Baylor Emergency Medical Center, 26791, US Highway 380 East, Aubrey, Denton County, Texas, 76227, Un",
+"lat": 33.220451,
+"lon": -96.913426
+},
+"2690 N GALLOWAY AVE|MESQUITE|75150": {
+"found": "2690, North Galloway Avenue, Mesquite, Dallas County, Texas, 75150, United States",
+"lat": 32.80175,
+"lon": -96.611405
+},
+"26940 KUYKENDAHL ROAD, SUITE 300|TOMBALL|77375": {
+"found": "Luxe Beauty & Wellness Med Spa, 26940, Kuykendahl Road, Creekside Park, Tomball, Harris County, Texa",
+"lat": 30.149932,
+"lon": -95.548878
+},
+"2700 BEE CAVES RD,|AUSTIN|78746": {
+"found": "2700, Bee Caves Road, Westpark, Rollingwood, Travis County, Texas, 78703, United States",
+"lat": 30.268177,
+"lon": -97.785347
+},
+"2700 E BROAD STREET|MANSFIELD|76063": {
+"found": "Methodist Mansfield Medical Center, 2700, East Broad Street, Mansfield, Tarrant County, Texas, 76063",
+"lat": 32.568353,
+"lon": -97.094479
+},
+"2701 E. STAN SCHLUETER LOOP|KILLEEN|76542": {
+"tried": "nominatim, photon (any street type)"
+},
+"2701 HOSPITAL DRIVE|VICTORIA|77901": {
+"found": "Citizens Medical Center, 2701, Hospital Drive, Victoria, Victoria County, Texas, 77901, United State",
+"lat": 28.812804,
+"lon": -96.977765
+},
+"2701 US HWY 271 N|PITTSBURG|75686": {
+"found": "UT Health Pittsburg 2701 US 271 Pittsburg 75686",
+"lat": 33.03356,
+"lon": -94.959399,
+"src": "photon"
+},
+"2704 GALLOWAY SUITE 102|MESQUITE|75150": {
+"found": "2704, North Galloway Avenue, Mesquite, Dallas County, Texas, 75150, United States",
+"lat": 32.801925,
+"lon": -96.611406
+},
+"2706 WEST CUTHBERT, BUILDING A|MIDLAND|79701": {
+"found": "2706, West Cuthbert Avenue, Murray-Judson, Midland, Midland County, Texas, 79701, United States",
+"lat": 32.000657,
+"lon": -102.110072
+},
+"2719 VIRGINIA PARKWAY|MC KINNEY|75071": {
+"tried": "nominatim, photon (any street type)"
+},
+"2727 EAST LEMMON AVENUE BUILDING I|DALLAS|75204": {
+"found": "2727, Lemmon Avenue East, Uptown PID, Dallas, Dallas County, Texas, 75204, United States",
+"lat": 32.804068,
+"lon": -96.794466
+},
+"2727 GRAMERCY STREET|HOUSTON|77025": {
+"found": "Gramercy Outpatient Surgery Center, 2727, Gramercy Street, University Place, Houston, Harris County,",
+"lat": 29.703943,
+"lon": -95.421409
+},
+"2727 WEST HOLCOMBE 3RD FLOOR|HOUSTON|77025": {
+"found": "Spencer R. Berthelsen, M.D., Main Campus, 2727, West Holcombe Boulevard, University Place, Houston, ",
+"lat": 29.705196,
+"lon": -95.421613
+},
+"275 LANTERN BEND SUITE 400|HOUSTON|77090": {
+"found": "Northwest Medical Plaza, 275, Lantern Bend Drive, Houston, Harris County, Texas, 77090, United State",
+"lat": 30.02318,
+"lon": -95.435218
+},
+"2760 BRAZOS PARKWAY|ANGLETON|77515": {
+"tried": "nominatim, photon (any street type)"
+},
+"280 REGENCY PARKWAY|MANSFIELD|76063": {
+"found": "280, Regency Parkway, Mansfield, Tarrant County, Texas, 76063, United States",
+"lat": 32.567405,
+"lon": -97.111049
+},
+"2801 FRANCISCAN DR|BRYAN|77802": {
+"found": "CHI Saint Joseph Health Regional Hospital, 2801, Franciscan Drive, Bryan, Brazos County, Texas, 7780",
+"lat": 30.655925,
+"lon": -96.346847
+},
+"2801 SOUTH MAYHILL ROAD|DENTON|76208": {
+"found": "Baylor Scott & White The Heart Hospital 2801 Mayhill Road Denton 76208",
+"lat": 33.176624,
+"lon": -97.087377,
+"src": "photon"
+},
+"2813 S MAYHILL ROAD|DENTON|76208": {
+"found": "Atrium Medical Center 2813 Mayhill Road Denton 76208",
+"lat": 33.174373,
+"lon": -97.08706,
+"src": "photon"
+},
+"2815 W SOUTHLAKE BLVD SUITE 100|SOUTHLAKE|76092": {
+"found": "2815, West Southlake Boulevard, Southlake, Tarrant County, Texas, 76092, United States",
+"lat": 32.934735,
+"lon": -97.194154
+},
+"2820 MICHAELANGELO DRIVE|EDINBURG|78539": {
+"found": "2820, Michaelangelo Drive, Borderland Retreat Colonia, Edinburg, Hidalgo County, Texas, 78539, Unite",
+"lat": 26.253977,
+"lon": -98.202917
+},
+"2830 CALDER AVENUE|BEAUMONT|77702": {
+"found": "CHRISTUS Southeast Texas - Saint Elizabeth, 2830, Calder Avenue, Beaumont, Jefferson County, Texas, ",
+"lat": 30.087991,
+"lon": -94.131583
+},
+"2831 E PRESIDENT GEORGE BUSH HIGHWAY|RICHARDSON|75082": {
+"found": "Methodist Richardson Medical Center 2831 President George Bush Highway Richardson 75082",
+"lat": 32.996121,
+"lon": -96.667111,
+"src": "photon"
+},
+"2833 BABCOCK ROAD SUITE 120|SAN ANTONIO|78229": {
+"found": "2833, Babcock Road, Medical Center, South Texas Medical Center, San Antonio, Bexar County, Texas, 78",
+"lat": 29.512734,
+"lon": -98.591523
+},
+"2850 E STATE HIGHWAY 114|TROPHY CLUB|76262": {
+"found": "Baylor Medical Center at Trophy Club, 2850, East State Highway 114, Westlake, Tarrant County, Texas,",
+"lat": 32.988785,
+"lon": -97.175379
+},
+"2855 GRAMERCY STREET|HOUSTON|77025": {
+"found": "2855, Gramercy Street, University Place, Houston, Harris County, Texas, 77030, United States",
+"lat": 29.704305,
+"lon": -95.420574
+},
+"2858 N BELTLINE ROAD SUITE 100|SUNNYVALE|75182": {
+"found": "Dr. John M. Hibbitts, MD FAAOS | Sunnyvale Sports Medicine and Orthopedic Center 2858 North Belt Lin",
+"lat": 32.803792,
+"lon": -96.593833,
+"src": "photon"
+},
+"290 MIRON GROVE|SOUTHLAKE|76092": {
+"tried": "nominatim, photon (any street type)"
+},
+"2900 S LOOP 256|PALESTINE|75801": {
+"found": "Palestine Regional Medical Center, 2900, South Loop 256, Palestine, Anderson County, Texas, 75801, U",
+"lat": 31.732587,
+"lon": -95.627095
+},
+"2901 N FOURTH ST|LONGVIEW|75605": {
+"found": "Longview Regional Medical Center, 2901, North Fourth Street, Longview, Gregg County, Texas, 75605, U",
+"lat": 32.533766,
+"lon": -94.730653
+},
+"2905 PINE MILL ROAD|PARIS|75460": {
+"found": "2905, Pine Mill Road, Paris, Lamar County, Texas, 75460, United States",
+"lat": 33.666371,
+"lon": -95.522429
+},
+"2929 WOODLAND PARK DRIVE|HOUSTON|77082": {
+"found": "2929, Woodland Park Drive, Briar Forest, Houston, Harris County, Texas, 77082, United States",
+"lat": 29.732384,
+"lon": -95.580563
+},
+"300 KINGWOOD MEDICAL DRIVE|KINGWOOD|77339": {
+"found": "Memorial Hermann Surgical Hospital Kingwood, 300, Kingwood Medical Drive, Maedan, Houston, Montgomer",
+"lat": 30.047912,
+"lon": -95.259132
+},
+"300 S NOLEN DRIVE SUITE 160|SOUTHLAKE|76092": {
+"found": "300, South Nolen Drive, Southlake, Tarrant County, Texas, 76092, United States",
+"lat": 32.939138,
+"lon": -97.110758
+},
+"300 UNIVERSITY BLVD|ROUND ROCK|78664": {
+"found": "Baylor Scott & White Medical Center, 300, University Boulevard, Round Rock, Williamson County, Texas",
+"lat": 30.563616,
+"lon": -97.685113
+},
+"300 WILSON STREET|HENDERSON|75652": {
+"found": "UT Health - Henderson, 300, Wilson Street, Lake View, Henderson, Rusk County, Texas, 75652, United S",
+"lat": 32.160413,
+"lon": -94.795458
+},
+"3000 N I-35|DENTON|76201": {
+"found": "Texas Health Presbyterian Hospital Denton, 3000, North Interstate 35, Denton, Denton County, Texas, ",
+"lat": 33.217379,
+"lon": -97.165419
+},
+"3001 E PRESIDENT GEORGE BUH HWY STE 150|RICHARDSON|75082": {
+"tried": "nominatim, photon (any street type)"
+},
+"301 N FRIO ST, STE 102|SAN ANTONIO|78207": {
+"found": "301, North Frio Street, Cattleman's Square, San Antonio, Bexar County, Texas, 78207, United States",
+"lat": 29.427923,
+"lon": -98.503709
+},
+"301 SETON PARKWAY, SUITE 200|ROUND ROCK|78665": {
+"found": "301, Seton Parkway, Round Rock, Williamson County, Texas, 78665, United States",
+"lat": 30.566225,
+"lon": -97.652454
+},
+"301 UNIVERSITY BOULEVARD|GALVESTON|77555": {
+"found": "301, University Boulevard - 6th Street, Galveston, Galveston County, Texas, 77550, United States",
+"lat": 29.310307,
+"lon": -94.774521
+},
+"3011 W LOOP 1604 N|SAN ANTONIO|78251": {
+"found": "Westover HIlls Baptist Hospital, 3011, West Loop 1604 North, San Antonio, Bexar County, Texas, 78251",
+"lat": 29.463424,
+"lon": -98.713604
+},
+"303 SANDY CORNER RD|EL CAMPO|77437": {
+"found": "El Campo Memorial Hospital 303 Sandy Corners Road Angleton 77437",
+"lat": 29.219075,
+"lon": -96.290994,
+"src": "photon"
+},
+"3030 GATEWAY BOULEVARD EAST|EL PASO|79905": {
+"found": "3030, Gateway Boulevard East, El Paso, El Paso County, Texas, 79905, United States",
+"lat": 31.777513,
+"lon": -106.459232
+},
+"3030 S GESSNER SUITE 150|HOUSTON|77063": {
+"found": "3030, South Gessner Road, Westchase, Houston, Harris County, Texas, 77063, United States",
+"lat": 29.732069,
+"lon": -95.539157
+},
+"304 S DAUGHERTY STREET|EASTLAND|76448": {
+"found": "Eastland Memorial Hospital 304 South Daugherty Avenue Eastland 76448",
+"lat": 32.399866,
+"lon": -98.820762,
+"src": "photon"
+},
+"305 MALLARD|TAYLOR|76574": {
+"found": "Baylor Scott & White Medical Center \u2013 Taylor, 305, Mallard Lane, Taylor, Williamson County, Texas, 7",
+"lat": 30.591235,
+"lon": -97.414956
+},
+"305 NORTH MCKINNEY|SWEENY|77480": {
+"found": "Sweeny Community Hospital, 305, North McKinney Street, Sweeny, Brazoria County, Texas, 77480, United",
+"lat": 29.047699,
+"lon": -95.691717
+},
+"3055 BARDIN ROAD STE 400|GRAND PRAIRIE|75052": {
+"found": "3055, Bardin Road, Grand Prairie, Tarrant County, Texas, 75052, United States",
+"lat": 32.673682,
+"lon": -97.058443
+},
+"3075 W SOUTHLAKE BLVD|SOUTHLAKE|76092": {
+"found": "3075, West Southlake Boulevard, Southlake, Tarrant County, Texas, 76092, United States",
+"lat": 32.934176,
+"lon": -97.20016
+},
+"308 HUDSPETH|SONORA|76950": {
+"found": "Lillian M. Hudspeth Memorial Hospital, 308, Hudspeth Street, Sonora, Sutton County, Texas, 76950, Un",
+"lat": 30.563622,
+"lon": -100.63466
+},
+"3080 COLLEGE STREET|BEAUMONT|77701": {
+"found": "Baptist Beaumont Hospital, 3080, College Street, Beaumont, Jefferson County, Texas, 77701, United St",
+"lat": 30.071398,
+"lon": -94.119586
+},
+"310 KINGWOOD EXECUTIVE DR, SUITE A|KINGWOOD|77339": {
+"tried": "nominatim, photon (any street type)"
+},
+"310 SOUTH PECOS STREET|COLEMAN|76834": {
+"found": "Coleman County Medical Center, 310, South Pecos Street, Coleman, Coleman County, Texas, 76834, Unite",
+"lat": 31.828589,
+"lon": -99.426258
+},
+"310 W SOUTH STREET|HENRIETTA|76365": {
+"found": "Clay County Memorial Hospital, 310, West South Street, Henrietta, Clay County, Texas, 76365, United ",
+"lat": 33.814353,
+"lon": -98.198458
+},
+"310 WEST HALSELL STREET|DIMMITT|79027": {
+"found": "Plains Memorial Hospital, 310, West Halsell Street, Dimmitt, Castro County, Texas, 79027, United Sta",
+"lat": 34.556139,
+"lon": -102.315877
+},
+"3100 AVENUE E|HONDO|78861": {
+"found": "Medina Community Hospital, 3100, Avenue E, Hondo, Medina County, Texas, 78861, United States",
+"lat": 29.335021,
+"lon": -99.13449
+},
+"3100 E TRINITY MILLS ROAD|CARROLLTON|75006": {
+"found": "3100, East Trinity Mills Road, Carrollton, Dallas County, Texas, 75001, United States",
+"lat": 32.986534,
+"lon": -96.846628
+},
+"3100 WESLAYAN SUITE 400|HOUSTON|77027": {
+"found": "3100, Weslayan Street, Greenway / Upper Kirby, Greenway, Houston, Harris County, Texas, 77027, Unite",
+"lat": 29.737452,
+"lon": -95.441676
+},
+"3101 GARRETT DRIVE|PERRYTON|79070": {
+"found": "Ochiltree General Hospital, 3101, Garrett Drive, Swingle-Cutter, Perryton, Ochiltree County, Texas, ",
+"lat": 36.370131,
+"lon": -100.798724
+},
+"3101 NORTH TARRANT PARKWAY|FORT WORTH|76177": {
+"found": "Medical City Alliance, 3101, North Tarrant Parkway, Fort Worth, Tarrant County, Texas, 76177, United",
+"lat": 32.899689,
+"lon": -97.313805
+},
+"3101 S 77 SUNSHINE STRIP|HARLINGEN|78550": {
+"tried": "nominatim, photon (any street type)"
+},
+"3107 OAK CREEK DRIVE #120|AUSTIN|78727": {
+"found": "3107, Oak Creek Drive, Austin, Travis County, Texas, 78727, United States",
+"lat": 30.425722,
+"lon": -97.70429
+},
+"3107 OAK CREEK DRIVE, SUITE 100|AUSTIN|78727": {
+"found": "3107, Oak Creek Drive, Austin, Travis County, Texas, 78727, United States",
+"lat": 30.425722,
+"lon": -97.70429
+},
+"3107 WEST CAMP WISDOM ROAD SUITE 189|DALLAS|75237": {
+"found": "3107, West Camp Wisdom Road, Dallas, Dallas County, Texas, 75237, United States",
+"lat": 32.66199,
+"lon": -96.870926
+},
+"311 GREEN AVENUE|PALACIOS|77465": {
+"found": "Palacios Community Medical Center, 311, Green Avenue, Palacios, Matagorda County, Texas, 77465, Unit",
+"lat": 28.716822,
+"lon": -96.214083
+},
+"3131 UNIVERSITY DRIVE EAST|BRYAN|77802": {
+"found": "The Physicians Centre Hospital, 3131, University Drive East, Bryan, Brazos County, Texas, 77802, Uni",
+"lat": 30.650293,
+"lon": -96.298024
+},
+"3140 HORIZON ROAD SUITE 100|ROCKWALL|75032": {
+"found": "3140, Horizon Road, Glen Hill, Rockwall, Rockwall County, Texas, 75032, United States",
+"lat": 32.886131,
+"lon": -96.465731
+},
+"3144 HORIZON ROAD STE 120|ROCKWALL|75032": {
+"found": "3144, Horizon Road, Glen Hill, Rockwall, Rockwall County, Texas, 75032, United States",
+"lat": 32.886578,
+"lon": -96.465483
+},
+"315 EAST 5TH STREET|ODESSA|79761": {
+"found": "315, East 5th Street, Mary Flanagan, Odessa, Ector County, Texas, 79761, United States",
+"lat": 31.849677,
+"lon": -102.367206
+},
+"3150 HORIZON ROAD|ROCKWALL|75032": {
+"found": "Texas Health Presbyterian Hospital Rockwall, 3150, Horizon Road, Glen Hill, Rockwall, Rockwall Count",
+"lat": 32.884839,
+"lon": -96.466348
+},
+"317 GASLIGHT BLVD|LUFKIN|75901": {
+"found": "317, Gaslight Boulevard, Lufkin, Angelina County, Texas, 75904, United States",
+"lat": 31.331082,
+"lon": -94.751202
+},
+"317 PROSPECT DRIVE|TRINITY|75862": {
+"found": "Trinity Memorial Hospital, 317, Prospect Drive, Mill Town, Trinity, Trinity County, Texas, 75862, Un",
+"lat": 30.956892,
+"lon": -95.38104
+},
+"320 NORTH MAIN|LOCKNEY|79241": {
+"found": "W.J. Mangold Memorial Hospital, 320, North Main Street, Lockney, Floyd County, Texas, 79241, United ",
+"lat": 34.127089,
+"lon": -101.440923
+},
+"3201 GEORGE BUSH FREEWAY SUITE 100|RICHARDSON|75082": {
+"tried": "nominatim, photon (any street type)"
+},
+"3201 S LOOP 256|PALESTINE|75801": {
+"found": "3201, South Loop 256, Palestine, Anderson County, Texas, 75801, United States",
+"lat": 31.73471,
+"lon": -95.629433
+},
+"3201 S WATER ST|BURNET|78611": {
+"found": "Ascension Seton Highland Lakes Hospital, 3201, South Water Street, Burnet, Burnet County, Texas, 786",
+"lat": 30.733171,
+"lon": -98.236117
+},
+"3201 UNIVERSITY DR E STE 430|BRYAN|77802": {
+"tried": "nominatim, photon (any street type)"
+},
+"3201 WEST HIGHWAY 22|CORSICANA|75110": {
+"found": "Navarro Regional Hospital, 3201, West State Highway 22, Corsicana, Navarro County, Texas, 75110, Uni",
+"lat": 32.083836,
+"lon": -96.503599
+},
+"3207 GREENLAWN BLVD #100|ROUND ROCK|78664": {
+"found": "Austin Regional Clinic, 3207, Greenlawn Boulevard, Round Rock, Williamson County, Texas, 78664, Unit",
+"lat": 30.480238,
+"lon": -97.65998
+},
+"3215 GATEWAY BLVD WEST STE, 210|EL PASO|79903": {
+"tried": "nominatim, photon (any street type)"
+},
+"3280 JOE BATTLE BLVD|EL PASO|79938": {
+"found": "The Hospitals of Providence - East Campus, 3280, Joe Battle Boulevard, Tierra Humeda, Far East El Pa",
+"lat": 31.790475,
+"lon": -106.264644
+},
+"330 STANDRIDGE BLVD|ANNA|75409": {
+"tried": "nominatim, photon (any street type)"
+},
+"3301 MATLOCK ROAD|ARLINGTON|76015": {
+"found": "Medical City Arlington, 3301, Matlock Road, Arlington, Tarrant County, Texas, 76015, United States",
+"lat": 32.692184,
+"lon": -97.112943
+},
+"3302 NE STALLINGS DR|NACOGDOCHES|75961": {
+"found": "3302, Northeast Stallings Drive, Nacogdoches, Nacogdoches County, Texas, 75965, United States",
+"lat": 31.643926,
+"lon": -94.619384
+},
+"3315 S ALAMEDA ST|CORPUS CHRISTI|78411": {
+"found": "Corpus Christi Medical Center - Doctors Regional, 3315, South Alameda Street, Corpus Christi, Nueces",
+"lat": 27.753222,
+"lon": -97.388803
+},
+"3316 COLORADO BLVD|DENTON|76210": {
+"found": "Medical City Surgery Center Denton, 3316, Colorado Boulevard, Denton, Denton County, Texas, 76210, U",
+"lat": 33.180117,
+"lon": -97.093612
+},
+"333 N SANTA ROSA ST|SAN ANTONIO|78207": {
+"found": "333, North Santa Rosa Street, Downtown, San Antonio, Bexar County, Texas, 78207, United States",
+"lat": 29.427093,
+"lon": -98.498532
+},
+"333 N TEXAS AVENUE, SUITE 1000|WEBSTER|77598": {
+"found": "Houston Physicians' Hospital, 333, North Texas Avenue, Webster, Harris County, Texas, 77598, United ",
+"lat": 29.534121,
+"lon": -95.126008
+},
+"3333 N FOSTER MALDONADO BLVD|EAGLE PASS|78852": {
+"found": "Fort Duncan Regional Medical Center 3333 Foster Maldonado Boulevard Eagle Pass 78852",
+"lat": 28.713071,
+"lon": -100.455664,
+"src": "photon"
+},
+"3349 S HIGHWAY 181|KENEDY|78119": {
+"found": "Otto Kaiser Memorial Hospital, 3349, South US Highway 181, Kenedy, Karnes County, Texas, 78119, Unit",
+"lat": 28.850095,
+"lon": -97.878013
+},
+"3355 EARL CAMPBELL PKWY|TYLER|75701": {
+"found": "3355, Earl Campbell Parkway, Tyler, Smith County, Texas, 75701, United States",
+"lat": 32.327891,
+"lon": -95.33904
+},
+"3400 E CENTRAL TEXAS EXPY STE 100|KILLEEN|76543": {
+"found": "3400, East Central Texas Expressway, Killeen, Bell County, Texas, 76543, United States",
+"lat": 31.084922,
+"lon": -97.708714
+},
+"3400 INTERSTATE 30 FRONTAGE ROAD SUITE 300|MESQUITE|75150": {
+"tried": "nominatim, photon (any street type)"
+},
+"3416 22ND ST,|LUBBOCK|79410": {
+"found": "3416, 22nd Street, Lubbock, Lubbock County, Texas, 79410, United States",
+"lat": 33.575124,
+"lon": -101.888394
+},
+"3455 LOCKE AVENUE SUITE 100|FORT WORTH|76107": {
+"found": "3455, Locke Avenue, Fort Worth, Tarrant County, Texas, 76107, United States",
+"lat": 32.731129,
+"lon": -97.368128
+},
+"349 REID ROAD|JUNCTION|76849": {
+"found": "Kimble Hospital, 349, Reid Road, Junction, Kimble County, Texas, 76849, United States",
+"lat": 30.498682,
+"lon": -99.780616
+},
+"350 EAST INTERSTATE 20 STE 200|ARLINGTON|76018": {
+"found": "350, East Interstate 20, Arlington, Tarrant County, Texas, 76018, United States",
+"lat": 32.678687,
+"lon": -97.109506
+},
+"350 S I-35E|DENTON|76205": {
+"found": "Denton Surgical Center 350 South Interstate 35E Denton 76205",
+"lat": 33.193624,
+"lon": -97.129901,
+"src": "photon"
+},
+"3500 GASTON AVE|DALLAS|75246": {
+"found": "Baylor University Medical Center, 3500, Gaston Avenue, Old East Dallas, Dallas, Dallas County, Texas",
+"lat": 32.789943,
+"lon": -96.777923
+},
+"3500 PRESTON ROAD SUITE 200|PLANO|75093": {
+"found": "Digestive Health Center of Plano, 3500, Preston Road, Plano, Collin County, Texas, 75093, United Sta",
+"lat": 33.045485,
+"lon": -96.792963
+},
+"3500 W WHEATLAND ROAD|DALLAS|75237": {
+"found": "Methodist Charlton Medical Center, 3500, West Wheatland Road, Dallas, Dallas County, Texas, 75237, U",
+"lat": 32.645498,
+"lon": -96.876374
+},
+"3501 MATLOCK ROAD|ARLINGTON|76015": {
+"found": "3501, Matlock Road, Arlington, Tarrant County, Texas, 76015, United States",
+"lat": 32.689583,
+"lon": -97.115124
+},
+"3502 CORINTH PKWY, UNIT 120|CORINTH|76208": {
+"found": "3502, Corinth Parkway, Corinth, Denton County, Texas, 76208, United States",
+"lat": 33.153144,
+"lon": -97.055629
+},
+"351 CYPRESS CREEK ROAD, STE 102|CEDAR PARK|78613": {
+"found": "351, Cypress Creek Road, Cedar Park, Williamson County, Texas, 78613, United States",
+"lat": 30.499593,
+"lon": -97.819006
+},
+"3533 S ALAMEDA|CORPUS CHRISTI|78411": {
+"found": "Driscoll Children's Hospital, 3533, South Alameda Street, Corpus Christi, Nueces County, Texas, 7841",
+"lat": 27.748732,
+"lon": -97.386476
+},
+"3534 VISTA|PASADENA|77504": {
+"found": "3534, Terreno Vista Boulevard, Pasadena, Harris County, Texas, 77504, United States",
+"lat": 29.657198,
+"lon": -95.188084
+},
+"3535 SOUTH I35 EAST|DENTON|76210": {
+"tried": "nominatim, photon (any street type)"
+},
+"3551 ROGER BROOKE DR|FORT SAM HOUSTON|78234": {
+"found": "Center for the Intrepid, 3551, Roger Brooke Drive, San Antonio, Bexar County, Texas, 78234, United S",
+"lat": 29.458896,
+"lon": -98.419309
+},
+"3560 COLLEGE ST|BEAUMONT|77705": {
+"found": "3560, College Street, Beaumont, Jefferson County, Texas, 77701, United States",
+"lat": 30.068413,
+"lon": -94.127334
+},
+"3601 CALAIS DRIVE|SHERMAN|75090": {
+"found": "Baylor Scott & White Surgical Hospital at Sherman 3601 North Calais Street Sherman 75090",
+"lat": 33.676977,
+"lon": -96.601815,
+"src": "photon"
+},
+"3604 LIVE OAK STREET SUITE 300|DALLAS|75204": {
+"found": "3604, Live Oak Street, Old East Dallas, Dallas, Dallas County, Texas, 75206, United States",
+"lat": 32.793501,
+"lon": -96.782522
+},
+"3610 22ND ST|LUBBOCK|79410": {
+"found": "3610, 22nd Street, Lubbock, Lubbock County, Texas, 79410, United States",
+"lat": 33.575114,
+"lon": -101.892438
+},
+"3610 24TH ST|LUBBOCK|79410": {
+"found": "3610, 24th Street, Maxey Park, Lubbock, Lubbock County, Texas, 79410, United States",
+"lat": 33.572367,
+"lon": -101.893398
+},
+"3610 N UNIVERSITY DRIVE|NACOGDOCHES|75961": {
+"found": "3610, North University Drive, Orton Hill, Nacogdoches, Nacogdoches County, Texas, 75965, United Stat",
+"lat": 31.642661,
+"lon": -94.63941
+},
+"3615 19TH STREET|LUBBOCK|79410": {
+"found": "Covenant Medical Center, 3615, 19th Street, Lubbock, Lubbock County, Texas, 79410, United States",
+"lat": 33.576893,
+"lon": -101.892112
+},
+"364 RICHLAND WEST CIRCLE SUITE B|WACO|76712": {
+"found": "364, Richland West Circle, Waco, McLennan County, Texas, 76712, United States",
+"lat": 31.512404,
+"lon": -97.197375
+},
+"3705 MEDICAL PARKWAY 110|AUSTIN|78705": {
+"found": "Austin Ear Nose & Throat Clinic 3705 Medical Parkway Austin 78705",
+"lat": 30.305239,
+"lon": -97.744155,
+"src": "photon"
+},
+"375 MUNICIPAL DR STE 200 & 214|RICHARDSON|75080": {
+"found": "375, Municipal Drive, Richardson, Dallas County, Texas, 75080, United States",
+"lat": 32.972975,
+"lon": -96.725719
+},
+"3800 GAYLORD PARKWAY SUITE 410|FRISCO|75034": {
+"found": "3800, Gaylord Parkway, Dallas Cowboys & Frisco Multi Event Center, Frisco, Collin County, Texas, 750",
+"lat": 33.111676,
+"lon": -96.826852
+},
+"3800 N SHEPHERD DR, STE B|HOUSTON|77018": {
+"found": "3800, North Shepherd Drive, Independence Heights, Houston, Harris County, Texas, 77018, United State",
+"lat": 29.821171,
+"lon": -95.409415
+},
+"3800 S WS YOUNG DRIVE|KILLEEN|76542": {
+"tried": "nominatim, photon (any street type)"
+},
+"3811 SAGEBRIAR|BRYAN|77802": {
+"found": "Texas Regional Eye Center, 3811, Sagebriar Drive, Bryan, Brazos County, Texas, 77802, United States",
+"lat": 30.652735,
+"lon": -96.296169
+},
+"3865 CHILDRESS AVENUE SUITE B|MESQUITE|75150": {
+"found": "3865, Childress Avenue, Mesquite, Dallas County, Texas, 75150, United States",
+"lat": 32.817256,
+"lon": -96.62719
+},
+"387 WEST I 10|FORT STOCKTON|79735": {
+"tried": "nominatim, photon (any street type)"
+},
+"390 NORTH 11TH ST, SUITE 100|BEAUMONT|77702": {
+"found": "390, North 11th Street, Beaumont, Jefferson County, Texas, 77702, United States",
+"lat": 30.08445,
+"lon": -94.129682
+},
+"3901 W 15TH ST|PLANO|75075": {
+"found": "Medical City Plano, 3901, West 15th Street, Plano, Collin County, Texas, 75075, United States",
+"lat": 33.0214,
+"lon": -96.766536
+},
+"3909 N MESA ST, STE 100|EL PASO|79902": {
+"found": "3909, North Mesa Street, Mission Hills, El Paso, El Paso County, Texas, 79902, United States",
+"lat": 31.788366,
+"lon": -106.507179
+},
+"3919 N TWIN CITY HWY|PORT ARTHUR|77642": {
+"tried": "nominatim, photon (any street type)"
+},
+"3929 WOODSONS RESERVE PARKWAY|SPRING|77386": {
+"tried": "nominatim, photon (any street type)"
+},
+"3930 CRUTCHER STREET|DALLAS|75246": {
+"found": "Physicians Day Surgery, 3930, Crutcher Street, Old East Dallas, Dallas, Dallas County, Texas, 75246,",
+"lat": 32.789814,
+"lon": -96.774864
+},
+"3944 RANCH ROAD 620 SOUTH BLDG 8 SUITE 103|BEE CAVE|78738": {
+"found": "Crumbl cookies, 3944, Ranch Road 620 South, Bee Cave, Travis County, Texas, 78738, United States",
+"lat": 30.309813,
+"lon": -97.946277
+},
+"4 BURNSIDE DRIVE|WICHITA FALLS|76310": {
+"found": "Momentum Specialty Surgery & Stay Suites, 4, Burnside Drive, Wichita Falls, Wichita County, Texas, 7",
+"lat": 33.868735,
+"lon": -98.581484
+},
+"400 CONCORD PLAZA DRIVE SUITE 200|SAN ANTONIO|78216": {
+"found": "400, Concord Plaza Drive, San Antonio, Bexar County, Texas, 78216, United States",
+"lat": 29.504917,
+"lon": -98.480639
+},
+"400 N BROWN, BUILDING 1|HAMILTON|76531": {
+"found": "Hamilton General Hospital, 400, North Brown Street, Hamilton, Hamilton County, Texas, 76531, United ",
+"lat": 31.704024,
+"lon": -98.114011
+},
+"400 ROSALIND REDFERN GROVER PARKWAY|MIDLAND|79701": {
+"found": "Midland Memorial Hospital, 400, Rosalind Redfern Grover Parkway, Westover Place, Midland, Midland Co",
+"lat": 31.99711,
+"lon": -102.099648
+},
+"400 SOUTHWEST 25 AVE|MINERAL WELLS|76067": {
+"tried": "nominatim, photon (any street type)"
+},
+"400 WEST LYNDON B JOHNSON SUITE 101B|IRVING|75063": {
+"found": "Baylor Scott & White Internal Medicine - Las Colinas, 400, West Lyndon B Johnson Freeway, Irving, Da",
+"lat": 32.912408,
+"lon": -96.951661
+},
+"4000 SPENCER HWY|PASADENA|77504": {
+"found": "HCA Houston Healthcare Southeast, 4000, Spencer Highway, Pasadena, Harris County, Texas, 77504, Unit",
+"lat": 29.661452,
+"lon": -95.183914
+},
+"4005 W 15TH STREET|PLANO|75093": {
+"found": "4005, West 15th Street, Cowley, Plano, Collin County, Texas, 75093, United States",
+"lat": 33.018533,
+"lon": -96.769333
+},
+"401 A EAST PINECREST DR|MARSHALL|75670": {
+"tried": "nominatim, photon (any street type)"
+},
+"4015 22ND PLACE|LUBBOCK|79410": {
+"found": "4015, 22nd Place, Lubbock, Lubbock County, Texas, 79410, United States",
+"lat": 33.574022,
+"lon": -101.901054
+},
+"4019 I-45 NORTH, SUITE 150|CONROE|77304": {
+"found": "The Emergency Center at Conroe 4019 Interstate 45 North Conroe 77304",
+"lat": 30.36989,
+"lon": -95.486586,
+"src": "photon"
+},
+"402 MERCER ST|QUANAH|79252": {
+"found": "Hardeman County Memorial Hospital, 402, Mercer Street, Quanah, Hardeman County, Texas, 79252, United",
+"lat": 34.296531,
+"lon": -99.741617
+},
+"4020 JUNIUS STREET|DALLAS|75246": {
+"found": "4020, Junius Street, Old East Dallas, Dallas, Dallas County, Texas, 75246, United States",
+"lat": 32.79229,
+"lon": -96.776602
+},
+"406 SOUTH GARY ST|MONAHANS|79756": {
+"found": "Ward Memorial Hospital 406 South Gary Avenue Monahans 79756",
+"lat": 31.593764,
+"lon": -102.883488,
+"src": "photon"
+},
+"409 COTTAGE RD|CARTHAGE|75633": {
+"found": "UT Health - Carthage, 409, Cottage Road, Carthage, Panola County, Texas, 75633, United States",
+"lat": 32.166537,
+"lon": -94.346634
+},
+"4100 DUVAL ROAD BLDG 3, SUITE 100|AUSTIN|78759": {
+"found": "4100, Duval Road, Duval Springs, Austin, Travis County, Texas, 78759, United States",
+"lat": 30.412287,
+"lon": -97.728587
+},
+"4100 MAPLESHADE LANE|PLANO|75075": {
+"found": "Legent Surgical Hospital Plano, 4100, Mapleshade Lane, Cowley, Plano, Collin County, Texas, 75075, U",
+"lat": 33.001397,
+"lon": -96.771869
+},
+"411 CENTRAL PARK DRIVE|ARLINGTON|76014": {
+"found": "411, Central Park Drive, Arlington, Tarrant County, Texas, 76014, United States",
+"lat": 32.694604,
+"lon": -97.109396
+},
+"411 N BELKNAP ST|STEPHENVILLE|76401": {
+"found": "411, North Belknap Street, Stephenville, Erath County, Texas, 76401, United States",
+"lat": 32.222313,
+"lon": -98.204166
+},
+"412 MUSTANG AVENUE|DENVER CITY|79323": {
+"found": "Yoakum County Hospital 412 Mustang Drive Denver City 79323",
+"lat": 32.968797,
+"lon": -102.835492,
+"src": "photon"
+},
+"4126 SOUTHWEST FREEWAY SUITE 108|HOUSTON|77027": {
+"found": "4126, Southwest Freeway, Greenway / Upper Kirby, Greenway, Houston, Harris County, Texas, 77027, Uni",
+"lat": 29.729783,
+"lon": -95.444897
+},
+"418 S HENDERSON|FORT WORTH|76104": {
+"found": "418, South Henderson Street, Fort Worth, Tarrant County, Texas, 76104, United States",
+"lat": 32.741438,
+"lon": -97.337471
+},
+"4200 ANDREWS HWY|MIDLAND|79703": {
+"found": "4200, Andrews Highway, Radio Plaza, Midland, Midland County, Texas, 79703, United States",
+"lat": 32.002568,
+"lon": -102.134203
+},
+"4200 W UNIVERSITY DRIVE SUITE 110|PROSPER|75078": {
+"found": "Cook Children\u2019s Pediatric Hospital, 4200, West University Drive, Prosper, Denton County, Texas, 7507",
+"lat": 33.220503,
+"lon": -96.870257
+},
+"4207 JAMES CASEY SUITE 203|AUSTIN|78745": {
+"found": "LabCorp, 4207, James Casey Street, Placidena, Austin, Travis County, Texas, 78745, United States",
+"lat": 30.224768,
+"lon": -97.773663
+},
+"421 E STATE HIGHWAY 114|SOUTHLAKE|76092": {
+"found": "Methodist Southlake Medical Center, 421, East State Highway 114, Southlake, Tarrant County, Texas, 7",
+"lat": 32.957498,
+"lon": -97.145211
+},
+"4211NORTH JACKSON RD. SUITE 100|MCALLEN|78504": {
+"found": "4211, North Jackson Road, Pharr, Hidalgo County, Texas, 78577, United States",
+"lat": 26.233341,
+"lon": -98.198179
+},
+"4214 BENNER ROAD BLDG 2|KYLE|78640": {
+"tried": "nominatim, photon (any street type)"
+},
+"4215 JOE RAMSEY BLVD E|GREENVILLE|75401": {
+"found": "Hunt Regional Medical Center, 4215, Joe Ramsey Boulevard East, Greenville, Hunt County, Texas, 75401",
+"lat": 33.122013,
+"lon": -96.124389
+},
+"4219 RICHMOND AVE, SUITE 100|HOUSTON|77027": {
+"found": "4219, Richmond Avenue, Greenway / Upper Kirby, Greenway, Houston, Harris County, Texas, 77027, Unite",
+"lat": 29.732474,
+"lon": -95.44551
+},
+"4221 MEDICAL PARKWAY SUITE 100|CARROLLTON|75010": {
+"found": "4221, Medical Parkway, Carrollton, Denton County, Texas, 75010, United States",
+"lat": 33.025284,
+"lon": -96.887164
+},
+"423 TREELINE PARK, STE 202|SAN ANTONIO|78209": {
+"found": "423, Treeline Park, San Antonio, Bexar County, Texas, 78209, United States",
+"lat": 29.506182,
+"lon": -98.477188
+},
+"427 WEST 20TH STREET, SUITE 102|HOUSTON|77008": {
+"found": "Heights Medical Tower, 427, West 20th Street, Houston Heights, Houston, Harris County, Texas, 77008,",
+"lat": 29.804143,
+"lon": -95.404786
+},
+"4300 CITY POINT DRIVE SUITE 100|NORTH RICHLAND HILLS|76180": {
+"found": "4300, City Point Drive, North Richland Hills, Tarrant County, Texas, 76180, United States",
+"lat": 32.827824,
+"lon": -97.215375
+},
+"4301 MAPLEWOOD STE C|WICHITA FALLS|76308": {
+"found": "4301, Maplewood Avenue, Wichita Falls, Wichita County, Texas, 76308, United States",
+"lat": 33.865977,
+"lon": -98.530034
+},
+"4307 JAMES CASEY|AUSTIN|78745": {
+"found": "4307, James Casey Street, Placidena, Austin, Travis County, Texas, 78745, United States",
+"lat": 30.224018,
+"lon": -97.774308
+},
+"4310 JAMES CASEY STREET,ST 4B 2ND FLOOR|AUSTIN|78745": {
+"found": "4310 James Casey Street Austin 78745",
+"lat": 30.224368,
+"lon": -97.775553,
+"src": "photon"
+},
+"4315 28TH STREET SUITE B|LUBBOCK|79410": {
+"found": "4315, 28th Street, Lubbock, Lubbock County, Texas, 79410, United States",
+"lat": 33.568689,
+"lon": -101.904714
+},
+"4343 NORTH JOSEY LANE|CARROLLTON|75010": {
+"found": "4343, North Josey Lane, Carrollton, Denton County, Texas, 75010, United States",
+"lat": 33.028475,
+"lon": -96.883942
+},
+"4349 MARTIN LUTHER KING BLVD, SUITE 100|HOUSTON|77204": {
+"found": "Health 1, 4349, Martin Luther King Boulevard, Third Ward, Houston, Harris County, Texas, 77204, Unit",
+"lat": 29.716748,
+"lon": -95.338778
+},
+"4351 RIDGEMONT DRIVE SUITE B|ABILENE|79606": {
+"found": "4351, Ridgemont Drive, Abilene, Taylor County, Texas, 79606, United States",
+"lat": 32.398733,
+"lon": -99.764709
+},
+"4375 BOOTH CALLOWAY RD STE 100|NORTH RICHLAND HILLS|76180": {
+"found": "4375, Booth Calloway Road, North Richland Hills, Tarrant County, Texas, 76180, United States",
+"lat": 32.829392,
+"lon": -97.212307
+},
+"44 N CUMMINGS ST|BELLVILLE|77418": {
+"found": "CHI Saint Joseph Health Bellville Hospital 44 North Cummings Road Bellville 77418",
+"lat": 29.953827,
+"lon": -96.260472,
+"src": "photon"
+},
+"4400 LONG PRAIRIE ROAD|FLOWER MOUND|75028": {
+"found": "Texas Health Presbyterian Hospital Flower Mound, 4400, Long Prairie Road, Flower Mound, Denton Count",
+"lat": 33.045493,
+"lon": -97.067105
+},
+"4401 BOOTH CALLOWAY ROAD|NORTH RICHLAND HILLS|76180": {
+"found": "Medical City North Hills, 4401, Booth Calloway Road, North Richland Hills, Tarrant County, Texas, 76",
+"lat": 32.827555,
+"lon": -97.212959
+},
+"4401 COIT ROAD SUITE 100|FRISCO|75035": {
+"found": "4401, Coit Road, Frisco, Collin County, Texas, 75035, United States",
+"lat": 33.113672,
+"lon": -96.769822
+},
+"4401 GARTH ROAD|BAYTOWN|77521": {
+"found": "Houston Methodist San Jacinto Hospital, 4401, Garth Road, Baytown, Harris County, Texas, 77521, Unit",
+"lat": 29.768092,
+"lon": -94.980019
+},
+"4401 TRADITION TRAIL|PLANO|75093": {
+"found": "4401, Tradition Trail, Cowley, Plano, Collin County, Texas, 75093, United States",
+"lat": 33.01233,
+"lon": -96.781763
+},
+"4404 6TH STREET|LUBBOCK|79416": {
+"found": "Rushland Park Surgery Center, 4404, 6th Street, Lubbock, Lubbock County, Texas, 79416, United States",
+"lat": 33.590694,
+"lon": -101.905422
+},
+"4406 N LAURENT|VICTORIA|77901": {
+"found": "4406, North Laurent Street, Victoria, Victoria County, Texas, 77901, United States",
+"lat": 28.833656,
+"lon": -96.992922
+},
+"4411 MEDICAL DRIVE SUITE 200|SAN ANTONIO|78229": {
+"found": "Methodist Ambulatory Surgery Center, 4411, Medical Drive, Medical Center, South Texas Medical Center",
+"lat": 29.510627,
+"lon": -98.572297
+},
+"4412 6TH STREET|LUBBOCK|79416": {
+"found": "4412, 6th Street, Lubbock, Lubbock County, Texas, 79416, United States",
+"lat": 33.590381,
+"lon": -101.905506
+},
+"444 FM 1959, SUITE B|HOUSTON|77034": {
+"found": "444, Dixie Farm Road, Houston, Harris County, Texas, 77034, United States",
+"lat": 29.596268,
+"lon": -95.179233
+},
+"4450 SOJOURN DRIVE SUITE 200|ADDISON|75001": {
+"found": "4450, Sojourn Drive, Addison, Dallas County, Texas, 75001, United States",
+"lat": 32.983249,
+"lon": -96.835576
+},
+"4460 BISSONNET STREET, SUITE 300|BELLAIRE|77401": {
+"found": "4460, Bissonnet Street, Bellaire, Harris County, Texas, 77401, United States",
+"lat": 29.71655,
+"lon": -95.45062
+},
+"4500 MEDICAL CENTER DRIVE|MCKINNEY|75069": {
+"found": "Medical City McKinney, 4500, Medical Center Drive, McKinney, Collin County, Texas, 75069, United Sta",
+"lat": 33.159266,
+"lon": -96.63807
+},
+"4500 S. LANCASTER ROAD|DALLAS|75216": {
+"found": "4500, South Lancaster Road, Dallas, Dallas County, Texas, 75216, United States",
+"lat": 32.6955,
+"lon": -96.787072
+},
+"4502 MEDICAL DR|SAN ANTONIO|78229": {
+"found": "University Hospital, 4502, Medical Drive, Medical Center, South Texas Medical Center, San Antonio, B",
+"lat": 29.507826,
+"lon": -98.578094
+},
+"4505 HOLIDAY HILL RD, STE 110|MIDLAND|79707": {
+"found": "4505, Holiday Hill Road, Fasken Vineyard Complex, Midland, Midland County, Texas, 79707, United Stat",
+"lat": 32.024444,
+"lon": -102.161945
+},
+"4510 MEDICAL CENTER DRIVE SUITE 150|MCKINNEY|75069": {
+"tried": "nominatim, photon (any street type)"
+},
+"4511 HORIZON HILL BLVD SUITE 175|SAN ANTONIO|78212": {
+"found": "4511, Horizon Hill Boulevard, San Antonio, Bexar County, Texas, 78229, United States",
+"lat": 29.518613,
+"lon": -98.558045
+},
+"4600 EAST SAM HOUSTON PARKWAY SOUTH|PASADENA|77505": {
+"found": "CHI Saint Luke\u2019s Health - Patients Medical Center, 4600, East Sam Houston Parkway South, Pasadena, H",
+"lat": 29.64116,
+"lon": -95.161558
+},
+"461 WESTPARK WAY|EULESS|76040": {
+"found": "461, Westpark Way, Euless, Tarrant County, Texas, 76040, United States",
+"lat": 32.830463,
+"lon": -97.12055
+},
+"4611 GUADALUPE STREET, STE 100|AUSTIN|78751": {
+"found": "4611, Guadalupe Street, The Triangle, Austin, Travis County, Texas, 78751, United States",
+"lat": 30.313245,
+"lon": -97.730953
+},
+"4700 ALLIANCE BOULEVARD|PLANO|75093": {
+"found": "Baylor Scott & White Medical Center - Plano, 4700, Alliance Boulevard, Plano, Collin County, Texas, ",
+"lat": 33.014138,
+"lon": -96.791111
+},
+"4700 SETON CENTER PARKWAY SUITE 100|AUSTIN|78759": {
+"found": "4700, Seton Center Parkway, Quarry, Austin, Travis County, Texas, 78759, United States",
+"lat": 30.403487,
+"lon": -97.741958
+},
+"4708 ALLIANCE BLVD SUITE 210|PLANO|75093": {
+"found": "4708, Alliance Boulevard, Plano, Collin County, Texas, 75252, United States",
+"lat": 33.014047,
+"lon": -96.791572
+},
+"4780 N JOSEY LANE|CARROLLTON|75010": {
+"found": "Baylor Scott & White Surgicare - Carrollton, 4780, North Josey Lane, Carrollton, Denton County, Texa",
+"lat": 33.043228,
+"lon": -96.880004
+},
+"4800 FEDERAL PLAZA DRIVE|HOUSTON|77092": {
+"found": "4800, Federal Plaza Drive, Rosslyn, Langwood, Houston, Harris County, Texas, 77092, United States",
+"lat": 29.836373,
+"lon": -95.484396
+},
+"4801 BISSONNNET ST|BELLAIRE|77401": {
+"found": "First Surgical Hospital 4801 Bissonnet Street Bellaire 77401",
+"lat": 29.709977,
+"lon": -95.462671,
+"src": "photon"
+},
+"4801 TROUP HWY STE 800|TYLER|75703": {
+"found": "4801, Troup Highway, Tyler, Smith County, Texas, 75703, United States",
+"lat": 32.299746,
+"lon": -95.266176
+},
+"4810 NORTH LOOP 289|LUBBOCK|79416": {
+"found": "Lubbock Heart & Surgical Hospital, 4810, North Loop 289, Lubbock, Lubbock County, Texas, 79416, Unit",
+"lat": 33.602973,
+"lon": -101.915801
+},
+"4815 ALAMEDA AVE|EL PASO|79905": {
+"found": "University Medical Center, 4815, Alameda Avenue, El Paso, El Paso County, Texas, 79905, United State",
+"lat": 31.77201,
+"lon": -106.434904
+},
+"4825 ALLIANCE BLVD SUITE 300|PLANO|75093": {
+"found": "4825, Alliance Boulevard, Plano, Collin County, Texas, 75093, United States",
+"lat": 33.014738,
+"lon": -96.792882
+},
+"4845 ALAMEDA AVENUE|EL PASO|79905": {
+"found": "El Paso Children's Hospital, 4845, Alameda Avenue, El Paso, El Paso County, Texas, 79905, United Sta",
+"lat": 31.771455,
+"lon": -106.433956
+},
+"4900 MUELLER BLVD|AUSTIN|78723": {
+"found": "Lancaster/Barbara Jordan, 4900, Mueller Boulevard, Aldrich Street District, Austin, Travis County, T",
+"lat": 30.305739,
+"lon": -97.707522
+},
+"4920 NE STALLINGS DRIVE|NACOGDOCHES|75965": {
+"found": "Nacogdoches Medical Center, 4920, Northeast Stallings Drive, Nacogdoches, Nacogdoches County, Texas,",
+"lat": 31.652749,
+"lon": -94.653765
+},
+"4948 N E STALLINGS DRIVE|NACOGDOCHES|75961": {
+"tried": "nominatim, photon (any street type)"
+},
+"499 10TH STREET|FLORESVILLE|78114": {
+"found": "Connally Memorial Medical Center, 499, 10th Street, Floresville, Wilson County, Texas, 78114, United",
+"lat": 29.15891,
+"lon": -98.17477
+},
+"500 LIPSCOMB STREET|FORT WORTH|76104": {
+"found": "500, Lipscomb Street, Fort Worth, Tarrant County, Texas, 76102, United States",
+"lat": 32.739318,
+"lon": -97.333574
+},
+"500 N HIGHLAND AVENUE|SHERMAN|75091": {
+"found": "Sherman Medical Center, 500, North Highland Avenue, Sherman, Grayson County, Texas, 75092, United St",
+"lat": 33.636071,
+"lon": -96.623549
+},
+"500 W 4TH STREET|ODESSA|79761": {
+"found": "Medical Center Hospital, 500, West 4th Street, Sunset Place, Westside, Odessa, Ector County, Texas, ",
+"lat": 31.845017,
+"lon": -102.373672
+},
+"500 W MEDICAL CENTER BLVD|WEBSTER|77598": {
+"tried": "nominatim, photon (any street type)"
+},
+"500 WEST MAIN STREET|LEWISVILLE|75057": {
+"found": "Medical Arts, 500, West Main Street, Lewisville, Denton County, Texas, 75057, United States",
+"lat": 33.04545,
+"lon": -97.003456
+},
+"5000 LONG PRAIRIE ROAD|FLOWER MOUND|75028": {
+"found": "Texas Health Orthopedic Surgery Center, 5000, Long Prairie Road, Flower Mound, Denton County, Texas,",
+"lat": 33.054253,
+"lon": -97.074028
+},
+"501 S RAGSDALE|JACKSONVILLE|75766": {
+"found": "UT Health - Jacksonville 501 South Ragsdale Street Jacksonville 75766",
+"lat": 31.96011,
+"lon": -95.270559,
+"src": "photon"
+},
+"5016 GILMER RD, STE B.|LONGVIEW|75604": {
+"found": "5016, Gilmer Road, Spring Hill, Longview, Gregg County, Texas, 75604, United States",
+"lat": 32.573199,
+"lon": -94.808219
+},
+"5016 S US HIGHWAY 75|DENISON|75020": {
+"found": "Texoma Medical Center 5016 South Highway 75 Denison 75020",
+"lat": 33.710295,
+"lon": -96.585449,
+"src": "photon"
+},
+"501B EAST KOLSTAD|PALESTINE|75801": {
+"tried": "nominatim, photon (any street type)"
+},
+"502 MADISON OAK DRIVE, SUITE 500|SAN ANTONIO|78258": {
+"found": "502, Madison Oak Drive, San Antonio, Bexar County, Texas, 78258, United States",
+"lat": 29.621174,
+"lon": -98.490456
+},
+"502 MEDICAL CENTER BLVD|WEBSTER|77598": {
+"tried": "nominatim, photon (any street type)"
+},
+"504 LIPSCOMB STREET|BONHAM|75418": {
+"found": "TMC Bonham Hospital, 504, Lipscomb Street, Bonham, Fannin County, Texas, 75418, United States",
+"lat": 33.578344,
+"lon": -96.166304
+},
+"504 MEDICAL CENTER BLVD|CONROE|77304": {
+"found": "Conroe Regional Medical Center, 504, Medical Center Boulevard, Conroe, Montgomery County, Texas, 773",
+"lat": 30.284319,
+"lon": -95.468186
+},
+"505 SOUTH JOHN REDDITT DRIVE|LUFKIN|75904": {
+"found": "Woodland Heights Medical Center, 505, South John Redditt Drive, Lufkin, Angelina County, Texas, 7590",
+"lat": 31.328424,
+"lon": -94.754004
+},
+"5055 W PARK BLVD SUITE 800|PLANO|75093": {
+"found": "Robot Entertainment, 5055, West Park Boulevard, Plano, Collin County, Texas, 75093, United States",
+"lat": 33.029699,
+"lon": -96.798747
+},
+"506 E SAN ANTONIO ST|VICTORIA|77901": {
+"found": "DeTar Hospital Navarro, 506, East San Antonio Street, Victoria, Victoria County, Texas, 77901, Unite",
+"lat": 28.808134,
+"lon": -96.997703
+},
+"5085 W PARK BLVD SUITE 180B|PLANO|75093": {
+"found": "nonPareil, 5085, West Park Boulevard, Plano, Collin County, Texas, 75093, United States",
+"lat": 33.031036,
+"lon": -96.798489
+},
+"5109 80TH STREET|LUBBOCK|79424": {
+"found": "5109, 80th Street, Lubbock, Lubbock County, Texas, 79424, United States",
+"lat": 33.521039,
+"lon": -101.919792
+},
+"5115 FANNIN ST, STE 1010|HOUSTON|77004": {
+"found": "5115, Fannin Street, Museum District, Houston, Harris County, Texas, 77004, United States",
+"lat": 29.728381,
+"lon": -95.38614
+},
+"5115 FANNIN ST, STE 103|HOUSTON|77004": {
+"found": "5115, Fannin Street, Museum District, Houston, Harris County, Texas, 77004, United States",
+"lat": 29.728381,
+"lon": -95.38614
+},
+"5146 PRESTON AVENUE|PASADENA|77504": {
+"tried": "nominatim, photon (any street type)"
+},
+"515 SOUTH NOLEN DRIVE|SOUTHLAKE|76092": {
+"found": "515, South Nolen Drive, Southlake, Tarrant County, Texas, 76092, United States",
+"lat": 32.935336,
+"lon": -97.108878
+},
+"520 E 6TH STREET|ODESSA|79761": {
+"found": "Odessa Regional Medical Center, 520, East 6th Street, Owen, Odessa, Ector County, Texas, 79761, Unit",
+"lat": 31.851886,
+"lon": -102.364432
+},
+"520 EAST EUCLID AVE|SAN ANTONIO|78212": {
+"found": "520, East Euclid Avenue, Pearl, San Antonio, Bexar County, Texas, 78212, United States",
+"lat": 29.439445,
+"lon": -98.489341
+},
+"5200 HARRY HINES BLVD|DALLAS|75235": {
+"found": "5200, Harry Hines Boulevard, Dallas, Dallas County, Texas, 75235, United States",
+"lat": 32.814346,
+"lon": -96.83527
+},
+"5200-B DAVIS LANE SUITE 100|AUSTIN|78749": {
+"tried": "nominatim, photon (any street type)"
+},
+"5223 HAMILTON WOLFE,|SAN ANTONIO|78229": {
+"found": "5223, Hamilton Wolfe Road, Medical Center, South Texas Medical Center, San Antonio, Bexar County, Te",
+"lat": 29.518522,
+"lon": -98.590392
+},
+"524 SINGING OAKS #101|SPRING BRANCH|78070": {
+"tried": "nominatim, photon (any street type)"
+},
+"5245 W US 290|AUSTIN|78735": {
+"found": "Baylor Scott & White Medical Center - Austin 5245 West US 290 Frontage Road Austin 78735",
+"lat": 30.234806,
+"lon": -97.834789,
+"src": "photon"
+},
+"5252 WEST UNIVERSITY DRIVE|MC KINNEY|75071": {
+"found": "5252 West University Drive McKinney 75069",
+"lat": 33.221339,
+"lon": -96.682786,
+"src": "photon"
+},
+"530 CLARA BARTON SUITE 100|GARLAND|75042": {
+"found": "530, Clara Barton Boulevard, Garland, Dallas County, Texas, 75042, United States",
+"lat": 32.917159,
+"lon": -96.661833
+},
+"5300 NORTH ST|NACOGDOCHES|75965": {
+"found": "5300, North Street, Nacogdoches, Nacogdoches County, Texas, 75965, United States",
+"lat": 31.655195,
+"lon": -94.65649
+},
+"5301 N G ST|MCALLEN|78504": {
+"tried": "nominatim, photon (any street type)"
+},
+"5313 MCPHERSON ROAD|LAREDO|78041": {
+"found": "5313, McPherson Road, Del Mar, Laredo, Webb County, Texas, 78041, United States",
+"lat": 27.548769,
+"lon": -99.481802
+},
+"5329 SERENE HILLS DRIVE SUITE 100|LAKEWAY|78738": {
+"found": "5329, Serene Hills Drive, Serene Hills, Lakeway, Travis County, Texas, 78738, United States",
+"lat": 30.32108,
+"lon": -98.005611
+},
+"5330 N LOOP 1604 W|SAN ANTONIO|78249": {
+"found": "South Texas Specialty Hospital, 5330, North Loop 1604 West, San Antonio, Bexar County, Texas, 78249,",
+"lat": 29.590758,
+"lon": -98.590237
+},
+"5330 OVERPASS ROAD SUITE 110|BUDA|78610": {
+"found": "Baylor Scott And White Medical Center - Buda, 5330, Overpass Road, Buda, Hays County, Texas, 78610, ",
+"lat": 30.076709,
+"lon": -97.820097
+},
+"538 BROADWAY|WINNIE|77665": {
+"found": "Riceland Medical Center, 538, Broadway Avenue, Winnie, Chambers County, Texas, 77665, United States",
+"lat": 29.81974,
+"lon": -94.376383
+},
+"539 SOUTHEAST 2ND|TULIA|79088": {
+"found": "Swisher Memorial Hospital, 539, Southeast 2nd Street, Tulia, Swisher County, Texas, 79088, United St",
+"lat": 34.53619,
+"lon": -101.755893
+},
+"5404 SUMMERHILL RD|TEXARKANA|75503": {
+"found": "5404, Summerhill Road, Texarkana, Bowie County, Texas, 75503, United States",
+"lat": 33.471228,
+"lon": -94.067591
+},
+"5407 N MESA ST, STE 100|EL PASO|79912": {
+"found": "5407, North Mesa Street, Coronado Hills, El Paso, El Paso County, Texas, 79912, United States",
+"lat": 31.818665,
+"lon": -106.516148
+},
+"5494 GLEN LAKES DRIVE|DALLAS|75231": {
+"found": "5494, Glen Lakes Drive, Dallas, Dallas County, Texas, 75231, United States",
+"lat": 32.88314,
+"lon": -96.765683
+},
+"5501 SOUTH EXPRESSWAY 77|HARLINGEN|78550": {
+"tried": "nominatim, photon (any street type)"
+},
+"5501 SOUTH MCCOLL|EDINBURG|78539": {
+"found": "Doctors Hospital at Renaissance, 5501, South McColl Road, Borderland Retreat Colonia, Edinburg, Hida",
+"lat": 26.253732,
+"lon": -98.206212
+},
+"551 HILL COUNTRY DRIVE|KERRVILLE|78028": {
+"found": "Peterson Regional Medical Center, 551, Hill Country Drive, Kerrville, Kerr County, Texas, 78028, Uni",
+"lat": 30.043646,
+"lon": -99.152763
+},
+"5510 PRESIDIO PARKWAY SUITE 100|SAN ANTONIO|78249": {
+"found": "Methodist Hospital Landmark, 5510, Presidio Parkway, San Antonio, Bexar County, Texas, 78249, United",
+"lat": 29.584935,
+"lon": -98.592223
+},
+"5520 NORTH C STREET|MCALLEN|78504": {
+"found": "5520, North C Street, McAllen, Hidalgo County, Texas, 78504, United States",
+"lat": 26.250437,
+"lon": -98.207884
+},
+"555 CREEKSIDE XING,|NEW BRAUNFELS|78130": {
+"found": "555, Creekside Crossing, Freiheit, New Braunfels, Comal County, Texas, 78130, United States",
+"lat": 29.71992,
+"lon": -98.071981
+},
+"5550 KELLEY STREET, 3RD FLOOR|HOUSTON|77026": {
+"found": "LBJ Hospital Garage, 5550, Kelley Street, Kashmere Gardens, Houston, Harris County, Texas, 77026, Un",
+"lat": 29.811507,
+"lon": -95.313955
+},
+"5601 HEALTH CENTER DRIVE|ABILENE|79606": {
+"found": "5601, Health Center Drive, Abilene, Taylor County, Texas, 79606, United States",
+"lat": 32.41783,
+"lon": -99.798326
+},
+"5601 WARREN PARKWAY|FRISCO|75034": {
+"found": "Baylor Scott & White Medical Center \u2013 Frisco, 5601, Warren Parkway, Frisco, Collin County, Texas, 75",
+"lat": 33.105278,
+"lon": -96.837691
+},
+"5609 DEAUVILLE BLVD|MIDLAND|79706": {
+"found": "5609, Deauville Boulevard, Westridge Park, Midland, Midland County, Texas, 79706, United States",
+"lat": 31.99177,
+"lon": -102.155679
+},
+"5609 DONNYBROOK AVENUE|TYLER|75703": {
+"found": "5609, Donnybrook Avenue, Tyler, Smith County, Texas, 75703, United States",
+"lat": 32.28493,
+"lon": -95.301136
+},
+"5617 TIMBERGATE DRIVE|CORPUS CHRISTI|78414": {
+"tried": "nominatim, photon (any street type)"
+},
+"5656 BEE CAVES ROAD, SUITE M-302|AUSTIN|78746": {
+"found": "Building H, 5656, Bee Caves Road, Austin, Travis County, Texas, 78746, United States",
+"lat": 30.295627,
+"lon": -97.824158
+},
+"5662 N. MESA ST. SUITE B|EL PASO|79912": {
+"found": "5662, North Mesa Street, Coronado Hills, El Paso, El Paso County, Texas, 79912, United States",
+"lat": 31.821437,
+"lon": -106.519263
+},
+"5700 NORTH EXPRESSWAY SUITE 201|BROWNSVILLE|78526": {
+"found": "Gomez Cardiovascular Clinic, 5700, North Expressway, Hacienda Gardens Colonia, Brownsville, Cameron ",
+"lat": 25.987587,
+"lon": -97.518987
+},
+"5721 ESPLANADE DRIVE|CORPUS CHRISTI|78414": {
+"found": "5721, Esplanade Drive, South Side, Corpus Christi, Nueces County, Texas, 78414, United States",
+"lat": 27.688325,
+"lon": -97.379251
+},
+"5734 SPOHN DRIVE SUITE B|CORPUS CHRISTI|78414": {
+"found": "5734, Spohn Drive, South Side, Corpus Christi, Nueces County, Texas, 78414, United States",
+"lat": 27.687403,
+"lon": -97.381342
+},
+"5744 LBJ FREEWAY SUITE 200|DALLAS|75240": {
+"found": "5744 LBJ Freeway Dallas 75240",
+"lat": 32.925013,
+"lon": -96.808239,
+"src": "photon"
+},
+"5900 ALTAMESA BLVD|FORT WORTH|76132": {
+"found": "Texas Health, 5900, Altamesa Boulevard, Fort Worth, Tarrant County, Texas, 76132, United States",
+"lat": 32.646704,
+"lon": -97.418367
+},
+"5901 S HULEN STREET|FORT WORTH|76132": {
+"found": "5901, South Hulen Street, Fort Worth, Tarrant County, Texas, 76132, United States",
+"lat": 32.663751,
+"lon": -97.402561
+},
+"5909 CROSSTOWN SH 286|CORPUS CHRISTI|78417": {
+"tried": "nominatim, photon (any street type)"
+},
+"591 WEST MAIN ST|LEWISVILLE|75057": {
+"found": "591, West Main Street, Lewisville, Denton County, Texas, 75057, United States",
+"lat": 33.046244,
+"lon": -97.005622
+},
+"5950 SUMMERHILL ROAD|TEXARKANA|75503": {
+"found": "5950, Summerhill Road, Texarkana, Bowie County, Texas, 75503, United States",
+"lat": 33.47847,
+"lon": -94.071146
+},
+"6 LAKEWAY CENTRE CT|LAKEWAY|78734": {
+"found": "6, Lakeway Centre Court, Vistas at Lakeway, Lakeway, Travis County, Texas, 78734, United States",
+"lat": 30.346247,
+"lon": -97.962188
+},
+"600 E INTERSTATE 20 PO BOX 640|STANTON|79782": {
+"found": "Martin County Hospital 600 East Interstate 20 Stanton 79782",
+"lat": 32.139533,
+"lon": -101.787263,
+"src": "photon"
+},
+"600 ELIZABETH STREET|CORPUS CHRISTI|78404": {
+"found": "CHRISTUS Spohn Hospital Corpus Christi - Shoreline, 600, Elizabeth Street, Downtown, Corpus Christi,",
+"lat": 27.777879,
+"lon": -97.39509
+},
+"600 FERRIS AVENUE SUITE B|WAXAHACHIE|75165": {
+"found": "600, Ferris Avenue, W B Reinmiller House, Waxahachie, Ellis County, Texas, 75165, United States",
+"lat": 32.392039,
+"lon": -96.846994
+},
+"600 HIGHWAY 349 NORTH|IRAAN|79744": {
+"found": "Iraan General Hospital District 600 Highway 349 North Iraan 79744",
+"lat": 30.914839,
+"lon": -101.906835,
+"src": "photon"
+},
+"600 SOUTH AUSTIN ROAD|EAGLE LAKE|77434": {
+"found": "Rice Medical Center 600 South Austin Road Eagle Lake 77434",
+"lat": 29.587469,
+"lon": -96.345128,
+"src": "photon"
+},
+"600 SOUTH BONHAM STREET|MEXIA|76667": {
+"found": "Parkview Regional Hospital, 600, South Bonham Street, Springfield, Mexia, Limestone County, Texas, 7",
+"lat": 31.675389,
+"lon": -96.480571
+},
+"6001 KYLE PKWY|KYLE|78640": {
+"found": "Seton Medical Center Hays, 6001, Kyle Parkway, Kyle, Hays County, Texas, 78640, United States",
+"lat": 30.008978,
+"lon": -97.852467
+},
+"6005 HOLLY ROAD|CORPUS CHRISTI|78412": {
+"found": "6005, Holly Road, South Side, Corpus Christi, Nueces County, Texas, 78412, United States",
+"lat": 27.693837,
+"lon": -97.367114
+},
+"601 E 15TH STREET|AUSTIN|78701": {
+"found": "601, East 15th Street, Medical District, Austin, Travis County, Texas, 78701, United States",
+"lat": 30.275385,
+"lon": -97.734364
+},
+"601 WEST STATE HWY 6, SUITE 109|WACO|76710": {
+"tried": "nominatim, photon (any street type)"
+},
+"6010 AMARILLO BLVD. WEST|AMARILLO|79106": {
+"found": "Thomas E. Creek VA Medical Center, 6010, West Amarillo Boulevard, Amarillo, Potter County, Texas, 79",
+"lat": 35.203752,
+"lon": -101.907127
+},
+"6011 W SAM HOUSTON PKWY SOUTH|HOUSTON|77072": {
+"found": "West Chase Houston Hospital, 6011, West Sam Houston Parkway South, Chinatown, Westchase, Houston, Ha",
+"lat": 29.711451,
+"lon": -95.556165
+},
+"602 INDIANA AVENUE|LUBBOCK|79415": {
+"found": "602, Indiana Avenue, Lubbock, Lubbock County, Texas, 79415, United States",
+"lat": 33.590804,
+"lon": -101.887677
+},
+"6020 W PARKER ROAD|PLANO|75093": {
+"found": "6020, West Parker Road, Plano, Collin County, Texas, 75093, United States",
+"lat": 33.04505,
+"lon": -96.830908
+},
+"6020 WEST PLANO PARKWAY|PLANO|75093": {
+"found": "6020, West Plano Parkway, Plano, Collin County, Texas, 75093, United States",
+"lat": 33.016208,
+"lon": -96.830196
+},
+"603 E AMBER STREET SUITE 103|SAN ANTONIO|78221": {
+"found": "603, East Amber Street, San Antonio, Bexar County, Texas, 78221, United States",
+"lat": 29.345239,
+"lon": -98.487105
+},
+"6045 ALMA ROAD SUITE 100|MCKINNEY|75070": {
+"found": "Victory Medical Center Craig Ranch, 6045, North Alma Road, McKinney, Collin County, Texas, 75070, Un",
+"lat": 33.142734,
+"lon": -96.707441
+},
+"605 HOLDERRIETH|TOMBALL|77375": {
+"found": "Tomball Regional Medical Center, 605, Holderrieth Boulevard, Tomball, Harris County, Texas, 77375, U",
+"lat": 30.087446,
+"lon": -95.623255
+},
+"605 N MAPLE STREET|MUENSTER|76252": {
+"found": "Muenster Memorial Hospital, 605, North Maple Street, Muenster, Cooke County, Texas, 76252, United St",
+"lat": 33.653599,
+"lon": -97.380584
+},
+"608 AVENUE B|BALLINGER|76821": {
+"found": "Ballinger Memorial Hospital, 608, Avenue B, Ballinger, Runnels County, Texas, 76821, United States",
+"lat": 31.750144,
+"lon": -99.962768
+},
+"608 NORTH KEY AVENUE|LAMPASAS|76550": {
+"found": "AdventHealth Rollins Brook, 608, North Key Avenue, Lampasas, Lampasas County, Texas, 76550, United S",
+"lat": 31.072526,
+"lon": -98.186377
+},
+"610 KAMALI DRIVE|HARLINGEN|78550": {
+"found": "610, Kamali Drive, Harlingen, Cameron County, Texas, 78550, United States",
+"lat": 26.163157,
+"lon": -97.677684
+},
+"6100 HARRIS PKWY|FORT WORTH|76132": {
+"found": "Harris Methodist Southwest Hospital, 6100, Harris Parkway, Fort Worth, Tarrant County, Texas, 76132,",
+"lat": 32.657766,
+"lon": -97.420764
+},
+"6101 WINDHAVEN PARKWAY SUITE 195|PLANO|75093": {
+"found": "6101, Windhaven Parkway, Plano, Collin County, Texas, 75093, United States",
+"lat": 33.056312,
+"lon": -96.831642
+},
+"6110 SHERRY LANE|DALLAS|75225": {
+"found": "6110, Sherry Lane, Preston Center, Dallas, Dallas County, Texas, 75225, United States",
+"lat": 32.862079,
+"lon": -96.806234
+},
+"6121 NORTH STATE HWY 161, STE100|IRVING|75038": {
+"found": "UT Southwestern Medical Center at Las Colinas 6121 North State Highway 161 Irving 75038",
+"lat": 32.891075,
+"lon": -96.981815,
+"src": "photon"
+},
+"6160 WINDHAVEN PARKWAY SUITE 220|PLANO|75093": {
+"found": "6160, Windhaven Parkway, Plano, Collin County, Texas, 75093, United States",
+"lat": 33.05536,
+"lon": -96.832686
+},
+"6200 I-40 WEST|AMARILLO|79106": {
+"tried": "nominatim, photon (any street type)"
+},
+"6200 W PARKER RD|PLANO|75093": {
+"found": "Texas Health Presbyterian Hospital Plano, 6200, West Parker Road, Plano, Collin County, Texas, 75093",
+"lat": 33.043745,
+"lon": -96.83626
+},
+"6201 HARRY HINES BLVD|DALLAS|75390": {
+"found": "6201, Harry Hines Boulevard, Dallas, Dallas County, Texas, 75235, United States",
+"lat": 32.819761,
+"lon": -96.847236
+},
+"621 CAMDEN STREET|SAN ANTONIO|78215": {
+"found": "621, Camden Street, Pearl, Downtown, San Antonio, Bexar County, Texas, 78215, United States",
+"lat": 29.436858,
+"lon": -98.488992
+},
+"621 NORTH HALL STREET|DALLAS|75226": {
+"found": "Parking Lot 19, 621, North Hall Street, Dallas, Dallas County, Texas, 75226, United States",
+"lat": 32.787538,
+"lon": -96.780861
+},
+"6214 SARATOGA BLVD, BLDG. 006|CORPUS CHRISTI|78414": {
+"found": "6214, Saratoga Boulevard, South Side, Corpus Christi, Nueces County, Texas, 78414, United States",
+"lat": 27.679535,
+"lon": -97.371645
+},
+"6300 REGIONAL PLAZA STE 475|ABILENE|79606": {
+"found": "6300, Regional Plaza, Abilene, Taylor County, Texas, 79606, United States",
+"lat": 32.374037,
+"lon": -99.744788
+},
+"6311 SOUTHWEST BLVD|BENBROOK|76132": {
+"found": "6311, Southwest Boulevard, Benbrook, Tarrant County, Texas, 76132, United States",
+"lat": 32.691267,
+"lon": -97.418194
+},
+"6316 PRECINCT LINE ROAD SUITE B|HURST|76054": {
+"found": "6316, Precinct Line Road, Hurst, Tarrant County, Texas, 76054, United States",
+"lat": 32.86035,
+"lon": -97.186004
+},
+"6317 HARRIS PARKWAY SUITE 100|FORT WORTH|76132": {
+"found": "Texas Health Professional Building 2, 6317, Harris Parkway, Fort Worth, Tarrant County, Texas, 76132",
+"lat": 32.657513,
+"lon": -97.418457
+},
+"6317 HARRIS PARKWAY SUITE 200|FORT WORTH|76132": {
+"found": "Texas Health Professional Building 2, 6317, Harris Parkway, Fort Worth, Tarrant County, Texas, 76132",
+"lat": 32.657513,
+"lon": -97.418457
+},
+"6350 HIGHWAY 90 A, SUITE 700|SUGAR LAND|77478": {
+"found": "Lexington Plastic Surgeons 6350 Highway 90A Sugar Land 77478",
+"lat": 29.606227,
+"lon": -95.663787,
+"src": "photon"
+},
+"6401 SPUR 327|LUBBOCK|79424": {
+"found": "6401, Spur 327, Lubbock, Lubbock County, Texas, 79424, United States",
+"lat": 33.538793,
+"lon": -101.953593
+},
+"6404 NURSERY DRIVE, SUITE 300|VICTORIA|77904": {
+"found": "6404, Nursery Drive, Dupre, Victoria, Victoria County, Texas, 77904, United States",
+"lat": 28.851278,
+"lon": -97.018265
+},
+"6405 W PARKER RD STE 370|PLANO|75093": {
+"found": "Papa John's, 6405, West Parker Road, Plano, Collin County, Texas, 75093, United States",
+"lat": 33.045753,
+"lon": -96.841078
+},
+"6411 FANNIN|HOUSTON|77030": {
+"found": "Memorial Hermann-Texas Medical Center, 6411, Fannin Street, Texas Medical Center, Houston, Harris Co",
+"lat": 29.713388,
+"lon": -95.396045
+},
+"6421 SARATOGA BLVD BLDG 105|CORPUS CHRISTI|78414": {
+"found": "6421, Saratoga Boulevard, South Side, Corpus Christi, Nueces County, Texas, 78414, United States",
+"lat": 27.6776,
+"lon": -97.368145
+},
+"6424 E RIVERPARK DR|SUGAR LAND|77479": {
+"tried": "nominatim, photon (any street type)"
+},
+"6427 OLD BABCOCK RD. STE 100|SAN ANTONIO|78240": {
+"tried": "nominatim, photon (any street type)"
+},
+"643 I-45|HUNTSVILLE|77340": {
+"tried": "nominatim, photon (any street type)"
+},
+"6449 CENTRAL PARK BLVD|ABILENE|79606": {
+"found": "6449, Central Park Boulevard, Abilene, Taylor County, Texas, 79606, United States",
+"lat": 32.371691,
+"lon": -99.747733
+},
+"647 N MILLER ROAD|MANSFIELD|76063": {
+"found": "647, North Miller Road, Mansfield, Tarrant County, Texas, 76063, United States",
+"lat": 32.566675,
+"lon": -97.090592
+},
+"6501 BLANCO ROAD|SAN ANTONIO|78216": {
+"found": "6501, Blanco Road, San Antonio, Bexar County, Texas, 78216, United States",
+"lat": 29.515476,
+"lon": -98.506895
+},
+"6551 HARRIS PARKWAY|FORT WORTH|76132": {
+"found": "6551, Harris Parkway, Fort Worth, Tarrant County, Texas, 76132, United States",
+"lat": 32.65481,
+"lon": -97.418413
+},
+"6560 FANNIN SUITE 600|HOUSTON|77030": {
+"found": "Scurlock Tower Parking, 6560, Fannin Street, Texas Medical Center, Houston, Harris County, Texas, 77",
+"lat": 29.710706,
+"lon": -95.40108
+},
+"6565 FANNIN|HOUSTON|77030": {
+"found": "Houston Methodist Hospital, 6565, Fannin Street, Texas Medical Center, Houston, Harris County, Texas",
+"lat": 29.710817,
+"lon": -95.399264
+},
+"6620 MAIN STREET, SUITE 1500|HOUSTON|77030": {
+"found": "6620, Main Street, Texas Medical Center, Houston, Harris County, Texas, 77030, United States",
+"lat": 29.709963,
+"lon": -95.402211
+},
+"6621 FANNIN STREET|HOUSTON|77030": {
+"found": "Texas Children's Hospital - West Tower, 6621, Fannin Street, Texas Medical Center, Houston, Harris C",
+"lat": 29.708002,
+"lon": -95.401458
+},
+"6720 BERTNER AVE, STE MC1-266|HOUSTON|77030": {
+"found": "Baylor St. Luke's Medical Center, 6720, Bertner Avenue, Texas Medical Center, Houston, Harris County",
+"lat": 29.708143,
+"lon": -95.400441
+},
+"6800 N MACARTHUR BLVD|IRVING|75039": {
+"found": "6800, North MacArthur Boulevard, Las Colinas, Irving, Dallas County, Texas, 75039, United States",
+"lat": 32.90201,
+"lon": -96.958581
+},
+"6800 SCENIC DR|ROWLETT|75088": {
+"found": "Baylor Scott & White Medical Center \u2013 Lake Pointe, 6800, Scenic Drive, Rowlett, Rockwall County, Tex",
+"lat": 32.917708,
+"lon": -96.508613
+},
+"6801 OAKMONT BLVD|FORT WORTH|76132": {
+"found": "Parks Physical Therapy, 6801, Oakmont Boulevard, Fort Worth, Tarrant County, Texas, 76132, United St",
+"lat": 32.662017,
+"lon": -97.414303
+},
+"6818 AUSTIN CENTER BLVD, STE 200|AUSTIN|78731": {
+"found": "6818, Austin Center Boulevard, Austin, Travis County, Texas, 78731, United States",
+"lat": 30.350517,
+"lon": -97.75176
+},
+"6818 AUSTIN CTR BLVD SUITE 100|AUSTIN|78731": {
+"found": "6818, Austin Center Boulevard, Austin, Travis County, Texas, 78731, United States",
+"lat": 30.350517,
+"lon": -97.75176
+},
+"6819 PLUM CREEK|AMARILLO|79124": {
+"found": "Quail Creek Surgical Hospital, 6819, Plum Creek Drive, Amarillo, Potter County, Texas, 79106, United",
+"lat": 35.210408,
+"lon": -101.912763
+},
+"6830 HEUERMANN ROAD|SAN ANTONIO|78256": {
+"found": "6830, Heuermann Road, San Antonio, Bexar County, Texas, 78256, United States",
+"lat": 29.636492,
+"lon": -98.617248
+},
+"6833 PLUM CREEK|AMARILLO|79124": {
+"found": "Amarillo Endoscopy Center, 6833, Plum Creek Drive, Amarillo, Potter County, Texas, 79124, United Sta",
+"lat": 35.209403,
+"lon": -101.911977
+},
+"690 S LOOP 336 W, SUITE 130|CONROE|77304": {
+"found": "690, South Loop 336 West, Conroe, Montgomery County, Texas, 77304, United States",
+"lat": 30.281485,
+"lon": -95.471783
+},
+"6901 MEDICAL PARKWAY|WACO|76712": {
+"found": "Ascension Providence, 6901, Medical Parkway, Waco, McLennan County, Texas, 76712, United States",
+"lat": 31.514362,
+"lon": -97.199475
+},
+"6901 SNIDER PLAZA SUITE 300|DALLAS|75205": {
+"found": "6901, Snider Plaza, University Park, Dallas County, Texas, 75205, United States",
+"lat": 32.849473,
+"lon": -96.7877
+},
+"6902 N NAVARRO ST. SUITE 200|VICTORIA|77904": {
+"found": "6902, North Navarro Street, Victoria, Victoria County, Texas, 77904, United States",
+"lat": 28.858683,
+"lon": -96.996746
+},
+"6910 JOHN DAVID CIRCLE STE 200|AMARILLO|79124": {
+"found": "6910, John David Circle, Amarillo, Potter County, Texas, 79124, United States",
+"lat": 35.211824,
+"lon": -101.913506
+},
+"6927 BRISBANE CT, STE 100|SUGAR LAND|77479": {
+"found": "6927, Brisbane Court, Sugar Land, Fort Bend County, Texas, 77479, United States",
+"lat": 29.58024,
+"lon": -95.652389
+},
+"6949 BRYANT IRVIN ROAD SUITE 110|FORT WORTH|76132": {
+"found": "6949, Bryant Irvin Road, Fort Worth, Tarrant County, Texas, 76132, United States",
+"lat": 32.65409,
+"lon": -97.430299
+},
+"6957 W PLANO PARKWAY SUITE 1000|PLANO|75093": {
+"tried": "nominatim, photon (any street type)"
+},
+"6999 MCPHERSON AVENUE SUITE 219|LAREDO|78041": {
+"tried": "nominatim, photon (any street type)"
+},
+"7 MEDICAL PARKWAY|DALLAS|75234": {
+"found": "7, Medical Parkway, Farmers Branch, Dallas County, Texas, 75234, United States",
+"lat": 32.914826,
+"lon": -96.871185
+},
+"700 E MARSHALL AVE|LONGVIEW|75601": {
+"found": "CHRISTUS Good Shepherd Medical Center, 700, East Marshall Avenue, Longview, Gregg County, Texas, 756",
+"lat": 32.501587,
+"lon": -94.730056
+},
+"700 MEDICAL PARKWAY|BRENHAM|77833": {
+"found": "Baylor Scott & White Medical Center \u2013 Brenham, 700, Medical Parkway, Brenham, Washington County, Tex",
+"lat": 30.145277,
+"lon": -96.399741
+},
+"700 SCOTT & WHITE DRIVE|COLLEGE STATION|77845": {
+"found": "Baylor Scott & White Medical Center \u2013 College Station, 700, Scott & White Drive, College Station, Br",
+"lat": 30.582814,
+"lon": -96.278976
+},
+"7000 NORTH MOPAC #120|AUSTIN|78731": {
+"found": "Texan Surgery Center, 7000, North Mopac Expressway, Allandale, Austin, Travis County, Texas, 78731, ",
+"lat": 30.353663,
+"lon": -97.749416
+},
+"7000 W PLANO PARKWAY|PLANO|75093": {
+"tried": "nominatim, photon (any street type)"
+},
+"7003 WOODWAY DRIVE SUITE 307|WOODWAY|76712": {
+"found": "7003, Woodway Drive, Woodway, McLennan County, Texas, 76712, United States",
+"lat": 31.507554,
+"lon": -97.198911
+},
+"701 EAST FM 1626 UNIT 300|AUSTIN|78748": {
+"found": "Medical Plaza at Onion Creek, 701, East FM 1626, Austin, Travis County, Texas, 78748, United States",
+"lat": 30.140559,
+"lon": -97.79811
+},
+"701 EAST RENDON CROWLEY ROAD|BURLESON|76028": {
+"found": "701 East Rendon Crowley Road Fort Worth 76028",
+"lat": 32.581663,
+"lon": -97.308077,
+"src": "photon"
+},
+"701 MCCLINTIC DRIVE|GROESBECK|76642": {
+"found": "Limestone Medical Center, 701, McClintic Drive, Groesbeck, Limestone County, Texas, 76642, United St",
+"lat": 31.532733,
+"lon": -96.531276
+},
+"701 N VIRGINIA ST|PORT LAVACA|77979": {
+"tried": "nominatim, photon"
+},
+"701 SOUTHEAST 5TH STREET|KNOX CITY|79529": {
+"found": "Knox County Hospital, 701, Southeast 5th Street, Knox City, Knox County, Texas, 79529, United States",
+"lat": 33.413613,
+"lon": -99.811359
+},
+"701 TUSCAN DRIVE SUITE 100|IRVING|75039": {
+"found": "Tuscan Surgery Center at Las Colinas, 701, Tuscan Drive, Las Colinas, Irving, Dallas County, Texas, ",
+"lat": 32.89853,
+"lon": -96.957324
+},
+"704 HOSPITAL DRIVE|CARRIZO SPRINGS|78834": {
+"found": "Dimmit Regional Hospital, 704, Hospital Drive, Carrizo Springs, Dimmit County, Texas, 78834, United ",
+"lat": 28.519336,
+"lon": -99.863315
+},
+"705 EAST FELT STREET|BROWNFIELD|79316": {
+"found": "Brownfield Regional Medical Center, 705, East Felt Street, Brownfield, Terry County, Texas, 79316, U",
+"lat": 33.187561,
+"lon": -102.26742
+},
+"707 HIGHLANDER BLVD|ARLINGTON|76015": {
+"found": "Baylor Orthopedic and Spine Hospital, 707, Highlander Boulevard, Arlington, Tarrant County, Texas, 7",
+"lat": 32.682943,
+"lon": -97.116972
+},
+"707 ROLAND ST|SPEARMAN|79081": {
+"found": "Hansford County Hospital, 707, Roland Street, Spearman, Hansford County, Texas, 79081, United States",
+"lat": 36.190368,
+"lon": -101.199273
+},
+"708 S 1ST ST|MULESHOE|79347": {
+"found": "Muleshoe Area Medical Center, 708, South 1st Street, Muleshoe, Bailey County, Texas, 79347, United S",
+"lat": 34.221387,
+"lon": -102.728981
+},
+"710 CYPRESS CREEK PARKWAY|HOUSTON|77090": {
+"found": "Houston Northwest Medical Center, 710, Cypress Creek Parkway, Houston, Harris County, Texas, 77090, ",
+"lat": 30.020676,
+"lon": -95.442669
+},
+"7105 N BARTLETT AVENUE|LAREDO|78041": {
+"tried": "nominatim, photon (any street type)"
+},
+"7114 SAN PEDRO AVENUE|SAN ANTONIO|78216": {
+"found": "7114, San Pedro Avenue, San Antonio, Bexar County, Texas, 78216, United States",
+"lat": 29.511644,
+"lon": -98.499177
+},
+"7115 GREENVILLE AVENUE SUITE 100|DALLAS|75231": {
+"found": "Texas Institute for Surgery At Texas Health Presbyterian Dallas, 7115, Greenville Avenue, Dallas, Da",
+"lat": 32.876813,
+"lon": -96.762135
+},
+"7125 NEW SANGER AVE, SUITE E|WACO|76712": {
+"tried": "nominatim, photon (any street type)"
+},
+"713 E ANDERSON ST|WEATHERFORD|76086": {
+"found": "Medical City Weatherford, 713, East Anderson Street, Weatherford, Parker County, Texas, 76086, Unite",
+"lat": 32.747992,
+"lon": -97.785757
+},
+"715 CAMDEN ST|SAN ANTONIO|78215": {
+"found": "715, Camden Street, Pearl, Downtown, San Antonio, Bexar County, Texas, 78215, United States",
+"lat": 29.437455,
+"lon": -98.487939
+},
+"7150 GREENVILLE AVE SUITE 200|DALLAS|75231": {
+"found": "7150, Greenville Avenue, Dallas, Dallas County, Texas, 75231, United States",
+"lat": 32.876917,
+"lon": -96.76078
+},
+"7150 N GEORGE BUSH HIGHWAY SUITE 101|GARLAND|75044": {
+"found": "7150, North President George Bush Highway, Garland, Dallas County, Texas, 75044, United States",
+"lat": 32.978705,
+"lon": -96.662894
+},
+"717 GENERATIONS DR. SUITE A|NEW BRAUNFELS|78130": {
+"found": "717, Generations Drive, Freiheit, New Braunfels, Comal County, Texas, 78130, United States",
+"lat": 29.721404,
+"lon": -98.063566
+},
+"718 LEXINGTON AVE, STE 101|SAN ANTONIO|78212": {
+"found": "718, Lexington Avenue, San Antonio, Bexar County, Texas, 78212, United States",
+"lat": 29.437621,
+"lon": -98.493029
+},
+"719 WEST COKE ROAD|WINNSBORO|75494": {
+"found": "CHRISTUS Mother Frances Hospital - Winnsboro, 719, West Coke Road, Winnsboro, Wood County, Texas, 75",
+"lat": 32.944733,
+"lon": -95.307143
+},
+"720 1/2 ROLLINGBROOK|BAYTOWN|77521": {
+"tried": "nominatim, photon (any street type)"
+},
+"720 HOSPITAL DRIVE|ANDREWS|79714": {
+"found": "Permian Regional Medical Center, 720, Hospital Drive, Duncan, Andrews, Andrews County, Texas, 79714,",
+"lat": 32.337664,
+"lon": -102.546077
+},
+"7200 OAKMONT BLVD|FORT WORTH|76132": {
+"found": "7200, Oakmont Boulevard, Fort Worth, Tarrant County, Texas, 76132, United States",
+"lat": 32.663552,
+"lon": -97.417911
+},
+"7211 PRESTON ROAD SUITE 2100|PLANO|75024": {
+"tried": "nominatim, photon (any street type)"
+},
+"729 BEDFORD EULESS RD W STE 100|HURST|76053": {
+"found": "729, West Bedford Euless Road, Hurst, Tarrant County, Texas, 76053, United States",
+"lat": 32.833888,
+"lon": -97.185199
+},
+"731 PLAZA BLVD|COPPELL|75019": {
+"tried": "nominatim, photon (any street type)"
+},
+"7310 FLEMING|AMARILLO|79106": {
+"found": "Amarillo Cataract & Eye Surgery Center, 7310, Fleming Avenue, Amarillo, Potter County, Texas, 79106,",
+"lat": 35.193711,
+"lon": -101.922709
+},
+"7400 MERTON MINTER BLVD.|SAN ANTONIO|78229": {
+"found": "Audie L. Murphy Memorial Veterans' Hospital 7400 Merton Minter San Antonio 78229",
+"lat": 29.505893,
+"lon": -98.580703,
+"src": "photon"
+},
+"7401 SOUTH MAIN STREET|HOUSTON|77030": {
+"found": "Texas Orthopedic Hospital 7401 Main Street Houston 77030",
+"lat": 29.700223,
+"lon": -95.409083,
+"src": "photon"
+},
+"7402 JOHN SMITH DR., SUITE 104|SAN ANTONIO,|78229": {
+"found": "7402, John Smith Drive, Medical Center, South Texas Medical Center, San Antonio, Bexar County, Texas",
+"lat": 29.5063,
+"lon": -98.585983
+},
+"750 12TH AVENUE|FORT WORTH|76104": {
+"found": "750, 12th Avenue, Fort Worth, Tarrant County, Texas, 76104, United States",
+"lat": 32.73681,
+"lon": -97.348317
+},
+"750 FISH CREEK THOROUGHFARE, STE 200|MONTGOMERY|77316": {
+"found": "Scott Family Dental, 750, Fish Creek Thoroughfare, Montgomery County, Texas, 77316, United States",
+"lat": 30.285627,
+"lon": -95.574734
+},
+"7502 GREENVILLE AVENUE|DALLAS|75231": {
+"found": "7502, Greenville Avenue, Vickery Meadows PID, Dallas, Dallas County, Texas, 75231, United States",
+"lat": 32.883753,
+"lon": -96.75793
+},
+"7515 MAIN ST SUITE 800|HOUSTON|77030": {
+"found": "7515, Main Street, Houston, Harris County, Texas, 77030, United States",
+"lat": 29.699567,
+"lon": -95.410449
+},
+"755 N 11TH ST STE P3970B|BEAUMONT|77702": {
+"found": "755, North 11th Street, Beaumont, Jefferson County, Texas, 78734, United States",
+"lat": 30.088366,
+"lon": -94.131104
+},
+"7589 PRESTON ROAD SUITE 100|FRISCO|75034": {
+"found": "7589, Preston Road, Frisco, Collin County, Texas, 75035, United States",
+"lat": 33.140401,
+"lon": -96.805431
+},
+"7600 BETTER WAY|FRISCO|75033": {
+"found": "Baylor Scott & White Medical Center, 7600, Better Way, Frisco, Collin County, Texas, 75078, United S",
+"lat": 33.210181,
+"lon": -96.815893
+},
+"7600 FANNIN|HOUSTON|77054": {
+"found": "The Woman's Hospital of Texas, 7600, Fannin Street, Texas Medical Center, Houston, Harris County, Te",
+"lat": 29.693378,
+"lon": -95.402793
+},
+"7601 PRESTON ROAD|PLANO|75024": {
+"found": "Children\u2019s Medical Center Plano, 7601, Preston Road, Plano, Collin County, Texas, 75024, United Stat",
+"lat": 33.079223,
+"lon": -96.801395
+},
+"7700 FANNIN SUITE 650|HOUSTON|77054": {
+"found": "7700, Fannin Street, Texas Medical Center, Houston, Harris County, Texas, 77054, United States",
+"lat": 29.691861,
+"lon": -95.402403
+},
+"7700 FLOYD CURL DR|SAN ANTONIO|78229": {
+"found": "Texas Neurosciences Institute, 7700, Floyd Curl Drive, Medical Center, South Texas Medical Center, S",
+"lat": 29.509931,
+"lon": -98.571492
+},
+"774 STATE HIGHWAY 70 N|ROTAN|79546": {
+"found": "Fisher County Hospital, 774, State Highway 70 North, Fisher, Rotan, Fisher County, Texas, 79546, Uni",
+"lat": 32.834369,
+"lon": -100.43638
+},
+"7777 FOREST LANE SUITE C150|DALLAS|75230": {
+"found": "7777, Forest Lane, Dallas, Dallas County, Texas, 75230, United States",
+"lat": 32.913126,
+"lon": -96.775521
+},
+"7777 FOREST LANE|DALLAS|75230": {
+"found": "7777, Forest Lane, Dallas, Dallas County, Texas, 75230, United States",
+"lat": 32.913126,
+"lon": -96.775521
+},
+"7789 SOUTHWEST FREEWAY SUITE 200|HOUSTON|77074": {
+"found": "7789, Southwest Freeway, Sharpstown, Houston, Harris County, Texas, 77074, United States",
+"lat": 29.695791,
+"lon": -95.523478
+},
+"7830 W GRAND PKWY S, STE 150|RICHMOND|77406": {
+"tried": "nominatim, photon (any street type)"
+},
+"7900 FM 1826|AUSTIN|78737": {
+"tried": "nominatim, photon (any street type)"
+},
+"7902 EWING HALSELL|SAN ANTONIO|78229": {
+"found": "7902, Ewing Halsell Drive, Medical Center, South Texas Medical Center, San Antonio, Bexar County, Te",
+"lat": 29.511723,
+"lon": -98.573115
+},
+"7909 FREDRICKSBURG ROAD SUITE 222|SAN ANTONIO|78229": {
+"tried": "nominatim, photon (any street type)"
+},
+"7924 GATEWAY EAST BOULEVARD #150|EL PASO|79915": {
+"found": "7924, Gateway Boulevard East, Hacienda Heights, El Paso, El Paso County, Texas, 79915, United States",
+"lat": 31.753585,
+"lon": -106.347721
+},
+"7946 N LOOP W|SAN ANTONIO|78249": {
+"found": "UT Health Outpatient and Surgery Center, 7946, North Loop 1604 West, San Antonio, Bexar County, Texa",
+"lat": 29.578666,
+"lon": -98.641958
+},
+"7992 WEST VIRGINIA DR|DALLAS|75237": {
+"found": "7992, West Virginia Drive, Dallas, Dallas County, Texas, 75237, United States",
+"lat": 32.649028,
+"lon": -96.877734
+},
+"800 EAST DAWSON|TYLER|75701": {
+"found": "CHRISTUS Mother Frances Hospital - Tyler, 800, East Dawson Street, Tyler, Smith County, Texas, 75701",
+"lat": 32.343195,
+"lon": -95.291124
+},
+"800 QUAIL CREEK DR, STE 102|AMARILLO|79124": {
+"found": "800, Quail Creek Drive, Amarillo, Potter County, Texas, 79124, United States",
+"lat": 35.208985,
+"lon": -101.91062
+},
+"800 W RANDOL MILL RD|ARLINGTON|76012": {
+"found": "800, West Randol Mill Road, Arlington, Tarrant County, Texas, 76012, United States",
+"lat": 32.749346,
+"lon": -97.117083
+},
+"8000 W ELDORADO PKWY BLDG C SUITE C|MCKINNEY|75070": {
+"found": "Methodist McKinney Hospital 8000 West Eldorado Parkway McKinney 75070",
+"lat": 33.176671,
+"lon": -96.722805,
+"src": "photon"
+},
+"801 BEDELL AVE|DEL RIO|78840": {
+"found": "Val Verde Regional Medical Center, 801, North Bedell Avenue, Del Rio, Val Verde County, Texas, 78840",
+"lat": 29.374985,
+"lon": -100.892157
+},
+"801 E WHITESTONE BLVD, STE 100|CEDAR PARK,|78613": {
+"found": "801, East Whitestone Boulevard, Cedar Park, Williamson County, Texas, 78613, United States",
+"lat": 30.523629,
+"lon": -97.821911
+},
+"801 EAST THIRD|HEREFORD|79045": {
+"tried": "nominatim, photon"
+},
+"801 SEVENTH AVENUE|FORT WORTH|76104": {
+"tried": "nominatim, photon (any street type)"
+},
+"801 TURTLE CREEK DRIVE|TYLER|75701": {
+"found": "801, Turtle Creek Drive, Tyler, Smith County, Texas, 75701, United States",
+"lat": 32.339142,
+"lon": -95.294055
+},
+"801 W INTERSTATE 20|ARLINGTON|76017": {
+"found": "801, West Interstate 20, Arlington, Tarrant County, Texas, 76017, United States",
+"lat": 32.677558,
+"lon": -97.118155
+},
+"8015 N. EXPRESSWAY 77 SUITE A|OLMITO|78575": {
+"tried": "nominatim, photon (any street type)"
+},
+"8015 SHOAL CREEK BLVD SUITE 300|AUSTIN|78757": {
+"found": "Austin Endoscopy Center - North, 8015, Shoal Creek Boulevard, North Shoal Creek, Austin, Travis Coun",
+"lat": 30.363623,
+"lon": -97.739477
+},
+"8015 SHOAL CREEK BOULEVARD,SUITE 100|AUSTIN|78757": {
+"found": "Austin Endoscopy Center - North, 8015, Shoal Creek Boulevard, North Shoal Creek, Austin, Travis Coun",
+"lat": 30.363623,
+"lon": -97.739477
+},
+"802 N MINTER AVENUE|THROCKMORTON|76483": {
+"found": "Throckmorton County Memorial Hospital, 802, North Minter Avenue, Throckmorton, Throckmorton County, ",
+"lat": 33.189961,
+"lon": -99.176186
+},
+"802 TURTLE CREEK DR|TYLER|75701": {
+"found": "802, Turtle Creek Drive, Tyler, Smith County, Texas, 75701, United States",
+"lat": 32.33914,
+"lon": -95.29386
+},
+"8080 INDEPENDENCE PARKWAY SUITE160|PLANO|75025": {
+"found": "8080, Independence Parkway, Plano, Collin County, Texas, 75025, United States",
+"lat": 33.088962,
+"lon": -96.749423
+},
+"8080 STATE HIGHWAY 121 SUITE 100|MC KINNEY|75070": {
+"tried": "nominatim, photon (any street type)"
+},
+"810 W HIGHWAY 71|MARBLE FALLS|78654": {
+"found": "Baylor Scott & White Medical Center \u2013 Marble Falls, 810, West State Highway 71, Marble Falls, Burnet",
+"lat": 30.512992,
+"lon": -98.303939
+},
+"811 S MILAM ST|FREDERICKSBURG|78624": {
+"tried": "nominatim, photon (any street type)"
+},
+"811 WRIGHT STREET|ARLINGTON|76012": {
+"found": "Texas Health Heart & Vascular Hospital Arlington, 811, Wright Street, Arlington, Tarrant County, Tex",
+"lat": 32.748716,
+"lon": -97.116453
+},
+"8122 DATAPOINT DR SUITE 105|SAN ANTONIO|78229": {
+"found": "8122, Datapoint Drive, Medical Center, San Antonio, Bexar County, Texas, 78229, United States",
+"lat": 29.514394,
+"lon": -98.570036
+},
+"815 MARKET STREET|GALVESTON|77550": {
+"found": "Shriners Hospitals for Children \u2014 Galveston, 815, Market Street, Galveston, Galveston County, Texas,",
+"lat": 29.309504,
+"lon": -94.77715
+},
+"820 E REDD RD|EL PASO|79912": {
+"found": "820, East Redd Road, West Side, El Paso, El Paso County, Texas, 79912, United States",
+"lat": 31.861447,
+"lon": -106.550615
+},
+"8200 WALNUT HILL LANE|DALLAS|75231": {
+"found": "Texas Health Presbyterian Hospital Dallas, 8200, Walnut Hill Lane, Vickery Meadows PID, Dallas, Dall",
+"lat": 32.879779,
+"lon": -96.762447
+},
+"8207 W AMARILLO BLVD|AMARILLO|79124": {
+"tried": "nominatim, photon (any street type)"
+},
+"821 JEFFEE DRIVE|KERMIT|79745": {
+"found": "Winkler County Memorial Hospital, 821, Jeffee Drive, Olsen, Kermit, Winkler County, Texas, 79745, Un",
+"lat": 31.849471,
+"lon": -103.090666
+},
+"821 NORTH BROADWAY|ASPERMONT|79502": {
+"found": "Stonewall Memorial Hospital 821 North Broadway Street Aspermont 79502",
+"lat": 33.150635,
+"lon": -100.229175,
+"src": "photon"
+},
+"8230 WALNUT HILL LANE|DALLAS|75231": {
+"found": "8230, Walnut Hill Lane, Vickery Meadows PID, Dallas, Dallas County, Texas, 75231, United States",
+"lat": 32.883406,
+"lon": -96.763021
+},
+"8230 WALNUT HILL LN SUITE 808|DALLAS|75231": {
+"found": "8230, Walnut Hill Lane, Vickery Meadows PID, Dallas, Dallas County, Texas, 75231, United States",
+"lat": 32.883406,
+"lon": -96.763021
+},
+"825 E YELLOWJACKET LANE|ROCKWALL|75087": {
+"tried": "nominatim, photon (any street type)"
+},
+"8300 FLOYD CURL DRIVE|SAN ANTONIO|78229": {
+"found": "Medical Arts & Research Center, 8300, Floyd Curl Drive, Medical Center, South Texas Medical Center, ",
+"lat": 29.515262,
+"lon": -98.58166
+},
+"8311 EWING HALSELL DR|SAN ANTONIO|78229": {
+"found": "UT Health San Antonio Multispecialty and Research Hospital, 8311, Ewing Halsell Drive, Medical Cente",
+"lat": 29.515536,
+"lon": -98.578074
+},
+"8315 WALNUT HILL LANE SUITE 110|DALLAS|75231": {
+"found": "8315, Walnut Hill Lane, Vickery Meadows PID, Dallas, Dallas County, Texas, 75231, United States",
+"lat": 32.88344,
+"lon": -96.761838
+},
+"8350 DALLAS PARKWAY SUITE 100|FRISCO|75034": {
+"found": "8350, Dallas Parkway, Frisco, Collin County, Texas, 75034, United States",
+"lat": 33.148392,
+"lon": -96.838577
+},
+"8411 FM 1960 BYPASS RD W, STE A|HUMBLE|77338": {
+"found": "Humble Vascular Surgical Center 8411 FM 1960 Bypass Road West  77338",
+"lat": 30.005467,
+"lon": -95.299094,
+"src": "photon"
+},
+"850 ED HALL|KAUFMAN|75142": {
+"found": "Texas Health Presbyterian Hospital Kaufman, 850, Ed Hall Drive, Kaufman, Kaufman County, Texas, 7514",
+"lat": 32.591949,
+"lon": -96.31818
+},
+"850 W CENTRAL TEXAS EXPRESSWAY|HARKER HEIGHTS|76548": {
+"found": "Seton Medical Center Harker Heights, 850, West Central Texas Expressway, Harker Heights, Bell County",
+"lat": 31.072556,
+"lon": -97.682638
+},
+"8537 GULF FREEWAY, STE C|HOUSTON|77017": {
+"found": "8537, Gulf Freeway, Houston, Harris County, Texas, 77017, United States",
+"lat": 29.669592,
+"lon": -95.260263
+},
+"8545 GULF FREEWAY|HOUSTON|77017": {
+"found": "8545, Gulf Freeway, Houston, Harris County, Texas, 77017, United States",
+"lat": 29.669178,
+"lon": -95.261798
+},
+"855 PROTON DRIVE|SAN ANTONIO|78258": {
+"tried": "nominatim, photon (any street type)"
+},
+"8550 DATAPOINT DRIVE SUITE 100|SAN ANTONIO|78229": {
+"found": "8550, Datapoint Drive, Medical Center, San Antonio, Bexar County, Texas, 78229, United States",
+"lat": 29.518975,
+"lon": -98.567965
+},
+"8620 BURNET RD STE 400|AUSTIN|78757": {
+"found": "8620, Burnet Road, Wooten, Austin, Travis County, Texas, 78757, United States",
+"lat": 30.368656,
+"lon": -97.727949
+},
+"865 DESHONG DR|PARIS|75460": {
+"found": "Paris Regional Medical Center, 865, Deshong Drive, Paris, Lamar County, Texas, 75460, United States",
+"lat": 33.68748,
+"lon": -95.548259
+},
+"8703 BANDERA RD|SAN ANTONIO|78250": {
+"found": "8703, Bandera Road, San Antonio, Bexar County, Texas, 78250, United States",
+"lat": 29.525147,
+"lon": -98.639704
+},
+"8706 FREDERICKSBURG RD SUITE 104|SAN ANTONIO|78240": {
+"found": "8706, Fredericksburg Road, Medical Center, San Antonio, Bexar County, Texas, 78240, United States",
+"lat": 29.523553,
+"lon": -98.57362
+},
+"8731 KATY FWY, STE 400|HOUSTON|77024": {
+"found": "Berkeley Eye Center - Memorial Villages, 8731, Katy Freeway, Houston, Harris County, Texas, 77024, U",
+"lat": 29.783452,
+"lon": -95.504633
+},
+"8855 SYNERGY DRIVE|MC KINNEY|75070": {
+"found": "8855 Synergy Drive McKinney 75072",
+"lat": 33.167129,
+"lon": -96.730512,
+"src": "photon"
+},
+"8901 FM 1960 BYPASS RD W, SUITE 105|HUMBLE|77338": {
+"tried": "nominatim, photon (any street type)"
+},
+"900 12TH AVENUE|FORT WORTH|76104": {
+"found": "900, 12th Avenue, Fort Worth, Tarrant County, Texas, 76104, United States",
+"lat": 32.736319,
+"lon": -97.348105
+},
+"900 EIGHTH AVENUE|FORT WORTH|76104": {
+"tried": "nominatim, photon (any street type)"
+},
+"900 MORGAN|CORPUS CHRISTI|78404": {
+"found": "900, Morgan Avenue, Downtown, Corpus Christi, Nueces County, Texas, 78404, United States",
+"lat": 27.77897,
+"lon": -97.399632
+},
+"900 SOUTH BRYAN ROAD|MISSION|78572": {
+"found": "Mission Regional Medical Center, 900, South Bryan Road, Mission, Hidalgo County, Texas, 78572, Unite",
+"lat": 26.195907,
+"lon": -98.314869
+},
+"900 W 38TH STREET|AUSTIN|78705": {
+"found": "Austin Sports Medicine and Orthopedics, 900, West 38th Street, Heritage, Austin, Travis County, Texa",
+"lat": 30.305318,
+"lon": -97.741078
+},
+"900 WEST MAGNOLIA AVENUE SUITE 101|FORT WORTH|76104": {
+"found": "900, West Magnolia Avenue, Fairmount, Fort Worth, Tarrant County, Texas, 76104, United States",
+"lat": 32.730948,
+"lon": -97.333771
+},
+"901 NORTH JACKSON ROAD|MCALLEN|78501": {
+"found": "901, North Jackson Road, Palm Heights Colonia, Pharr, Hidalgo County, Texas, 78577, United States",
+"lat": 26.20555,
+"lon": -98.202863
+},
+"901 S. SWEETWATER|WHEELER|79096": {
+"found": "Parkview Hospital 901 South Sweetwater Street Wheeler 79096",
+"lat": 35.439336,
+"lon": -100.270311,
+"src": "photon"
+},
+"901 WEST BEN WHITE BLVD|AUSTIN|78704": {
+"found": "Saint David's South Austin Medical Center, 901, West Ben White Boulevard, Placidena, Austin, Travis ",
+"lat": 30.225642,
+"lon": -97.77527
+},
+"901 WEST HAMILTON|OLNEY|76374": {
+"found": "Olney Hamilton Hospital, 901, West Hamilton Street, Olney, Young County, Texas, 76374, United States",
+"lat": 33.369049,
+"lon": -98.764187
+},
+"9010 BRODIE LANE SUITE D200|AUSTIN|78748": {
+"found": "9010, Brodie Lane, Austin, Travis County, Texas, 78748, United States",
+"lat": 30.194156,
+"lon": -97.843241
+},
+"9010 BRODIE LANE, BUILDING B-100|AUSTIN|78748": {
+"found": "9010, Brodie Lane, Austin, Travis County, Texas, 78748, United States",
+"lat": 30.194156,
+"lon": -97.843241
+},
+"902 W RANDOL MILL ROAD, SUITE 230|ARLINGTON|76012": {
+"found": "902, West Randol Mill Road, Arlington, Tarrant County, Texas, 76012, United States",
+"lat": 32.750073,
+"lon": -97.118127
+},
+"905 W. SOUTHLAKE BLVD SUITE 200|SOUTHLAKE|76092": {
+"tried": "nominatim, photon (any street type)"
+},
+"909 9TH AVE|FORT WORTH|76104": {
+"found": "909, 9th Avenue, Fort Worth, Tarrant County, Texas, 76104, United States",
+"lat": 32.734789,
+"lon": -97.345684
+},
+"9101 NORTH CENTRAL EXPRESSWAY SUITE 650|DALLAS|75231": {
+"found": "9101, North Central Expressway, Dallas, Dallas County, Texas, 75231, United States",
+"lat": 32.873083,
+"lon": -96.77162
+},
+"911 WEST 38TH STREET SUITE 400|AUSTIN|78705": {
+"found": "911, West 38th Street, Heritage, Austin, Travis County, Texas, 78705, United States",
+"lat": 30.304527,
+"lon": -97.741852
+},
+"9110 KATY FREEWAY|HOUSTON|77055": {
+"found": "Kelsey-Seybold Clinic - Memorial Villages Campus, 9110, Katy Freeway, Houston, Harris County, Texas,",
+"lat": 29.785266,
+"lon": -95.51461
+},
+"914 LIPSCOMB STREET|FORT WORTH|76104": {
+"found": "914, Lipscomb Street, Fort Worth, Tarrant County, Texas, 76110, United States",
+"lat": 32.734829,
+"lon": -97.333587
+},
+"918 N DAVIS DRIVE|ARLINGTON|76012": {
+"found": "918, North Davis Drive, Arlington, Tarrant County, Texas, 76012, United States",
+"lat": 32.747033,
+"lon": -97.123106
+},
+"9180 KATY FREEWAY SUITE 250|HOUSTON|77055": {
+"tried": "nominatim, photon (any street type)"
+},
+"919 E 32ND ST|AUSTIN|78705": {
+"found": "919, East 32nd Street, Eastwoods, Austin, Travis County, Texas, 78705, United States",
+"lat": 30.290676,
+"lon": -97.726737
+},
+"920 HILLCREST DR|VERNON|76384": {
+"found": "Wilbarger General Hospital, 920, Hillcrest Drive, Vernon, Wilbarger County, Texas, 76384, United Sta",
+"lat": 34.158731,
+"lon": -99.314569
+},
+"920 SOUTH BELT LINE ROAD|COPPELL|75019": {
+"found": "920, South Belt Line Road, Coppell, Dallas County, Texas, 75019, United States",
+"lat": 32.946936,
+"lon": -96.993343
+},
+"9200 PINECROFT SUITE 200|THE WOODLANDS|77380": {
+"tried": "nominatim, photon (any street type)"
+},
+"921 GESSNER|HOUSTON|77024": {
+"found": "Memorial Hermann Memorial City Medical Center, 921, Gessner Road, Memorial City, Houston, Harris Cou",
+"lat": 29.781704,
+"lon": -95.54671
+},
+"9230 KATY FWY, STE 601|HOUSTON|77055": {
+"found": "9230, Katy Freeway, Spring Valley Village, Harris County, Texas, 77055, United States",
+"lat": 29.78496,
+"lon": -95.519543
+},
+"9238 FLOYD CURL DRIVE SUITE 100|SAN ANTONIO|78240": {
+"found": "9238, Floyd Curl Drive, Medical Center, South Texas Medical Center, San Antonio, Bexar County, Texas",
+"lat": 29.529059,
+"lon": -98.593189
+},
+"9301 NORTH CENTRAL EXPRESSWAY SUITE 100|DALLAS|75231": {
+"found": "9301, North Central Expressway, Dallas, Dallas County, Texas, 75231, United States",
+"lat": 32.872409,
+"lon": -96.76972
+},
+"9305 PINECROFT DR, STE 200|THE WOODLANDS|77380": {
+"tried": "nominatim, photon (any street type)"
+},
+"9312 BRODIE LANE UNIT 100|AUSTIN|78746": {
+"found": "9312, Brodie Lane, Austin, Travis County, Texas, 78748, United States",
+"lat": 30.192449,
+"lon": -97.843949
+},
+"9430 KATY FREEWAY|HOUSTON|77055": {
+"found": "9430, Katy Freeway, Spring Branch, Memorial City, Houston, Harris County, Texas, 77024, United State",
+"lat": 29.785196,
+"lon": -95.52508
+},
+"9439 NORTH BEACH STREET|FORT WORTH|76244": {
+"found": "9439, North Beach Street, Fort Worth, Tarrant County, Texas, 76244, United States",
+"lat": 32.909333,
+"lon": -97.289821
+},
+"9440 POPPY DRIVE|DALLAS|75218": {
+"found": "White Rock Medical Center, 9440, Poppy Drive, Dallas, Dallas County, Texas, 75218, United States",
+"lat": 32.834601,
+"lon": -96.705736
+},
+"950 N 11TH ST|BEAUMONT|77702": {
+"found": "950, North 11th Street, Beaumont, Jefferson County, Texas, 77702, United States",
+"lat": 30.090099,
+"lon": -94.129812
+},
+"950 NORTH 14TH STREET|BEAUMONT|77702": {
+"found": "950, North 14th Street, Beaumont, Jefferson County, Texas, 77702, United States",
+"lat": 30.089945,
+"lon": -94.133171
+},
+"950 THREADNEEDLE, SUITE 250|HOUSTON|77079": {
+"found": "950, Threadneedle Street, Energy Corridor, Houston, Harris County, Texas, 77079, United States",
+"lat": 29.782629,
+"lon": -95.609422
+},
+"9500 N CENTRAL EXPWY STE 200|DALLAS|75231": {
+"found": "Spec's, 9500, North Central Expressway, Dallas, Dallas County, Texas, 75231, United States",
+"lat": 32.878407,
+"lon": -96.769098
+},
+"9525 GREENVILLE AVENUE|DALLAS|75243": {
+"found": "9525, Greenville Avenue, Lake Highlands, Dallas, Dallas County, Texas, 75243, United States",
+"lat": 32.905226,
+"lon": -96.74855
+},
+"9569 HARMON ROAD|FORT WORTH|76177": {
+"found": "9569, Harmon Road, Fort Worth, Tarrant County, Texas, 76177, United States",
+"lat": 32.913434,
+"lon": -97.33165
+},
+"959 SUNLAND PARK DR, STE 200|EL PASO|79922": {
+"found": "959, Sunland Park Drive, El Paso, El Paso County, Texas, 79922, United States",
+"lat": 31.814231,
+"lon": -106.552084
+},
+"9618 HUEBNER ROAD SUITE 111|SAN ANTONIO|78240": {
+"found": "9618, Huebner Road, South Texas Medical Center, San Antonio, Bexar County, Texas, 78240, United Stat",
+"lat": 29.532001,
+"lon": -98.591479
+},
+"9725 DATAPOINT DRSTE136|SAN ANTONIO|78229": {
+"found": "UIW Rosenberg School of Optometry, 9725, Datapoint Drive, San Antonio, Bexar County, Texas, 78229, U",
+"lat": 29.527223,
+"lon": -98.562587
+},
+"975 HASKELL ST|FORT WORTH|76107": {
+"found": "975, Haskell Street, Fort Worth, Tarrant County, Texas, 76107, United States",
+"lat": 32.749885,
+"lon": -97.371437
+},
+"981 HIGHWAY STATE 121|ALLEN|75013": {
+"found": "981, State Highway 121, The Meadows, Allen, Collin County, Texas, 75013, United States",
+"lat": 33.142758,
+"lon": -96.680288
+},
+"9835 NORTH LAKE CREEK PARKWAY BLDG A|AUSTIN|78717": {
+"found": "Texas Children's Hospital, 9835, North Lake Creek Parkway, Austin, Williamson County, Texas, 78717, ",
+"lat": 30.474217,
+"lon": -97.79043
+},
+"9848 NORTH BEACH STREET|FORT WORTH|76244": {
+"found": "9848, North Beach Street, Fort Worth, Tarrant County, Texas, 76244, United States",
+"lat": 32.917197,
+"lon": -97.289584
+},
+"9863 FM 1097 RD W|WILLIS|77318": {
+"tried": "nominatim, photon (any street type)"
+},
+"9955 GILLESPIE DRIVE SUITE 200|PLANO|75025": {
+"found": "9955, Gillespie Drive, Plano, Collin County, Texas, 75025, United States",
+"lat": 33.114139,
+"lon": -96.759493
+},
+"997 WEST I-20|COLORADO CITY|79512": {
+"found": "Mitchell County Hospital, 997, West Interstate 20, Colorado City, Mitchell County, Texas, 79512, Uni",
+"lat": 32.406904,
+"lon": -100.875764
+},
+": 6000 S. MOPAC SUITE 200|AUSTIN|78749": {
+"found": "6000, South Mopac Expressway, Austin, Travis County, Texas, 78749, United States",
+"lat": 30.226974,
+"lon": -97.831795
+},
+"EISENHOWER ROAD AND FM 2185|VAN HORN|79855": {
+"tried": "nominatim, photon (any street type)"
+},
+"HWY 83 NORTH|CHILDRESS|79201": {
+"tried": "nominatim, photon (any street type)"
+},
+"PO BOX 750, 2301 HWY 83 W|HEMPHILL|75948": {
+"tried": "nominatim, photon (any street type)"
+}
+}

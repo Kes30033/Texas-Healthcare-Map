@@ -1,0 +1,24 @@
+id,name,street,city,zip,lat,lng,closed,note,source
+"# Corrections to CMS facility records, checked by hand. Empty fields keep the CMS value. lat and lng pin the dot. closed (a date) takes a facility that CMS still lists off the map.",,,,,,,,,
+450162,,7509 Marsha Sharp Fwy,,79424,33.523281,-101.985298,,"CMS still lists the hospital's former address, 2412 50th St.",Covenant Health location page (providence.org); OpenStreetMap
+670345,,24429 Tomball Pkwy,Tomball,77375,30.037024,-95.606207,,CMS lists a business address in Bellaire (4801 Bissonnet St). The hospital opened in 2023 in the former Memorial Hermann Tomball Hospital building.,Community Impact (May 2023); OpenStreetMap
+45070F,Carl R. Darnall Army Medical Center (Fort Cavazos),36065 Santa Fe Ave,,,31.127431,-97.776604,,"CMS lists 590 Medical Center Rd, which can't be placed on a map.",OpenStreetMap
+453317,,,,,33.220475,-96.870199,,"Address geocoders put 4100 W University Dr in McKinney, so the dot is pinned to the hospital in Prosper.",OpenStreetMap
+450237,CHRISTUS Santa Rosa Hospital Westover Hills,,,,29.466669,-98.69654,,"CMS lists this hospital as CHRISTUS Santa Rosa Medical Center; the number also covers the Alamo Heights and New Braunfels campuses, shown separately. The former Medical Center campus on Babcock Rd closed in 2025 and is being reopened as Babcock Specialty Hospital.",KSAT (February 2025); San Antonio Report; OpenStreetMap
+45C0451293,,1125 Texas Ave Suite 502,,79901,,,,CMS lists ZIP code 79938.,TDLR filing TABS2023016528
+45C0451316,,1200 Soldiers Field Dr Suite 101,,77479,,,,CMS lists ZIP code 77470.,U.S. Census geocoder
+45C0451345,,11123 Christus Hills,,,,,,CMS lists the street as 11123 Christus Surgery Center.,TDLR filings for CHRISTUS Santa Rosa Westover Hills Plaza 4
+45C0001709,,24727 Tomball Pkwy Suite 100,,,,,,CMS lists the street as 24727 Tomball Surgical Center.,Community Impact (February 2020)
+45C0001574,,8706 Fredericksburg Rd Suite 104,,,,,,CMS lists the street as 8706 Frederick Rd.,TDLR; WebMD
+670331,,,,,,,2025-04-25,"Closed April 25, 2025.",Texas Tribune (April 2025)
+670109,BMC Baytown Hospital,,,,,,,"CMS lists the legal name, Baytown Medical Center LP (formerly Altus Baytown Hospital).",American Hospital Directory; Turquoise Health
+450033,Valley Baptist Medical Center Harlingen,,,,,,,"CMS lists the legal name, VHS Harlingen Hospital Company LLC.",Valley Baptist Health System
+450518,The Medical Center of Southeast Texas,,,,,,,"CMS lists the legal name, HSA Port Arthur, LLC.",OpenStreetMap; Becker's Hospital Review
+450119,South Texas Health System Edinburg,,,,,,,CMS lists the South Texas Health System hospitals under this number as South Texas Health System Behavioral; this address is the Edinburg hospital.,South Texas Health System
+450876,Lubbock Heart & Surgical Hospital,,,,,,,"CMS lists the legal name, Lubbock Heart Hospital LP.",Lubbock Heart & Surgical Hospital
+450674,The Woman's Hospital of Texas,,,,,,,,HCA Houston Healthcare
+450155,,540 W 15th St,,,34.838928,-102.413683,,"CMS still lists the hospital's former address, 801 E Third St.",340B program database; OpenStreetMap
+451356,,815 N Virginia St,,,28.620376,-96.632254,,CMS lists 701 N Virginia St.,TDLR filing TABS2025011895; 340B program database; OpenStreetMap
+670314,St. Michael's Elite Hospital,,,,,,,"CMS lists the legal name, St Michaels Medical Hospital LLC.",Turquoise Health; WebMD
+45C0451275,,1101 Wolf Lakes Dr Suite 150,,,,,,CMS lists the street as Wolf Lake Dr.,ASC directories; Ascension Medical Group Georgetown Health Center
+45C0001649,,,,,29.455938,-98.689767,,,OpenStreetMap address point for 10622 State Hwy 151 (Photon)

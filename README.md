@@ -45,11 +45,31 @@ surgery centers that are filed with the state or announced but haven't broken gr
 | Hospitals | [CMS Provider of Services file](https://data.cms.gov/provider-characteristics/hospitals-and-other-facilities/provider-of-services-file-hospital-non-hospital-facilities) (every Medicare-certified short-term acute care, critical access and children's hospital active in the latest quarter), plus VA and military hospitals from [CMS Care Compare](https://data.cms.gov/provider-data/dataset/xubh-q36u) |
 | Hospital campuses | CMS lists some multi-campus hospitals under one number and one address (for example Methodist Hospital in San Antonio, Memorial Hermann, Baptist, CHRISTUS Spohn). Their other campuses are added from [OpenStreetMap](https://www.openstreetmap.org/copyright) and listed in [data/campuses.csv](data/campuses.csv) |
 | Surgery centers | [CMS Provider of Services file, iQIES](https://data.cms.gov/provider-characteristics/hospitals-and-other-facilities/provider-of-services-file-internet-quality-improvement-and-evaluation-system) (every certified ASC) |
+| Corrections | [data/facility_fixes.csv](data/facility_fixes.csv): CMS records checked by hand, each with its source: out-of-date addresses, legal names in place of the names hospitals use, positions geocoders can't find, and hospitals that have closed but are still listed |
 | Construction projects | [TDLR Texas Architectural Barriers (TABS) project registry](https://www.tdlr.texas.gov/TABS/Search). Texas requires every building project costing $50,000 or more to be registered there before construction, with owner, design firm, address, estimated cost, type of work, scope and estimated start and completion dates |
 | Announced projects and project details | News reports and health system announcements, listed with links in [data/research/news_projects.csv](data/research/news_projects.csv) |
-| Map positions | U.S. Census geocoder, then OpenStreetMap Nominatim; hospital positions are checked against OpenStreetMap |
+| Map positions | OpenStreetMap buildings and address points (Nominatim), the U.S. Census geocoder and OpenStreetMap hospitals; see [How dots are placed](#how-dots-are-placed) |
 | Counties, highways (Simple map) | U.S. Census Bureau cartographic boundary and TIGER files |
 | Street and satellite maps | Esri World Street Map and World Imagery |
+
+## How dots are placed
+
+Each facility's dot comes from the first of these that has it:
+
+1. **Pinned**: hospital campuses from OpenStreetMap, and the hand-checked positions in data/facility_fixes.csv.
+2. **The building**: OpenStreetMap's building or address point for the street address (same house number on the same
+   street, in the same town), found with Nominatim or Photon.
+3. **The street address**: the U.S. Census geocoder. Its answers are thrown out when it had to change the address to match it,
+   such as a different street, the opposite direction ("2000 N Mays" for "2000 S Mays", "Loop 1604 E" for "Loop 1604 W")
+   or a different street type ("Houston Hwy" for "Houston St").
+4. **OpenStreetMap** found by the address or by the facility's name.
+5. **Approximate**: a similar street the Census geocoder matched, the middle of the street, or the center of the ZIP code.
+   These dots say so in their details, and the spreadsheet's "Map position" column says where every dot came from.
+
+Hospitals are also checked against OpenStreetMap's hospitals: when OpenStreetMap has the same hospital (same name and street
+number, or the same distinctive name in the same city) more than 150 m from the dot, the dot moves to it. A facility's county
+is the county its dot is in when that's clearly a different county than CMS lists. New hospitals and surgery centers are placed
+from their state filing's address, or from news reports; "X Rd & Y Rd" or an area named in the news counts as approximate.
 
 ## How projects are classified
 
@@ -58,8 +78,11 @@ surgery centers that are filed with the state or announced but haven't broken gr
 2. **Active**: the filing isn't closed or inspected, and its estimated completion is no more than 150 days past
    (projects often run past the date in their filing).
 3. **Linked to a facility** when the filing's address is the facility's street address, or it's within 600 m and
-   shares a distinctive name, or it's within 150 m of a hospital and is medical work. Surgery centers also need
-   surgery-related wording, since they share buildings with other tenants.
+   shares a distinctive name, or it's within 250 m of a hospital (or on its block of the same street) and is medical work
+   for the hospital itself: a neighbor's filing doesn't count when its owner or tenant is someone else, such as a
+   clinic in a medical office building next door. Surgery centers also need surgery-related wording, since they share
+   buildings with other tenants. Street and neighborhood names ("Fannin", "Sonterra") don't count as shared names.
+   A project registered twice (same name, address and about the same cost) counts once.
 4. **Kind**: *New* (a hospital or surgery center that isn't open yet, including build-outs of new ASCs inside existing
    buildings), *Expansion* (new construction or an addition at an existing facility) or *Renovation* (work inside one).
 5. **Stage**: *Filed, not started* when the filing's estimated start date is still ahead; *Under construction* when
@@ -71,7 +94,12 @@ Filings that were found but left off the map are listed with the reason in [data
 ### Things to know
 
 - **Dates in filings are estimates** made when the project was registered. A project marked "under construction"
-  may have slipped, and some marked "filed" may have started early.
+  may have slipped, and some marked "filed" may have started early. A filing can also stay open after a project
+  stops: the Wadley Regional replacement hospital in Texarkana, halted in 2024, is left off for that reason
+  (data/research/news_projects.csv marks such projects "skip").
+- **CMS lists lag behind closures and sales.** Hospitals were checked in October 2026 against news reports: closed
+  hospitals CMS still lists, stale OpenStreetMap campuses and legal names are corrected in data/facility_fixes.csv
+  and data/campuses.csv. Surgery centers weren't checked one by one.
 - **Costs are the filer's estimate** of construction cost, not the total project budget news reports often quote.
 - **Builders aren't in state filings.** TABS lists the owner and the architect but not the contractor, so builders
   come only from news reports and contractor announcements (in data/research/news_projects.csv) and cover a
@@ -96,10 +124,11 @@ data/
   projects.csv              every project shown on the map
   review.csv                filings found but left off, with the reason
   campuses.csv              hospital campuses added from OpenStreetMap
+  facility_fixes.csv        hand-checked corrections to CMS records, with sources
   research/news_projects.csv   news-researched projects and sources
   raw/                      CMS downloads (Texas rows)
   tabs/search/              TABS search results; tabs/details/: one file per filing
-  geocode/                  map positions, saved by address
+  geocode/                  map positions, saved by address (cache.json: geocoders; osm_address.json: OpenStreetMap buildings)
   osm/hospitals.json        Texas hospitals from OpenStreetMap
   basemap/basemap.json      counties and highways for the Simple map
 scripts/                    the steps that build everything (below)
@@ -118,7 +147,8 @@ python scripts/tabs_harvest.py keywords ProjectName
 python scripts/tabs_harvest.py addresses
 python scripts/tabs_candidates.py            # which filings could be active
 python scripts/tabs_details.py data/tabs/candidates.txt   # detail page of each (skips ones already saved)
-python scripts/build_projects.py             # classify, link and place every project
+python scripts/build_projects.py             # place facilities, classify and link every project (new addresses
+                                             # wait on OpenStreetMap's one-request-a-second limit; answers are saved)
 python scripts/build_site.py                 # website in docs/ and the spreadsheet
 ```
 

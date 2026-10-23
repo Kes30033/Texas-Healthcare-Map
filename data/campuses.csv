@@ -1,9 +1,9 @@
 osm_name,name,type,city,parent_id,note,address,zip,lat,lng
 # Hospital campuses that CMS lists only under a parent hospital's number (or not at all), placed from OpenStreetMap.
 # osm_name is the OpenStreetMap name; "@text" picks one of several same-named places by its address or city. Rows with no osm_name give address, zip, lat and lng.
+# Rows that also give an address and zip use them when OpenStreetMap has no address. Removed after checking (October 2026): Memorial Hermann Tomball (closed; the building is now Legent North Houston Surgical Hospital, CMS 670345), the Baylor Scott & White site in Wylie (a freestanding emergency center), Cook Children's Prosper (CMS lists it, 453317), CHRISTUS Santa Rosa Westover Hills (CMS lists it, 450237), and these closed or emergency-only hospitals: Nix Medical Center (closed; the building was sold), CHRISTUS St. Mary in Port Arthur (closed 2019), CHRISTUS Santa Rosa Medical Center (closed 2025; being reopened by University Health) and Baptist Orange (emergency and outpatient only).
 Memorial Hermann Southeast Hospital,Memorial Hermann Southeast Hospital,Acute Care Hospital,Houston,450184,Campus of Memorial Hermann Hospital System
 Memorial Hermann Southwest Hospital,Memorial Hermann Southwest Hospital,Acute Care Hospital,Houston,450184,Campus of Memorial Hermann Hospital System
-Memorial Hermann Tomball Hospital,Memorial Hermann Tomball Hospital,Acute Care Hospital,Tomball,450184,Campus of Memorial Hermann Hospital System
 Memorial Hermann Pearland,Memorial Hermann Pearland Hospital,Acute Care Hospital,Pearland,450184,Campus of Memorial Hermann Hospital System
 Memorial Hermann The Woodlands Medical Center,Memorial Hermann The Woodlands Medical Center,Acute Care Hospital,The Woodlands,450184,Campus of Memorial Hermann Hospital System
 Memorial Hermann Cypress Hospital,Memorial Hermann Cypress Hospital,Acute Care Hospital,Cypress,450184,Campus of Memorial Hermann Hospital System
@@ -13,22 +13,22 @@ Mainland Medical Center,HCA Houston Healthcare Mainland,Acute Care Hospital,Texa
 Saint Luke's Health - Springwoods Village Hospital,St. Luke's Health Springwoods Village Hospital,Acute Care Hospital,Spring,,
 UTMB Health Clear Lake Campus Hospital,UTMB Health Clear Lake Campus Hospital,Acute Care Hospital,Webster,450018,Campus of University of Texas Medical Branch
 UTMB Health Angleton Danbury Campus,UTMB Health Angleton Danbury Campus,Acute Care Hospital,Angleton,450018,Campus of University of Texas Medical Branch
-OakBend Medical Center - Wharton Campus,OakBend Medical Center Wharton Campus,Acute Care Hospital,Wharton,450330,Campus of OakBend Medical Center
+OakBend Medical Center - Wharton Campus,OakBend Medical Center Wharton Campus,Acute Care Hospital,Wharton,450330,Campus of OakBend Medical Center,10141 US Highway 59,77488,,
 Oakbend Medical Center,OakBend Medical Center Williams Way Campus,Acute Care Hospital,Richmond,450330,Campus of OakBend Medical Center
 Medical City Frisco A Medical Center Of Plano Facility,Medical City Frisco,Acute Care Hospital,Frisco,450651,Campus of Medical City Plano
-Medical City Sachse,Medical City Sachse,Acute Care Hospital,Sachse,,
+Medical City Sachse,Medical City Sachse,Acute Care Hospital,Sachse,,,4750 President George Bush Turnpike,75048,,
 Medical City Decatur,Medical City Decatur,Acute Care Hospital,Decatur,,
 Texas Health Hospital Clearfork,Texas Health Hospital Clearfork,Acute Care Hospital,Fort Worth,,
 Cook Children's Northeast,Cook Children's Northeast Hospital,Children's Hospital,Hurst,,
-Cook Children’s Pediatric Hospital,Cook Children's Medical Center Prosper,Children's Hospital,Prosper,,
 Texas Surgical Hospital,Texas Surgical Hospital,Acute Care Hospital,Plano,,
 Garland VA Medical Center,Garland VA Medical Center,VA Hospital,Garland,,
 Baylor Scott & White Emergency Hospital@Colleyville,Baylor Scott & White Emergency Hospital Colleyville,Acute Care Hospital,Colleyville,,Small-format hospital
 Baylor Scott & White Emergency Hospital - Grand Prairie,Baylor Scott & White Emergency Hospital Grand Prairie,Acute Care Hospital,Grand Prairie,,Small-format hospital
 Baylor Scott & White Emergency Hospital@Mansfield,Baylor Scott & White Emergency Hospital Mansfield,Acute Care Hospital,Mansfield,,Small-format hospital
 Baylor Scott And White Emergency Hospital Murphy,Baylor Scott & White Emergency Hospital Murphy,Acute Care Hospital,Murphy,,Small-format hospital
-Baylor Scott & White Emergency Hospital@Wylie,Baylor Scott & White Emergency Hospital Wylie,Acute Care Hospital,Wylie,,Small-format hospital
 Royse City Emergency Hospital,Royse City Emergency Hospital,Acute Care Hospital,Royse City,,Small-format hospital
+Baylor Emergency Medical Center@Rockwall,Baylor Scott & White Emergency Hospital Rockwall,Acute Care Hospital,Rockwall,,Small-format hospital
+,Baylor Scott & White Emergency Hospital Keller,Acute Care Hospital,Keller,,Small-format hospital,620 South Main Street,76248,32.928387,-97.253998
 Saint David's Georgetown Hospital,St. David's Georgetown Hospital,Acute Care Hospital,Georgetown,450431,Campus of St. David's Medical Center
 Saint David's Surgical Hospital,St. David's Surgical Hospital,Acute Care Hospital,Round Rock,450431,Campus of St. David's Medical Center
 Dell Children's Medical Center North Campus,Dell Children's Medical Center North Campus,Children's Hospital,Austin,453310,Campus of Dell Children's Medical Center
@@ -44,26 +44,24 @@ Methodist Surgery Ambulatory Hospital,Methodist Hospital Ambulatory Surgery Hosp
 North Central Baptist Hospital,North Central Baptist Hospital,Acute Care Hospital,San Antonio,,Campus of Baptist Medical Center
 Northeast Baptist Hospital,Northeast Baptist Hospital,Acute Care Hospital,San Antonio,,Campus of Baptist Medical Center
 Mission Trail Baptist Hospital,Mission Trail Baptist Hospital,Acute Care Hospital,San Antonio,,Campus of Baptist Medical Center
-Baptist Neighborhood Hospital Zarzamora,Baptist Neighborhood Hospital Zarzamora,Acute Care Hospital,San Antonio,,Small-format hospital
+Baptist Neighborhood Hospital Zarzamora,Baptist Neighborhood Hospital Zarzamora,Acute Care Hospital,San Antonio,,Small-format hospital,7719 IH 35 South,78224,,
 Baptist Neighborhood Hospital Kelly,Baptist Neighborhood Hospital Kelly,Acute Care Hospital,San Antonio,,Small-format hospital
 Baptist Neighborhood Hospital Schertz,Baptist Neighborhood Hospital Schertz,Acute Care Hospital,Schertz,,Small-format hospital
-Baptist Emergency Hospital@8230,Baptist Emergency Hospital Shavano Park,Acute Care Hospital,San Antonio,,Small-format hospital
-Baptist Emergency Hospital@25615,Baptist Emergency Hospital Stone Oak,Acute Care Hospital,San Antonio,,Small-format hospital
-CHRISTUS Santa Rosa - Westover Hills,CHRISTUS Santa Rosa Hospital Westover Hills,Acute Care Hospital,San Antonio,,
+Baptist Emergency Hospital@8230,Baptist Neighborhood Hospital Hausman,Acute Care Hospital,San Antonio,,Small-format hospital
+Baptist Emergency Hospital@25615,Baptist Neighborhood Hospital Overlook,Acute Care Hospital,San Antonio,,Small-format hospital
+,Baptist Neighborhood Hospital Shavano Park,Acute Care Hospital,San Antonio,,Small-format hospital,4103 North Loop 1604 West,78249,29.600094,-98.565175
 CHRISTUS Santa Rosa Hospital - Alamo Heights,CHRISTUS Santa Rosa Hospital Alamo Heights,Acute Care Hospital,San Antonio,,
 CHRISTUS Santa Rosa Hospital - New Braunfels,CHRISTUS Santa Rosa Hospital New Braunfels,Acute Care Hospital,New Braunfels,,
-Nix Medical Center,Nix Medical Center,Acute Care Hospital,San Antonio,,
 CHRISTUS Spohn Hospital Corpus Christi - Memorial,CHRISTUS Spohn Hospital Corpus Christi Memorial,Acute Care Hospital,Corpus Christi,,Campus of CHRISTUS Spohn Hospital Corpus Christi
 CHRISTUS Spohn Hospital Corpus Christi - South,CHRISTUS Spohn Hospital Corpus Christi South,Acute Care Hospital,Corpus Christi,,Campus of CHRISTUS Spohn Hospital Corpus Christi
 Corpus Christi Medical Center - Bay Area,Corpus Christi Medical Center Bay Area,Acute Care Hospital,Corpus Christi,450788,Campus of Corpus Christi Medical Center
 Corpus Christi Medical Center - Northwest Regional,Corpus Christi Medical Center Northwest Regional,Acute Care Hospital,Corpus Christi,450788,Campus of Corpus Christi Medical Center
-South Texas Surgical Hospital,South Texas Surgical Hospital,Acute Care Hospital,Corpus Christi,,
+South Texas Surgical Hospital,CHRISTUS Surgical Hospital,Acute Care Hospital,Corpus Christi,,Formerly South Texas Surgical Hospital
 CHRISTUS Good Shepherd Medical Center - Marshall,CHRISTUS Good Shepherd Medical Center Marshall,Acute Care Hospital,Marshall,,Campus of CHRISTUS Good Shepherd Medical Center
 CHRISTUS Mother Frances Hospital,CHRISTUS Mother Frances Hospital South Tyler,Acute Care Hospital,Tyler,,
 CHRISTUS Saint Michael Hospital-Atlanta,CHRISTUS St. Michael Hospital Atlanta,Acute Care Hospital,Atlanta,,Campus of CHRISTUS St. Michael Health System
-CHRISTUS Southeast Texas - Saint Mary,CHRISTUS Southeast Texas St. Mary,Acute Care Hospital,Port Arthur,,
+CHRISTUS Health Pine Street,CHRISTUS Health Pine Street,Acute Care Hospital,Texarkana,450801,Formerly Wadley Regional Medical Center; CHRISTUS bought it from Steward Health Care in 2024
 CHRISTUS Hospital - Orange,CHRISTUS Southeast Texas Orange,Acute Care Hospital,Orange,,
-"Baptist Hospitals of Southeast Texas, Orange Campus",Baptist Hospitals of Southeast Texas Orange Campus,Acute Care Hospital,Orange,,
 Hendrick Medical Center South,Hendrick Medical Center South,Acute Care Hospital,Abilene,450229,Campus of Hendrick Medical Center
 Shannon Medical Center Saint John's Campus,Shannon Medical Center St. John's Campus,Acute Care Hospital,San Angelo,,Campus of Shannon Medical Center
 Del Sol Medical Center,Del Sol Medical Center,Acute Care Hospital,El Paso,,Campus of Las Palmas Del Sol Healthcare

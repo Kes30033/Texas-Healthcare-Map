@@ -98,6 +98,7 @@ button, input, select { font: inherit; color: inherit; }
 .linkbtn { border: 0; background: none; padding: 0; font: inherit; color: var(--ink); text-align: left; cursor: pointer;
   text-decoration: underline; text-decoration-color: var(--line); text-decoration-thickness: 1.5px; text-underline-offset: 3px; }
 .linkbtn:hover { text-decoration-color: var(--ink-2); }
+.here { display: grid; gap: 6px; font-size: 14px; }
 
 .filters { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .filters > summary { list-style: none; cursor: pointer; padding-block: 12px; display: flex; justify-content: space-between; align-items: center; font-weight: 600; }
@@ -626,14 +627,17 @@ function select(i, fly) {
     ["CMS number", esc(s.id && !s.id.startsWith("campus:") ? s.id : "")],
   ].filter(([, v]) => v);
   const addr = [s.addr, s.city, "TX"].filter(Boolean).join(", ");
+  // facilities sharing a building sit under one dot: list the others so each can be opened
+  const here = D.sites.map((_, j) => j).filter(j => j !== i && Math.abs(D.sites[j].lat - s.lat) < 0.0003 && Math.abs(D.sites[j].lng - s.lng) < 0.00035);
   $("detail").innerHTML = `
     <div><button class="btn ghost" type="button" id="back">← Back to list</button></div>
     <h2>${esc(s.n)}</h2>
     <div class="kind"><span class="key ${isNew(s) ? "newk" : siteType(s)}"></span>${esc(ty.label)}</div>
     ${isNew(s) ? `<p class="note">Not open yet: this is a planned or under-construction ${siteType(s) === "asc" ? "surgery center" : "hospital"}.</p>` : ""}
-    ${s.note ? `<p class="note">${esc(s.note)}.</p>` : ""}
+    ${s.note ? `<p class="note">${esc(s.note)}${/[.!?]$/.test(s.note) ? "" : "."}</p>` : ""}
     <dl class="facts">${facts.map(([k, v]) => `<dt>${k}</dt><dd>${v}</dd>`).join("")}</dl>
-    ${s.approx ? `<p class="note">The address couldn't be matched exactly, so the dot sits near the center of its city or ZIP code.</p>` : ""}
+    ${s.approx ? `<p class="note">${esc(s.pos || "Approximate position: the address couldn't be matched exactly")}.</p>` : ""}
+    ${here.length ? `<div><p class="eyebrow">Also at this spot (${here.length})</p><div class="here">${here.map(j => `<div><button class="linkbtn" type="button" data-site="${j}">${esc(D.sites[j].n)}</button> <span class="hint">${esc(D.types[D.sites[j].t].label)}${D.sites[j].pj.length ? ` · ${D.sites[j].pj.length} project${D.sites[j].pj.length > 1 ? "s" : ""}` : ""}</span></div>`).join("")}</div></div>` : ""}
     <div class="actions"><a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(s.n + ", " + addr)}" target="_blank" rel="noopener">Open in Google Maps</a></div>
     <div><p class="eyebrow">${ps.length ? `Projects (${ps.length})` : "Projects"}</p>
       ${ps.length ? "" : `<p class="note">No active construction filings found for this address since 2021.</p>`}
@@ -819,6 +823,7 @@ function setupSearch() {
   $("searchForm").addEventListener("submit", e => { e.preventDefault(); search(input.value); });
   $("detail").addEventListener("click", e => {   // names in the details search for themselves
     const b = e.target.closest(".linkbtn"); if (!b) return;
+    if (b.dataset.site) { select(+b.dataset.site, false); return; }   // another facility in the same building
     const entry = ENTRY_BY[b.dataset.entity];
     if (entry) { $("q").value = entry.label; entry.run(); }
   });

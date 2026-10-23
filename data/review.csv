@@ -7,6 +7,7 @@ TABS2022004400,Klyde Warren Park Phase 2,"research, academic or non-clinical bui
 TABS2022005068,FM 1960 MEDICAL PLAZA,not a hospital or surgery center
 TABS2022005648,The Reserve at Lancaster,not a hospital or surgery center
 TABS2022010753,Probandt Apartments,not a hospital or surgery center
+TABS2022011380,Replacement Hospital,"stopped, per news reports: Steward Health Care's replacement for Wadley Regional Medical Center. Construction stopped in February 2024 when Steward ran out of money and was abandoned after its bankruptcy; CHRISTUS bought the existing hospital, now CHRISTUS Health Pine Street. Left off the map even though the state filing is still open."
 TABS2022013318,Northside Islamic Center,not a hospital or surgery center
 TABS2022015439,Lubbock County Expo Center,not a hospital or surgery center
 TABS2022015942,Medprem Urgent Care,not a hospital or surgery center
@@ -64,6 +65,7 @@ TABS2024005573,Medical Office Building for Wadley Regional Medical Center,not a 
 TABS2024005952,Proposed Third Floor Buildout,not a hospital or surgery center
 TABS2024006912,Victory Block-M,not a hospital or surgery center
 TABS2024007337,"TBN Transformation – North Concourse BN02, BN07, BN08",not a hospital or surgery center
+TABS2024007563,MD Anderson South Campus Bridge and Gardens,not a hospital or surgery center
 TABS2024008068,FOOD MART - SMART SHOP,not a hospital or surgery center
 TABS2024008125,MECA Theater,not a hospital or surgery center
 TABS2024008515,Guyon Saunders Resource Center,not a hospital or surgery center
@@ -162,6 +164,7 @@ TABS2025005829,Oasis Aparrtments,not a hospital or surgery center
 TABS2025006034,Central Park Post Oak - Site,"research, academic or non-clinical building"
 TABS2025006241,Kathlyn Joy Gilliam Collegiate Academy,not a hospital or surgery center
 TABS2025006317,Bishop Modern,not a hospital or surgery center
+TABS2025006377,METRO TMC TC Elevator Replacement,"research, academic or non-clinical building"
 TABS2025006477,#23179 - Project Sky,not a hospital or surgery center
 TABS2025006510,Paris Pregnancy Center Maternity Center,not a hospital or surgery center
 TABS2025006664,Yarrow Business Park Building 2,"research, academic or non-clinical building"
@@ -183,6 +186,8 @@ TABS2025008777,The Grove Hotel,not a hospital or surgery center
 TABS2025008859,Memorial Hermann Mischer Neuroscience Associates,not a hospital or surgery center
 TABS2025008985,Sycamores at Pleasant Valley,not a hospital or surgery center
 TABS2025009051,Behavioral Health Hospital Expansion,not a hospital or surgery center
+TABS2025009735,MDACC - Garage Security Enhancements - PGA,not a hospital or surgery center
+TABS2025009754,MDACC - Garage Security Enhancements - MGA,not a hospital or surgery center
 TABS2025009767,Garage Security Enhancements - SCG,not a hospital or surgery center
 TABS2025009902,S.S Conner Elementary School-Building Renovation & Kitchen Addition,"research, academic or non-clinical building"
 TABS2025009931,Capital Millwork Office Renovation,"research, academic or non-clinical building"
@@ -200,7 +205,6 @@ TABS2025011419,Courtyard & Residence Inn by Marriott Corpus Christi,not a hospit
 TABS2025011424,Infrastructure and Research Space Upgrades for Research Building - Phase II - Research BLDG No..6,"research, academic or non-clinical building"
 TABS2025011683,TCU - Berry Street (E Block),not a hospital or surgery center
 TABS2025011765,"Ascension Cottages, A New Cottage Home Rental Community",not a hospital or surgery center
-TABS2025011895,HVAC & ROOF IMPROVEMENTS,not a hospital or surgery center
 TABS2025012056,CSH Northpark Garden Villas,not a hospital or surgery center
 TABS2025012751,4767 IBERIA,not a hospital or surgery center
 TABS2025012836,Sofie Bioscience Addition,"research, academic or non-clinical building"
@@ -256,9 +260,11 @@ TABS2025017674,Cadillac of Dallas Renovation,not a hospital or surgery center
 TABS2025017756,CWD Plano Medical Office Building,not a hospital or surgery center
 TABS2025017907,McAllen Health Center Improvement Project,not a hospital or surgery center
 TABS2025017946,TTBH EOP Renovation 25,not a hospital or surgery center
+TABS2025017953,Memorial Hermann Medical Group,not a hospital or surgery center
 TABS2025017990,Plano Gateway - Building 10,not a hospital or surgery center
 TABS2025018178,Kroger DAL 595,not a hospital or surgery center
 TABS2025018206,North Park Volkswagen Shop Expansion,"research, academic or non-clinical building"
+TABS2025018238,Woodforest Medical Office Center,not a hospital or surgery center
 TABS2025018346,7413 Grand Avenue Apartments,not a hospital or surgery center
 TABS2025018377,Livingspring Family Medical Center,not a hospital or surgery center
 TABS2025018400,Amistad Community Health,not a hospital or surgery center
@@ -292,11 +298,11 @@ TABS2025019921,Frederisckburg Rd Restaurant,not a hospital or surgery center
 TABS2025020000,Conveyance  Replacement at CUP,not a hospital or surgery center
 TABS2025020006,Frankford Middle School Addition/Renovation,not a hospital or surgery center
 TABS2025020007,Houston Methodist Emergency Care Center - CT Replacement,"research, academic or non-clinical building"
+TABS2025020171,LBJ Farm Pavilion and Shade House,"research, academic or non-clinical building"
 TABS2025020403,THR Midlothian IHC,not a hospital or surgery center
 TABS2025020453,CHRISTUS Good Shepherd Cancer Center,not a hospital or surgery center
 TABS2025020455,Texas Regional Asthma & Allergy Center,not a hospital or surgery center
 TABS2025020480,The Elle Apartment Homes,not a hospital or surgery center
-TABS2025020591,Hospitality Room Expansion,not a hospital or surgery center
 TABS2025020811,Elite Dermatology Kingwood,"research, academic or non-clinical building"
 TABS2025020974,Student Success Center,"research, academic or non-clinical building"
 TABS2025021010,HealthCo. Pharmacy - Cleanroom Suite & Testing Lab,not a hospital or surgery center
@@ -330,7 +336,7 @@ TABS2025022859,CENTRAL HEALTH - COLONY PARK HEALTH & WELLNESS CENTER,"research, 
 TABS2025022875,crawfish cafe,not a hospital or surgery center
 TABS2025023053,Pecan Deluxe 5,not a hospital or surgery center
 TABS2025023223,Lake Travis ISD - Educational Development Center Addition,"research, academic or non-clinical building"
-TABS2025023302,Atascosa County Regional Medical Examiner,not a hospital or surgery center
+TABS2025023302,Atascosa County Regional Medical Examiner,"research, academic or non-clinical building"
 TABS2025023329,DFW Park 161 Phase III - Logistics Center 13,"research, academic or non-clinical building"
 TABS2025023370,BSW MEC Renovation,"research, academic or non-clinical building"
 TABS2025023419,BioLife Plasma Services,not a hospital or surgery center
@@ -350,10 +356,12 @@ TABS2025024406,Lampasas Emergency Care Clinic,not a hospital or surgery center
 TABS2025024529,Central Bank - West Houston,not a hospital or surgery center
 TABS2025024578,Raising Cane's Restaurant #1164 Austin,not a hospital or surgery center
 TABS2025024667,HIGHLANDS VILLAGE,not a hospital or surgery center
+TABS2025024736,Shady Grove Fertility - Houston,"medical office or clinic, not a hospital or surgery center"
 TABS2025024920,Hospitality Health of Lake Jackson,not a hospital or surgery center
 TABS2025024921,Gas Station,not a hospital or surgery center
 TABS2025025057,Amarillo FOD - Office Expansion,not a hospital or surgery center
 TABS2025025395,Leal Development Bldgs A & B,not a hospital or surgery center
+TABS2025025723,UT Surgery,not a hospital or surgery center
 TABS2025025737,City of Houston Sims North WWTP Improvements - Package 3,"research, academic or non-clinical building"
 TABS2025025759,TTU HSC Amarillo Drive Improvements,not a hospital or surgery center
 TABS2025025766,RaceTrac #2336 Shiloh,not a hospital or surgery center
@@ -363,6 +371,7 @@ TABS2025025960,"MCD BUCKNER & FORNEY - DALLAS, TX",not a hospital or surgery cen
 TABS2025025971,Masjid Al-Ikhlas,not a hospital or surgery center
 TABS2025025976,Golf Galaxy,not a hospital or surgery center
 TABS2025025998,Irma L. Rangel Young Women's Leadership School,not a hospital or surgery center
+TABS2025026100,Texas Health Huguley MOB,not a hospital or surgery center
 TABS2025026198,LOVETT GARVER - BLDG 06,not a hospital or surgery center
 TABS2025026219,"Brady Investment Group, LLC",not a hospital or surgery center
 TABS2025026252,East End Cantina,not a hospital or surgery center
@@ -390,6 +399,7 @@ TABS2026000022,New Gymnasium Building,not a hospital or surgery center
 TABS2026000087,"New Office Manufacturing Facility for Schneider Electric, Plant #6 T.I.",not a hospital or surgery center
 TABS2026000112,Skips fort worth,not a hospital or surgery center
 TABS2026000144,4th Street Garden Offices - 4,not a hospital or surgery center
+TABS2026000176,MDA 1MC SIMULATION CENTER ROOM RENOVATION,not a hospital or surgery center
 TABS2026000335,UT Whitis Court,"research, academic or non-clinical building"
 TABS2026000351,McNiel Elementary School Renovation,"research, academic or non-clinical building"
 TABS2026000669,1120 Restaurant,not a hospital or surgery center
@@ -407,7 +417,6 @@ TABS2026001116,Hillcroft Ventures,not a hospital or surgery center
 TABS2026001238,Pizaro's Pizza- Space 2,not a hospital or surgery center
 TABS2026001242,CIBO Express Gourmet Market & Starbucks- Retail 7&8,"research, academic or non-clinical building"
 TABS2026001244,West Pier Food Hall- Space 5,"research, academic or non-clinical building"
-TABS2026001251,Back of House- Dishwash and Storage- Space 4,not a hospital or surgery center
 TABS2026001252,H-Town Burger Bar-Space 1,not a hospital or surgery center
 TABS2026001467,8610 Patriot Park,"research, academic or non-clinical building"
 TABS2026001471,8612 Patriot Park,"research, academic or non-clinical building"
@@ -438,7 +447,6 @@ TABS2026002800,Elite Carpet Cleaning,not a hospital or surgery center
 TABS2026002810,MUMINEEN HUB,not a hospital or surgery center
 TABS2026002942,6906 Glendora Business Park,"research, academic or non-clinical building"
 TABS2026003003,Vantage Data Centers TX22,"research, academic or non-clinical building"
-TABS2026003034,Expansion Stonbridge Surgery Center,addition at a hospital or surgery center not in the lists
 TABS2026003150,New Clinic Additions and Renovations,not a hospital or surgery center
 TABS2026003158,Sabey Austin Building B: DH B35,not a hospital or surgery center
 TABS2026003162,Sabey Austin Building B: DH B36,not a hospital or surgery center
@@ -474,7 +482,7 @@ TABS2026004343,Cozen O'Connor - Expansion,not a hospital or surgery center
 TABS2026004403,TX240546 San Antonio (H-E-B 623),not a hospital or surgery center
 TABS2026004439,Central on Commerce,not a hospital or surgery center
 TABS2026004514,"A Clinic for KW SP Management, LLC","medical office or clinic, not a hospital or surgery center"
-TABS2026004554,UTHealth MSB TBL Renovation,not a hospital or surgery center
+TABS2026004554,UTHealth MSB TBL Renovation,"research, academic or non-clinical building"
 TABS2026004564,Heights Medical Office Building,not a hospital or surgery center
 TABS2026004579,24-04 Kenwood Community & Senior Center,not a hospital or surgery center
 TABS2026004607,Rockwall MOB,not a hospital or surgery center
@@ -508,8 +516,10 @@ TABS2026005551,Rec + Relax Entertainment Venue,not a hospital or surgery center
 TABS2026005606,Foundry Children's Building,not a hospital or surgery center
 TABS2026005652,Bertner Garage Reimaging - Interior Food Hall Renovation,"research, academic or non-clinical building"
 TABS2026005680,Don Tipps State Farm,not a hospital or surgery center
+TABS2026005685,Building 3SCRB - Exterior Canopy Addition,"research, academic or non-clinical building"
 TABS2026005832,Tezel Rd & Old Tezel Rd,"research, academic or non-clinical building"
 TABS2026005834,SUYU PERUVIAN COCINA,not a hospital or surgery center
+TABS2026005836,Baylor Scott & White Frisco TX,not a hospital or surgery center
 TABS2026005839,414 W Rhapsody,not a hospital or surgery center
 TABS2026005848,CBG 1010 N 10th St,not a hospital or surgery center
 TABS2026005923,Burleson Warehouse Bldg. #1,not a hospital or surgery center
@@ -555,7 +565,7 @@ TABS2026007798,Famous Toastery,not a hospital or surgery center
 TABS2026007828,Motiva PAT Operator Building Renovation,not a hospital or surgery center
 TABS2026007879,Quanta Services Conference Center,not a hospital or surgery center
 TABS2026007903,QTS Data Centers Floor 7 Interior Improvements,"research, academic or non-clinical building"
-TABS2026007952,DHR Forensic & Behavioral Hospital,not a hospital or surgery center
+TABS2026007952,DHR Forensic & Behavioral Hospital,"research, academic or non-clinical building"
 TABS2026007959,RaceTrac Lakeside,not a hospital or surgery center
 TABS2026007992,Oak Springs Apartments,not a hospital or surgery center
 TABS2026007994,HEB Grocery Store #825,not a hospital or surgery center
@@ -568,6 +578,7 @@ TABS2026008191,Community First! Village - Phase 3,not a hospital or surgery cent
 TABS2026008193,DISD Lowe Elementary School - Renovation,"research, academic or non-clinical building"
 TABS2026008220,Brunello Cucinelli - Expansion,not a hospital or surgery center
 TABS2026008232,Signal Energy Tenant Improvement,not a hospital or surgery center
+TABS2026008257,Kelsey Seybold Bay Area MRI 2 Buildout,not a hospital or surgery center
 TABS2026008285,UT ORTHOPEDICS - CYPRESS,not a hospital or surgery center
 TABS2026008301,Kelsey Seybold Northwest MRI Buildout,not a hospital or surgery center
 TABS2026008327,The Boyd at Westover,not a hospital or surgery center
@@ -590,6 +601,8 @@ TABS2026008801,Jersey Mike's - Brodie Lane,not a hospital or surgery center
 TABS2026008836,Calvary Lutheran Church Parking Expansion,not a hospital or surgery center
 TABS2026008912,Sunset Heights Urgent Care,not a hospital or surgery center
 TABS2026008927,Petco Tenant Improvements,not a hospital or surgery center
+TABS2026008945,Texas Oncology,not a hospital or surgery center
+TABS2026008974,OBGYN Medical Center Associates,not a hospital or surgery center
 TABS2026009040,"Ulta_#2059 San Antonio, TX",not a hospital or surgery center
 TABS2026009090,Jane Long Building & Site Upgrades,"research, academic or non-clinical building"
 TABS2026009105,Select Medical - Specialty Hospital Renovation,work at an existing building that isn't in the lists or couldn't be matched
@@ -600,6 +613,7 @@ TABS2026009247,INTERNATIONAL MANAGEMENT DISTRICT GATE,not a hospital or surgery 
 TABS2026009279,CLS HEALTH - MCB (Mobile PET/CT Scan Unit),not a hospital or surgery center
 TABS2026009286,O2 Park,"research, academic or non-clinical building"
 TABS2026009292,Watson High School - Additions & Renovations,"research, academic or non-clinical building"
+TABS2026009352,STRIC NWIC PETCT Remodel,not a hospital or surgery center
 TABS2026009414,DISCOUNT TIRE TXS 11,not a hospital or surgery center
 TABS2026009458,Feel Great Carwash,not a hospital or surgery center
 TABS2026009464,Harris Health System Acres Homes Health Center IT Closet Expansion,not a hospital or surgery center
@@ -611,7 +625,6 @@ TABS2026009735,Renovations for Lake View Cardiology,not a hospital or surgery ce
 TABS2026009749,Center for Healthy Aging,not a hospital or surgery center
 TABS2026009765,Pampa Pregnancy Support Center,not a hospital or surgery center
 TABS2026009807,University Medical Center East Physical Therapy Addition,not a hospital or surgery center
-TABS2026009821,LabCorp,not a hospital or surgery center
 TABS2026009846,Frost Financial Center - Potranco,not a hospital or surgery center
 TABS2026009879,Microsoft SN1 X-ARCHIVE,"research, academic or non-clinical building"
 TABS2026009888,Suvida Healthcare,not a hospital or surgery center
@@ -636,8 +649,6 @@ TABS2026010440,Meta Restoration Phase II,not a hospital or surgery center
 TABS2026010480,Carefirst Emergency Center in Paris,not a hospital or surgery center
 TABS2026010545,Wells Fargo Culebra & 211,not a hospital or surgery center
 TABS2026010616,Retail and C-store,not a hospital or surgery center
-TABS2026010645,WESTECH SPEC SUITE 1250,not a hospital or surgery center
-TABS2026010648,WESTECH SPEC SUITE 3200,not a hospital or surgery center
 TABS2026010658,Alcon ASPEX EO Cooler #2,not a hospital or surgery center
 TABS2026010680,Orthopedics Clinic Renovation,"research, academic or non-clinical building"
 TABS2026010682,Create Healthy Wellness Center - Additions and Renovations,not a hospital or surgery center
@@ -654,10 +665,11 @@ TABS2026010854,Better Together Behavioral Health,not a hospital or surgery cente
 TABS2026010855,Invitation Homes Corporate Expansion,not a hospital or surgery center
 TABS2026010872,Laderach Swiss Chocolate,not a hospital or surgery center
 TABS2026010874,Z Electrica Inc Office/Warehouse,not a hospital or surgery center
-TABS2026010880,Buffalo Wild Wings GO Mission,not a hospital or surgery center
 TABS2026010965,KESEM HEALTH PHARMACY,not a hospital or surgery center
 TABS2026011003,Staybridge Suites - St. Paul Square,not a hospital or surgery center
+TABS2026011087,UH-Allergy & Asthma Expansion,not a hospital or surgery center
 TABS2026011090,WBT 9-180 - 3 New Offices,not a hospital or surgery center
+TABS2026011105,J3 - Pediatrics Offices,not a hospital or surgery center
 TABS2026011159,JCC Mind & Body Renovation,not a hospital or surgery center
 TABS2026011183,Encompass Health Rehabilitation Hospital of Prosper - Phase 2,not a hospital or surgery center
 TABS2026011226,PET/CT Renovation,work at an existing building that isn't in the lists or couldn't be matched
@@ -705,13 +717,16 @@ TABS2026012456,Black Family Hospitality - Bathhouse,not a hospital or surgery ce
 TABS2026012466,LoverBoy House Eats,not a hospital or surgery center
 TABS2026012480,23064 - Denton Point - Building 1,not a hospital or surgery center
 TABS2026012500,C.D. FULKES MEETING HALL,"research, academic or non-clinical building"
+TABS2026012517,Kelsey-Seybold Main Campus - Cardiology Expansion,not a hospital or surgery center
 TABS2026012518,Advanced Surgical Solutions,not a hospital or surgery center
 TABS2026012523,TSG - Trinity Towers Suite 1220,not a hospital or surgery center
 TABS2026012556,Joseph J. Rhoads Learning Center Building Additions & Site Work,not a hospital or surgery center
 TABS2026012562,Airway Dentists,not a hospital or surgery center
 TABS2026012596,"Powers Taylor, LLP",not a hospital or surgery center
 TABS2026012629,BENT ON HEALTHY LIVING WELLNESS STUDIOS,not a hospital or surgery center
+TABS2026012706,Memorial Hermann Mischer Neuroscience Associates - Infusion Center,not a hospital or surgery center
 TABS2026012757,Exalt Health Inpatient Rehab Hospital New Caney,not a hospital or surgery center
+TABS2026012776,Bertner Garage Reimaging - Exterior Renovation,not a hospital or surgery center
 TABS2026012788,Cabrini Geriatric Hospital,not a hospital or surgery center
 TABS2026012828,Interpool Inc.,not a hospital or surgery center
 TABS2026012834,X-Ray Renovation,work at an existing building that isn't in the lists or couldn't be matched
@@ -816,6 +831,7 @@ TABS2026014837,HHER Hospital Licensing,addition at a hospital or surgery center 
 TABS2026014841,River North Professional Complex- Medical & Surgical Clinic,not a hospital or surgery center
 TABS2026014844,SPX Champion,not a hospital or surgery center
 TABS2026014852,"Cabinet IQ - San Antonio, TX",not a hospital or surgery center
+TABS2026014853,MSL Healthcare,not a hospital or surgery center
 TABS2026014900,Aven Hospitality,"research, academic or non-clinical building"
 TABS2026014906,Dillard's Department Store - 2026 Remodel,not a hospital or surgery center
 TABS2026014935,MIDTOWNE - Building 3,not a hospital or surgery center
@@ -831,6 +847,7 @@ TABS2026015138,Kelsey Seybold New Lab,not a hospital or surgery center
 TABS2026015222,Space Corner at IAH,not a hospital or surgery center
 TABS2026015226,Welltower Kyle TX VIP Medical Group,not a hospital or surgery center
 TABS2026015237,Chubby Cattle BBQ,not a hospital or surgery center
+TABS2026015279,UT HEALTH MSB LAB CONVERSION,"research, academic or non-clinical building"
 TABS2026015297,La Villita Restroom Renovation at Plaza Juarez,"research, academic or non-clinical building"
 TABS2026015315,Tight Ends,not a hospital or surgery center
 TABS2026015370,BioBridge Remodel 6603 - Phase 2,not a hospital or surgery center
@@ -872,9 +889,11 @@ TABS2026015879,TEXAS HEALTH ORTHOPEDIC & TEXAS HEALTH SPORTS MEDICINE,not a hosp
 TABS2026015888,Advanced Imaging Center of Amarillo MRI Replacement,not a hospital or surgery center
 TABS2026015902,"3105 Lakeway, TX - Ranch Road",not a hospital or surgery center
 TABS2026015903,PRO-CARE Medical Center,not a hospital or surgery center
+TABS2026015916,Methodist Mansfeild GI,not a hospital or surgery center
 TABS2026015921,Communicare San Marcos,not a hospital or surgery center
 TABS2026015930,SONIDA SENIOR LIVING,not a hospital or surgery center
 TABS2026015940,Lavender Hill,not a hospital or surgery center
+TABS2026015947,Boutros OR Interior Renovation,not a hospital or surgery center
 TABS2026015980,Community Healthcore,not a hospital or surgery center
 TABS2026016013,2026 Renovations - Lease Space 123 at MediCenter,not a hospital or surgery center
 TABS2026016035,Project Astro,"research, academic or non-clinical building"
@@ -1034,7 +1053,7 @@ TABS2026018424,Owens Franklin Health Clinic,not a hospital or surgery center
 TABS2026018455,Shannon Medical Center South MOB,not a hospital or surgery center
 TABS2026018477,Pineywoods Academy Phase 2,not a hospital or surgery center
 TABS2026018481,Thompson and Horton - Tenant Renovation Suite 2000,not a hospital or surgery center
-TABS2026018498,Bexar County FSC - Medical Examiner Renovation,not a hospital or surgery center
+TABS2026018498,Bexar County FSC - Medical Examiner Renovation,"research, academic or non-clinical building"
 TABS2026018504,LC Weslaco,not a hospital or surgery center
 TABS2026018505,SynergenX,not a hospital or surgery center
 TABS2026018545,Dallas Renal Group,not a hospital or surgery center
@@ -1086,14 +1105,16 @@ TABS2026019081,UTD Sci- Dr. Liu Lab,not a hospital or surgery center
 TABS2026019090,Fat Ice,"research, academic or non-clinical building"
 TABS2026019120,Old Settlers Park Cross Country Improvement Project 2026,"research, academic or non-clinical building"
 TABS2026019167,Johnston & Murphy,not a hospital or surgery center
+TABS2026019171,E1.410G Glass Wall,not a hospital or surgery center
 TABS2026019177,TERREPOWER,not a hospital or surgery center
 TABS2026019185,10741 KING WILLIAM DR SPEC OFFICE INTERIOR RENOV,not a hospital or surgery center
-TABS2026019266,El Paso County Office of the Medical Examiner,not a hospital or surgery center
+TABS2026019266,El Paso County Office of the Medical Examiner,"research, academic or non-clinical building"
 TABS2026019274,MFK Northpark Boutique,not a hospital or surgery center
 TABS2026019290,Salon Centric,not a hospital or surgery center
 TABS2026019294,Natera Sequencing Core,not a hospital or surgery center
 TABS2026019298,Memorial Hermann Wharton Sports Medicine & Rehabilitation,not a hospital or surgery center
 TABS2026019305,Healthy Smiles Office Finish out,not a hospital or surgery center
+TABS2026019310,Serenity San Antonio,not a hospital or surgery center
 TABS2026019375,Venture Global Level 15 Renovation,not a hospital or surgery center
 TABS2026019379,Hidalgo Health Clinic Facility Construction Project,not a hospital or surgery center
 TABS2026019380,DD7 EMERGENCY OPERATIONS CENTER,"research, academic or non-clinical building"
@@ -1116,11 +1137,13 @@ TABS2026019624,UTSW Pegasus Level 4 Training Room,"research, academic or non-cli
 TABS2026019640,Ellipsis,not a hospital or surgery center
 TABS2026019642,Mansfield Funeral Home & Cremation Center at Oak Cliff,not a hospital or surgery center
 TABS2026019649,Angelina County Clerk's Office Interior Renovations,not a hospital or surgery center
+TABS2026019658,Sonterra Health Texas Clinic,not a hospital or surgery center
 TABS2026019678,Memorial Hermann Medical Group Urology,not a hospital or surgery center
 TABS2026019683,A Tenant Improvement Restaurant-Bar,not a hospital or surgery center
 TABS2026019688,Memorial Hermann - Mischer Neuroscience Associates,not a hospital or surgery center
 TABS2026019692,Rustic Cowboy,"research, academic or non-clinical building"
 TABS2026019708,"Amarillo, TX",not a hospital or surgery center
+TABS2026019716,MAIN CAMPUS PHARMACY REMODEL,not a hospital or surgery center
 TABS2026019718,alice + olivia Dallas,"research, academic or non-clinical building"
 TABS2026019761,Texas Healthcare Neck and Back,not a hospital or surgery center
 TABS2026019764,LUCID Private Offices,not a hospital or surgery center
@@ -1160,6 +1183,7 @@ TABS2026020199,USRC Southwood,not a hospital or surgery center
 TABS2026020211,Lucid Private Offices,not a hospital or surgery center
 TABS2026020217,BSW Rockwall CT Upgrade,not a hospital or surgery center
 TABS2026020226,Priority Management Expansion,not a hospital or surgery center
+TABS2026020228,Building UL07 Orthopaedics,not a hospital or surgery center
 TABS2026020243,The Brady Residences - Sky Spa,not a hospital or surgery center
 TABS2026020246,Alamo Concrete Interior Finish Out,not a hospital or surgery center
 TABS2026020255,VIP Medical Group,not a hospital or surgery center
@@ -1168,6 +1192,7 @@ TABS2026020305,Dr. Brett Mueller Office,not a hospital or surgery center
 TABS2026020333,Alief Natatorium Renovation,not a hospital or surgery center
 TABS2026020365,Fountain Park Village - Interior Renovation,"research, academic or non-clinical building"
 TABS2026020387,Suite 1709 Make Ready,not a hospital or surgery center
+TABS2026020394,TMF Renovation,not a hospital or surgery center
 TABS2026020396,Plato's Closet,not a hospital or surgery center
 TABS2026020425,Triumph PC3-Basement,not a hospital or surgery center
 TABS2026020430,UT Health Cardiac Plaza PET CT Addition,not a hospital or surgery center
@@ -1193,12 +1218,14 @@ TABS2026020884,TEC Suite Finish Out BJB 12th Floor New Office Build Out,not a ho
 TABS2026020890,coffee lounge,not a hospital or surgery center
 TABS2026020899,Texas Health Behavioral Health Center Denton - 2660,not a hospital or surgery center
 TABS2026020916,Fort Bend Care Center,not a hospital or surgery center
+TABS2026020941,MH SL1 Suite 460 Renovation,not a hospital or surgery center
 TABS2026020958,Central Houston Expansion - Level 42,not a hospital or surgery center
 TABS2026020964,McAlister's Deli,"research, academic or non-clinical building"
 TABS2026020982,UTMB OT/PT CLINIC,not a hospital or surgery center
 TABS2026021014,Kadampa Meditation Center Austin,not a hospital or surgery center
 TABS2026021061,CesiumAstro Building 3 Production,not a hospital or surgery center
 TABS2026021066,Relocate Portable Buildings at San Jacinto Junior High School,"research, academic or non-clinical building"
+TABS2026021088,Equpiment Replacement Project Level 01:A206,not a hospital or surgery center
 TABS2026021090,Community First! Village - Phase 3,not a hospital or surgery center
 TABS2026021092,Community First! Village - Phase 3,not a hospital or surgery center
 TABS2026021093,Community First! Village - Phase 3,not a hospital or surgery center
@@ -1264,7 +1291,6 @@ TABS2026022019,HealthTexas Ingram Clinic,not a hospital or surgery center
 TABS2026022025,ATI Physical Therapy - SAT Babcock,not a hospital or surgery center
 TABS2026022035,GREAT SOUTHWESTERN CONSTRUCTION,not a hospital or surgery center
 TABS2026022056,TCP Westwood,not a hospital or surgery center
-TABS2026022061,Genesis Medical Group - Phase II,not a hospital or surgery center
 TABS2026022066,CLS HEALTH - MCB (Suite 204),not a hospital or surgery center
 TABS2026022074,Creative School at Cochran Chapel,not a hospital or surgery center
 TABS2026022081,TFC DIR Suite Finish Out BJB,not a hospital or surgery center
@@ -1369,6 +1395,7 @@ TABS2026023451,Unlimited Soccer Austin,not a hospital or surgery center
 TABS2026023453,Valvoline,not a hospital or surgery center
 TABS2026023474,Texas Heart & Vascular Specialists Suite Renovation,not a hospital or surgery center
 TABS2026023482,"RGV HEALTH MEDICAL CLINIC, PLLC",not a hospital or surgery center
+TABS2026023484,3SCR1 Imaging Physics MRI U000237,"research, academic or non-clinical building"
 TABS2026023486,Hilcorp Level 11 Office Renovation,not a hospital or surgery center
 TABS2026023497,ESTES THORNE EWING & PAYNE,not a hospital or surgery center
 TABS2026023502,Daily Lagree,not a hospital or surgery center
@@ -1412,6 +1439,7 @@ TABS2026023872,Methodist Clinic Expansion,not a hospital or surgery center
 TABS2026023926,Memorial Hermann Medical Group Primary Care - Mont Belvieu,not a hospital or surgery center
 TABS2026023939,Memorial Hermann Medical Group Specialty Timeshare- Mont Belvieu,not a hospital or surgery center
 TABS2026023943,CONFIDENTIAL CLIENT,not a hospital or surgery center
+TABS2026023948,Memorial Hermann Medical Group Urology,not a hospital or surgery center
 TABS2026023952,Baylor Scott & White - Dallas/ Lake Highlands,not a hospital or surgery center
 TABS2026023953,UPS Store #8358 - Tenant Improvement,"research, academic or non-clinical building"
 TABS2026023977,A Crate Escape,not a hospital or surgery center
@@ -1487,6 +1515,7 @@ TABS2026024968,Back Nine Golf -- Rockwall,not a hospital or surgery center
 TABS2026024998,Dallas Museum of Art Municipal Bond Project - Equipment Replacement,not a hospital or surgery center
 TABS2026025000,162127 L4.202 Lab Renovation - Phase Two,not a hospital or surgery center
 TABS2026025059,MAISON NAIL BAR,"research, academic or non-clinical building"
+TABS2026025063,"NW Tower II, Suite 105",not a hospital or surgery center
 TABS2026025097,Level 1 Pain Clinic Renovation,"research, academic or non-clinical building"
 TABS2026025130,Hamilton ISD New Accessible JH Entrance,"research, academic or non-clinical building"
 TABS2026025133,Quanta Kitchen,not a hospital or surgery center
@@ -1519,6 +1548,7 @@ TABS2026025542,Jo Malone London - River Oaks District,not a hospital or surgery 
 TABS2026025567,WAREHOUSE,not a hospital or surgery center
 TABS2026025579,CommuniCare - Retama - Tenant Finish,not a hospital or surgery center
 TABS2026025588,Triumph Bank - 15th Floor Renovation,"research, academic or non-clinical building"
+TABS2026025615,IMAGE Studios Dallas - Preston Plaza,not a hospital or surgery center
 TABS2026025628,"Ji, EunJung",not a hospital or surgery center
 TABS2026025639,San Jacinto Junior High Renovations,"research, academic or non-clinical building"
 TABS2026025647,CP-FY26-034 Office Renovation for Respiratory Care,not a hospital or surgery center
@@ -1554,6 +1584,7 @@ TABS2026025912,4th Floor Women's Heath,not a hospital or surgery center
 TABS2026025930,Grocery Central,not a hospital or surgery center
 TABS2026025935,Second Floor Renovation - Center of Hope,not a hospital or surgery center
 TABS2026025950,OFFICE EVOLUTION EXPANSION,not a hospital or surgery center
+TABS2026025964,Memorial Hermann Woodlands OPID RAD,not a hospital or surgery center
 TABS2026025968,Daniel's Health,not a hospital or surgery center
 TABS2026025972,Auntie Anne's,not a hospital or surgery center
 TABS2026025973,Temple Beth-El Memorial Park Phase 1 Improvements,"research, academic or non-clinical building"
@@ -1608,16 +1639,19 @@ TABS2026026526,Gibson Dunn - Houston,not a hospital or surgery center
 TABS2026026577,Pleasanton Multifamily,not a hospital or surgery center
 TABS2026026612,Arcus Advisors,not a hospital or surgery center
 TABS2026026616,Texas Health Lab,"research, academic or non-clinical building"
+TABS2026026619,Redbird - North Wing - Children's Health Care,not a hospital or surgery center
 TABS2026026625,Uniqlo,not a hospital or surgery center
 TABS2026026647,Rios Super Mercado,not a hospital or surgery center
 TABS2026026650,Pandora,not a hospital or surgery center
 TABS2026026662,Dallas NetJets Campus - Terminal & Site,not a hospital or surgery center
 TABS2026026679,Purple Parking Garage Renovation,not a hospital or surgery center
 TABS2026026694,"Deloitte - Houston L40, (2) Conference Room Conversion",not a hospital or surgery center
+TABS2026026699,Memorial Hermann Woodlands OPID CT,not a hospital or surgery center
 TABS2026026701,Rose Haus in Bloom,not a hospital or surgery center
 TABS2026026716,Dr. Constantine,not a hospital or surgery center
 TABS2026026752,UTMB JSRH Level 6 - SHVI Buildout,not a hospital or surgery center
 TABS2026026781,Atwell Expansion,not a hospital or surgery center
+TABS2026026788,Orion Intensive Cardiac Rehab,not a hospital or surgery center
 TABS2026026794,Burger King - Galveston 19754,not a hospital or surgery center
 TABS2026026802,JPS-HOUSTON TX,not a hospital or surgery center
 TABS2026026828,"CDL, Fire & Police Training Facility",not a hospital or surgery center
@@ -1630,6 +1664,7 @@ TABS2026026919,6333 Broadway,not a hospital or surgery center
 TABS2026026943,"Plummer Associates, Inc.",not a hospital or surgery center
 TABS2026026962,Bavarian Polymers Warehouse,not a hospital or surgery center
 TABS2026026982,Charles Schwab Southlake 1st Floor Remediation,not a hospital or surgery center
+TABS2026026999,MPO Clinic - The Woodlands,not a hospital or surgery center
 TABS2026027053,Veterans Services Center,not a hospital or surgery center
 TABS2026027054,Eastside Community Church - Office Expansion,not a hospital or surgery center
 TABS2026027121,Famous Gold,not a hospital or surgery center
@@ -1763,6 +1798,7 @@ TABS2026029185,Spiars Engineering,"research, academic or non-clinical building"
 TABS2026029194,CORESITE DA1,not a hospital or surgery center
 TABS2026029209,UHS North Clinic Parking Lot Expansion,not a hospital or surgery center
 TABS2026029212,GRMC Laurel MOB MRI Install,not a hospital or surgery center
+TABS2026029215,Suite #200 Tenant Finish Out,not a hospital or surgery center
 TABS2026029244,Hector P Garcia MS,not a hospital or surgery center
 TABS2026029255,Play Street Museum,not a hospital or surgery center
 TABS2026029265,Marble Slab Creamery,not a hospital or surgery center
@@ -1828,6 +1864,7 @@ TABS2027000998,SignatureCare Arlington FEMC Renovation,not a hospital or surgery
 TABS2027001001,CLS Health-Pearland Medical Center Phase 1,not a hospital or surgery center
 TABS2027001023,Spec Suite #230,not a hospital or surgery center
 TABS2027001039,the forge ATHLETIC COMPLEX,not a hospital or surgery center
+TABS2027001084,Oakwood Medical Suite 301 Renovation,not a hospital or surgery center
 TABS2027001117,Coastal Medical Billing LLC,not a hospital or surgery center
 TABS2027001118,South Brewster County Emergency Response Center,not a hospital or surgery center
 TABS2027001120,Encompass Health Inpatient Rehabilitation Hospital of Conroe,not a hospital or surgery center
@@ -1855,6 +1892,7 @@ TABS2027001395,Carey's Place,not a hospital or surgery center
 TABS2027001414,"Westinghouse Office Park - Unified Women’s Healthcare, LP","research, academic or non-clinical building"
 TABS2027001420,Toastique,not a hospital or surgery center
 TABS2027001432,AUI Partners,not a hospital or surgery center
+TABS2027001433,Orthopedic Associates Interior Renovation,not a hospital or surgery center
 TABS2027001439,Camp Aranzazu - Health Center Expansion,not a hospital or surgery center
 TABS2027001445,Perot Sports Hall Renovation,not a hospital or surgery center
 TABS2027001446,Braemont Capital,"research, academic or non-clinical building"
@@ -1879,6 +1917,7 @@ TABS2027001617,Progress Beauty College,not a hospital or surgery center
 TABS2027001624,OAK HILL NAILS,not a hospital or surgery center
 TABS2027001657,Maxim Healthcare,not a hospital or surgery center
 TABS2027001667,TTUHSC Jenna Welch 1st and 2nd Floor Renovations,not a hospital or surgery center
+TABS2027001668,VIP Medical,not a hospital or surgery center
 TABS2027001696,Tae Technologies,not a hospital or surgery center
 TABS2027001743,Chick-fil-A #4409 Spanish Village,"research, academic or non-clinical building"
 TABS2027001744,Dumont Creamery & Cafe,not a hospital or surgery center
@@ -1936,6 +1975,7 @@ TABS2027002405,Houston Energy Restroom Remodel,not a hospital or surgery center
 TABS2027002422,Huebner Smiles & Braces,not a hospital or surgery center
 TABS2027002443,KELSEY SEYBOLD RIVER OAKS CLINIC RENOVATION,not a hospital or surgery center
 TABS2027002449,260409,not a hospital or surgery center
+TABS2027002451,Producer's Lounge,not a hospital or surgery center
 TABS2027002459,Presidio,not a hospital or surgery center
 TABS2027002480,GOMEZ CARDIOVASCULAR CLINIC,not a hospital or surgery center
 TABS2027002524,Townsen West Hospital Expansion,work at an existing building that isn't in the lists or couldn't be matched
@@ -1996,9 +2036,11 @@ TABS2027003154,Urgent Care Facilities,"research, academic or non-clinical buildi
 TABS2027003159,LCRA Eastern Maintenance Facility,not a hospital or surgery center
 TABS2027003199,AQUATECH,not a hospital or surgery center
 TABS2027003201,Evernorth Health Services Tenant Finish-out,"research, academic or non-clinical building"
+TABS2027003207,MD Anderson Cancer Center 3SCR1 CABI 3T MRI,"research, academic or non-clinical building"
 TABS2027003209,Batteries Plus,not a hospital or surgery center
 TABS2027003212,Texas Medical Center - Sidewalk Replacement - Phase 3,not a hospital or surgery center
 TABS2027003218,PRO-CARE Medical Center,not a hospital or surgery center
+TABS2027003219,"UTSW L3.201, L3.203 Lab Fume Hood Renovation","research, academic or non-clinical building"
 TABS2027003230,Westlake - Level 9 Corridor,not a hospital or surgery center
 TABS2027003231,Shower and Toilet Addition,not a hospital or surgery center
 TABS2027003234,Campus Box Media,"research, academic or non-clinical building"
@@ -2078,3 +2120,8 @@ TABS2027004170,The Reserve By TSL  Salon,not a hospital or surgery center
 TABS2027004194,Sweet Pizza LLC,not a hospital or surgery center
 TABS2027004210,Mueller Fitness Club - Tenant Finish-Out,not a hospital or surgery center
 TABS2027004217,Fort Worth Economic Development Partnership,not a hospital or surgery center
+TABS2026025593,Covenant Medical Center Cath Lab/EP Equipment Upgrade,same project as the later filing TABS2027000849
+TABS2026012553,THR Kaufman Restroom Renovation,same project as the later filing TABS2026021632
+TABS2026006967,Solara Surgical ASC,same project as the later filing TABS2026007132
+TABS2025002990,UTMDA Clinical Services Building (CSB) BP4 West Bridges,same project as the later filing TABS2025009417
+TABS2024009319,Kitchen Dish Room Renovation,same project as the later filing TABS2026012422

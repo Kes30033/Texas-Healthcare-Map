@@ -9,7 +9,8 @@ RAW_DIR holds the downloads made by scripts/download_cms.py:
   tx_counties.json        Census county names by FIPS code
 
 Also adds the hospital campuses in data/campuses.csv, which CMS lists only under a parent hospital's
-number (or not at all), placed from data/osm/hospitals.json (OpenStreetMap).
+number (or not at all), placed from data/osm/hospitals.json (OpenStreetMap), and applies the hand-checked
+corrections in data/facility_fixes.csv (CMS addresses that are out of date or can't be placed).
 
 Writes data/facilities.csv: one row per facility.
 """
@@ -54,15 +55,39 @@ def campuses(rows):
         o, parent = hits[0], by_id.get(c["parent_id"])
         slug = re.sub(r"[^a-z0-9]+", "-", c["name"].lower()).strip("-")
         out.append({
-            "Facility ID": f"campus:{slug}", "Name": c["name"], "Type": c["type"], "Street Address": o["addr"],
-            "City": o["city"] or c["city"], "ZIP": o["zip"], "County": parent["County"] if parent else "",
+            "Facility ID": f"campus:{slug}", "Name": c["name"], "Type": c["type"], "Street Address": o["addr"] or c["address"],
+            "City": o["city"] or c["city"], "ZIP": o["zip"] or c["zip"], "County": parent["County"] if parent else "",
             "Phone": "", "Beds": o.get("beds", ""), "Operating Rooms": "",
             "Ownership": parent["Ownership"] if parent else "", "Surgery Specialties": "", "Medicare Since": "",
-            "Source": "OpenStreetMap; not listed separately by CMS",
+            "Source": ("OpenStreetMap" if name else "the hospital's own listing") + "; not listed separately by CMS",
             "Note": c["note"] + (f" (CMS number {c['parent_id']})" if parent else ""),
             "Latitude": o["lat"], "Longitude": o["lng"],
         })
     return out
+
+
+def apply_fixes(rows):
+    """Hand-checked corrections from data/facility_fixes.csv; the CMS value stays wherever a field is empty.
+    Returns the rows without the facilities it marks closed."""
+    by_id = {r["Facility ID"]: r for r in rows}
+    cols = {"name": "Name", "street": "Street Address", "city": "City", "zip": "ZIP", "lat": "Latitude", "lng": "Longitude"}
+    closed = set()
+    for fx in csv.DictReader(open(ROOT / "data/facility_fixes.csv", encoding="utf-8")):
+        if fx["id"].startswith("#"):
+            continue
+        r = by_id.get(fx["id"])
+        if not r:
+            print("  facility_fixes.csv: no facility", fx["id"])
+            continue
+        if fx["closed"]:
+            print(f"  closed {fx['closed']}: {r['Name']} ({fx['id']})")
+            closed.add(fx["id"])
+        for k, col in cols.items():
+            if fx[k]:
+                r[col] = fx[k]
+        r["Note"] = " ".join(x for x in (r.get("Note", ""), fx["note"]) if x)
+        r["Source"] += f"; corrected from {fx['source']}"
+    return [r for r in rows if r["Facility ID"] not in closed]
 
 
 def clean(v):
@@ -87,7 +112,8 @@ def title(s):
         return s
     keep = {"ASC", "LLC", "LP", "LLP", "PLLC", "PA", "UT", "UTMB", "UMC", "JPS", "HCA", "CHI", "BSW", "MD", "TX", "ER",
             "II", "III", "ENT", "GI", "USMD", "UTHEALTH", "OCH", "DHR", "CHRISTUS", "ICU", "VA", "PC", "SW", "NW", "NE",
-            "SE", "US", "HEB", "BSA", "UMMC", "THR", "TOPS", "PRHC", "SETX", "OSH"}
+            "SE", "US", "HEB", "BSA", "UMMC", "THR", "TOPS", "PRHC", "SETX", "OSH", "AHS", "TMC", "FW", "ADC", "LPDS",
+            "RGV", "DFW", "OB", "GYN", "MRI", "IV"}
     small = {"of", "and", "the", "at", "for", "in", "on", "de", "del", "la"}
     out = []
     for i, w in enumerate(s.split()):
@@ -99,7 +125,9 @@ def title(s):
         else:
             out.append("-".join(p[:1].upper() + p[1:].lower() for p in w.split("-")))
     t = " ".join(out)
-    return t.replace("'S ", "'s ").replace("’S ", "’s ")
+    t = t.replace("'S ", "'s ").replace("’S ", "’s ")
+    m = re.match(r"(.+?)[,\s]+the$", t, re.I)   # "Endoscopy Center,the" -> "The Endoscopy Center"
+    return f"The {m[1]}" if m else t
 
 
 def main():
@@ -148,6 +176,7 @@ def main():
         })
 
     rows += campuses(rows)
+    rows = apply_fixes(rows)
     rows.sort(key=lambda r: (r["Type"] == "Ambulatory Surgery Center", r["City"], r["Name"]))
     OUT.parent.mkdir(parents=True, exist_ok=True)
     with open(OUT, "w", newline="", encoding="utf-8") as f:

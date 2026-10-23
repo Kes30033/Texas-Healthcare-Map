@@ -71,6 +71,8 @@ def pack(data):
         o["lat"], o["lng"] = round(s["lat"], 5), round(s["lng"], 5)
         if s["sys"]:
             o["sys"] = [sys_idx[x] for x in s["sys"]]
+        if s.get("approx") and s.get("pos"):
+            o["pos"] = s["pos"]   # why the dot is approximate
         sites.append(o)
     firms, builders, owners = Names(), Names(), Names()
     projects = []
@@ -131,7 +133,7 @@ def spreadsheet(data, path, updated, cms_date):
     cols = [("Name", 40), ("Type", 24), ("Street address", 30), ("City", 14), ("ZIP", 7), ("County", 12),
             ("Phone", 15), ("Beds", 6), ("Operating rooms", 9), ("Ownership", 18), ("Surgery types", 30),
             ("CMS number", 11), ("Active projects", 9), ("Under construction", 11), ("Filed, not started", 11),
-            ("Announced", 10), ("Total est. cost", 15), ("Largest project", 50), ("Map position", 14), ("Note", 40),
+            ("Announced", 10), ("Total est. cost", 15), ("Largest project", 50), ("Map position", 30), ("Note", 40),
             ("Health system", 30)]
     for c, (h, w) in enumerate(cols):
         ws.write(0, c, h, head)
@@ -144,7 +146,7 @@ def spreadsheet(data, path, updated, cms_date):
                s.get("beds", ""), s.get("ors", ""), s.get("own", ""), s.get("spec", ""), s.get("id", ""), len(ps),
                sum(p["stage"] == "uc" for p in ps), sum(p["stage"] == "filed" for p in ps),
                sum(p["stage"] == "ann" for p in ps), sum(p["cost"] for p in ps) or None, big,
-               "ZIP/city center" if s.get("approx") else "Street address", s.get("note", ""), "; ".join(s["sys"])]
+               s.get("pos") or ("Approximate" if s.get("approx") else "Street address"), s.get("note", ""), "; ".join(s["sys"])]
         for c, v in enumerate(row):
             if c == 16 and v:
                 ws.write_number(r, c, v, money)
