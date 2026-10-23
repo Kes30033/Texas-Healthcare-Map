@@ -80,6 +80,24 @@ button, input, select { font: inherit; color: inherit; }
 .btn.ghost:hover { border-color: var(--ink-2); }
 .status { font-size: 13px; color: var(--ink-2); display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-top: 8px; }
 .status:empty { display: none; }
+.status b { color: var(--ink); }
+
+/* search suggestions: one list, grouped by what each match is */
+.search { position: relative; }
+.suggest { position: absolute; z-index: 1000; left: max(16px, env(safe-area-inset-left, 0px)); right: 20px; top: 46px;
+  background: var(--panel); border: 1px solid var(--line); border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,.18);
+  max-height: min(60vh, 460px); overflow-y: auto; padding: 4px 0; }
+.suggest .grp { font-size: 10.5px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); padding: 8px 12px 3px; }
+.opt { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 1px 10px; padding: 6px 12px; cursor: pointer; }
+.opt[aria-selected="true"], .opt:hover { background: var(--panel-2); }
+.opt .l { font-weight: 600; overflow-wrap: anywhere; }
+.opt .l mark { background: none; color: inherit; text-decoration: underline; text-decoration-color: var(--focus); text-decoration-thickness: 2px; text-underline-offset: 2px; }
+.opt .n { font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.opt .s { grid-column: 1 / -1; font-size: 12px; color: var(--ink-2); overflow-wrap: anywhere; }
+.suggest .none { padding: 10px 12px; color: var(--ink-2); font-size: 13px; }
+.linkbtn { border: 0; background: none; padding: 0; font: inherit; color: var(--ink); text-align: left; cursor: pointer;
+  text-decoration: underline; text-decoration-color: var(--line); text-decoration-thickness: 1.5px; text-underline-offset: 3px; }
+.linkbtn:hover { text-decoration-color: var(--ink-2); }
 
 .filters { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .filters > summary { list-style: none; cursor: pointer; padding-block: 12px; display: flex; justify-content: space-between; align-items: center; font-weight: 600; }
@@ -199,9 +217,12 @@ input[type="checkbox"] { width: 16px; height: 16px; margin: 0; accent-color: var
 
     <div class="search">
       <form id="searchForm" role="search">
-        <input id="q" type="search" autocomplete="off" placeholder="Name, city, county or ZIP" aria-label="Search by name, city, county or ZIP code">
+        <input id="q" type="search" autocomplete="off" placeholder="Hospital, health system, architect, builder…"
+          aria-label="Search hospitals, health systems, architects, builders, owners or places" role="combobox"
+          aria-autocomplete="list" aria-expanded="false" aria-controls="suggest">
         <button class="btn" type="submit">Search</button>
       </form>
+      <div class="suggest" id="suggest" role="listbox" aria-label="Search suggestions" hidden></div>
       <div class="status" id="status" aria-live="polite"></div>
     </div>
 
@@ -282,7 +303,7 @@ const monthYear = d => { if (!d) return ""; const [y, m] = d.split("-"); return 
 
 let D, map, renderer, markers = [], tip;
 let F = { type: new Set(["hosp", "asc"]), stage: new Set(VIEWS.all.stage), kind: new Set(VIEWS.all.kind), min: 0, quiet: true, notStarted: false };
-let view = "all", query = null;   // query: set of site indexes matching a search
+let view = "all", query = null;   // the current search, if any (see compute)
 let visible = [];                 // per site: { on, projects: [matching project idx] }
 let listIdx = [], shown = 0, selected = -1, back = null;
 
@@ -301,15 +322,21 @@ function projectPasses(p) {
   return F.stage.has(p.stage) && F.kind.has(p.kind) && (p.cost || 0) >= F.min;
 }
 const started = s => s.pj.some(j => D.projects[j].stage === "uc");
+// query (a search): { label, sites: Set of site indexes, projects: Set of project indexes or null }.
+// A search for an architect, builder or owner keeps only that firm's projects; other searches keep whole places.
 function compute() {
   visible = D.sites.map((s, i) => {
-    if (!F.type.has(siteType(s)) || (query && !query.has(i))) return { on: false, projects: [] };
+    if (!F.type.has(siteType(s)) || (query && !query.sites.has(i))) return { on: false, projects: [] };
     if (F.notStarted && isNew(s) && started(s)) return { on: false, projects: [] };
-    const projects = s.pj.filter(j => projectPasses(D.projects[j]));
-    const on = projects.length > 0 || (F.quiet && !isNew(s));
+    const projects = s.pj.filter(j => projectPasses(D.projects[j]) && (!query || !query.projects || query.projects.has(j)));
+    const on = projects.length > 0 || (F.quiet && !isNew(s) && !(query && query.projects));
     return { on, projects };
   });
 }
+const firmName = p => p.d != null ? D.firms[p.d] : "";
+const ownerName = p => p.o != null ? D.owners[p.o] : "";
+const builderNames = p => (p.b || []).map(b => D.builders[b]);
+const systemNames = s => (s.sys || []).map(x => D.systems[x]);
 function best(i) {   // most advanced stage among a site's matching projects
   let b = null;
   for (const j of visible[i].projects) { const st = D.projects[j].stage; if (b === null || STAGE_RANK[st] < STAGE_RANK[b]) b = st; }
@@ -509,7 +536,7 @@ function sortKey(i) { return [visible[i].projects.length ? 0 : 1, -total(i), D.s
 function cmp(a, b) { const x = sortKey(a), y = sortKey(b); return x[0] - y[0] || x[1] - y[1] || x[2].localeCompare(y[2]); }
 function refreshList() {
   let ids;
-  if (query) { ids = [...query].filter(i => visible[i].on); $("resultsTitle").textContent = "Search results"; }
+  if (query) { ids = [...query.sites].filter(i => visible[i].on); $("resultsTitle").textContent = "Search results"; }
   else {
     const b = map.getBounds();
     ids = D.sites.map((_, i) => i).filter(i => visible[i].on && b.contains([D.sites[i].lat, D.sites[i].lng]));
@@ -517,8 +544,8 @@ function refreshList() {
   }
   ids.sort(cmp);
   listIdx = ids; shown = 0;
-  const active = ids.filter(i => visible[i].projects.length).length;
-  $("resultsCount").textContent = `${fmt(ids.length)} places${active ? `, ${fmt(active)} with projects` : ""}`;
+  const withProjects = ids.filter(i => visible[i].projects.length).length;
+  $("resultsCount").textContent = `${fmt(ids.length)} places${withProjects ? `, ${fmt(withProjects)} with projects` : ""}`;
   $("listAnnounce").textContent = `${ids.length} places listed`;
   $("list").innerHTML = "";
   $("empty").hidden = ids.length > 0;
@@ -557,14 +584,15 @@ function projectCard(j) {
   const p = D.projects[j], stage = STAGES.find(x => x.k === p.stage), kind = KINDS.find(x => x.k === p.kind);
   const dates = p.start || p.end ? `${monthYear(p.start) || "?"} – ${monthYear(p.end) || "?"}` : "";
   const facts = [
-    ["Cost", p.cost ? "$" + fmt(p.cost) + (p.costNote ? ` (${p.costNote})` : "") : ""],
-    ["Schedule", dates + (p.opens ? `${dates ? "; " : ""}opens ${p.opens}` : "")],
-    ["Size", p.sqft ? fmt(p.sqft) + " sq ft" : ""],
-    ["Work type", p.work || ""],
-    ["Owner", p.owner || ""], ["Tenant", p.tenant || ""],
-    ["Architect", p.designer || ""], ["Builder", p.builder || ""],
-    ["Filed", p.reg ? `${p.reg}${p.status ? " · " + p.status : ""}` : ""],
-    ["Address", p.addr || ""],
+    ["Cost", esc(p.cost ? "$" + fmt(p.cost) : "")],
+    ["Schedule", esc(dates + (p.opens ? `${dates ? "; " : ""}opens ${p.opens}` : ""))],
+    ["Size", esc(p.sqft ? fmt(p.sqft) + " sq ft" : "")],
+    ["Work type", esc(p.work || "")],
+    ["Owner", p.o != null ? entityButton("owner", p.o) : ""], ["Tenant", esc(p.tenant || "")],
+    ["Architect", p.d != null ? entityButton("firm", p.d) : ""],
+    ["Builder", (p.b || []).map(b => entityButton("builder", b)).join(", ")],
+    ["Filed", esc(p.reg ? `${p.reg}${p.status ? " · " + p.status : ""}` : "")],
+    ["Address", esc(p.addr || "")],
   ].filter(([, v]) => v);
   const links = [];
   if (p.num) links.push(`<a href="https://www.tdlr.texas.gov/TABS/Search/Project/${encodeURIComponent(p.num)}" target="_blank" rel="noopener">State filing ${esc(p.num)}</a>`);
@@ -576,9 +604,14 @@ function projectCard(j) {
     ${p.scope ? `<p class="scope">${esc(p.scope)}</p>` : ""}
     ${late ? `<p class="note">The estimated finish in the filing has passed, but the project hasn't been closed or inspected yet. It may be finishing up or already done.</p>` : ""}
     ${p.stage === "ann" ? `<p class="note">Announced in the news; no state construction filing found yet.</p>` : ""}
-    <dl class="facts">${facts.map(([k, v]) => `<dt>${k}</dt><dd>${esc(v)}</dd>`).join("")}</dl>
+    <dl class="facts">${facts.map(([k, v]) => `<dt>${k}</dt><dd>${v}</dd>`).join("")}</dl>
     ${links.length ? `<div class="links">${links.join("")}</div>` : ""}
   </article>`;
+}
+// A name in the details that runs a search for everything else it's on the map for
+const ENTITY_NAMES = { firm: i => D.firms[i], builder: i => D.builders[i], owner: i => D.owners[i], sys: i => D.systems[i] };
+function entityButton(cat, i) {
+  return `<button class="linkbtn" type="button" data-entity="${cat}:${i}" title="Show everything on the map for ${esc(ENTITY_NAMES[cat](i))}">${esc(ENTITY_NAMES[cat](i))}</button>`;
 }
 function select(i, fly) {
   if (!$("results").hidden) back = { scroll: $("panel").scrollTop };
@@ -586,10 +619,11 @@ function select(i, fly) {
   const s = D.sites[i], ty = D.types[s.t], ps = s.pj.slice().sort((a, b) => STAGE_RANK[D.projects[a].stage] - STAGE_RANK[D.projects[b].stage] || (D.projects[b].cost || 0) - (D.projects[a].cost || 0));
   const shownSet = new Set(visible[i].projects), hidden = ps.filter(j => !shownSet.has(j));
   const facts = [
-    ["Address", [s.addr, `${s.city}, TX ${s.zip || ""}`.trim()].filter(Boolean).join(", ") + (s.county ? ` (${s.county} County)` : "")],
-    ["Phone", s.phone || ""], ["Beds", s.beds || ""], ["Operating rooms", s.ors || ""],
-    ["Surgery types", s.spec || ""], ["Ownership", s.own || ""], ["Medicare since", s.since || ""],
-    ["CMS number", s.id || ""],
+    ["Health system", (s.sys || []).map(x => entityButton("sys", x)).join(", ")],
+    ["Address", esc([s.addr, `${s.city}, TX ${s.zip || ""}`.trim()].filter(Boolean).join(", ") + (s.county ? ` (${s.county} County)` : ""))],
+    ["Phone", esc(s.phone || "")], ["Beds", esc(s.beds || "")], ["Operating rooms", esc(s.ors || "")],
+    ["Surgery types", esc(s.spec || "")], ["Ownership", esc(s.own || "")], ["Medicare since", esc(s.since || "")],
+    ["CMS number", esc(s.id && !s.id.startsWith("campus:") ? s.id : "")],
   ].filter(([, v]) => v);
   const addr = [s.addr, s.city, "TX"].filter(Boolean).join(", ");
   $("detail").innerHTML = `
@@ -598,7 +632,7 @@ function select(i, fly) {
     <div class="kind"><span class="key ${isNew(s) ? "newk" : siteType(s)}"></span>${esc(ty.label)}</div>
     ${isNew(s) ? `<p class="note">Not open yet: this is a planned or under-construction ${siteType(s) === "asc" ? "surgery center" : "hospital"}.</p>` : ""}
     ${s.note ? `<p class="note">${esc(s.note)}.</p>` : ""}
-    <dl class="facts">${facts.map(([k, v]) => `<dt>${k}</dt><dd>${esc(v)}</dd>`).join("")}</dl>
+    <dl class="facts">${facts.map(([k, v]) => `<dt>${k}</dt><dd>${v}</dd>`).join("")}</dl>
     ${s.approx ? `<p class="note">The address couldn't be matched exactly, so the dot sits near the center of its city or ZIP code.</p>` : ""}
     <div class="actions"><a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(s.n + ", " + addr)}" target="_blank" rel="noopener">Open in Google Maps</a></div>
     <div><p class="eyebrow">${ps.length ? `Projects (${ps.length})` : "Projects"}</p>
@@ -625,42 +659,183 @@ function closeDetail() {
 
 // ---------- search ----------
 const norm = s => String(s || "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+const plural = (n, one, many) => `${fmt(n)} ${n === 1 ? one : many}`;
 function setStatus(html, clear) {
   $("status").innerHTML = html ? `<span>${html}</span>${clear ? '<button class="btn ghost" type="button" id="clear">Clear search</button>' : ""}` : "";
-  const c = $("clear"); if (c) c.addEventListener("click", () => { $("q").value = ""; query = null; setStatus(""); apply(); });
+  const c = $("clear"); if (c) c.addEventListener("click", clearQuery);
 }
+function clearQuery() {
+  $("q").value = ""; query = null; setStatus(""); apply();
+}
+function setQuery(q) {
+  query = q;
+  if (!$("detail").hidden) { selected = -1; $("detail").hidden = true; $("results").hidden = false; }
+  apply();
+  const shownSites = [...q.sites].filter(i => visible[i].on);
+  const shownProjects = shownSites.reduce((a, i) => a + visible[i].projects.length, 0);
+  const allProjects = q.projects ? q.projects.size : [...q.sites].reduce((a, i) => a + D.sites[i].pj.length, 0);
+  let html = `<b>${esc(q.label)}</b> · ${plural(shownSites.length, "place", "places")}`;
+  if (allProjects) html += `, ${plural(shownProjects, "project", "projects")}`;
+  if (shownProjects < allProjects) html += ` (${fmt(allProjects - shownProjects)} more hidden by your filters)`;
+  if (!q.sites.size) html = `Nothing matches <b>${esc(q.label)}</b>.`;
+  setStatus(html, true);
+  if (shownSites.length) map.fitBounds(L.latLngBounds(shownSites.map(i => [D.sites[i].lat, D.sites[i].lng])), { padding: [40, 40], maxZoom: 14 });
+}
+
+// Everything the box can find, built once: each entry knows how to show itself on the map
+let ENTRIES = [], ENTRY_BY = {};
+const CATS = [["sys", "Health systems", 3], ["fac", "Facilities", 6], ["firm", "Architects", 5],
+              ["builder", "Builders", 4], ["owner", "Owners", 4], ["place", "Places", 4]];
+function buildEntries() {
+  const siteOf = [];
+  D.sites.forEach((s, i) => s.pj.forEach(j => { siteOf[j] = i; }));
+  const add = e => { e.key = norm(e.label + " " + (e.also || "")); ENTRIES.push(e); if (e.id != null) ENTRY_BY[e.cat + ":" + e.id] = e; };
+  D.sites.forEach((s, i) => add({ cat: "fac", label: s.n, also: s.city, sub: `${D.types[s.t].label} · ${s.city}`,
+    n: s.pj.length ? plural(s.pj.length, "project", "projects") : "", size: s.pj.length,
+    run: () => { query = null; setStatus(""); apply(); select(i, true); } }));
+  D.systems.forEach((name, x) => {
+    const sites = new Set(D.sites.map((s, i) => i).filter(i => (D.sites[i].sys || []).includes(x)));
+    const nproj = [...sites].reduce((a, i) => a + D.sites[i].pj.length, 0);
+    add({ cat: "sys", id: x, label: name, sub: `${plural(sites.size, "place", "places")}, ${plural(nproj, "project", "projects")}`,
+      n: "", size: sites.size, run: () => setQuery({ label: name, sites, projects: null }) });
+  });
+  for (const [cat, list, has, label] of [["firm", D.firms, (p, x) => p.d === x, "Architect"],
+                                          ["builder", D.builders, (p, x) => (p.b || []).includes(x), "Builder"],
+                                          ["owner", D.owners, (p, x) => p.o === x, "Owner"]]) {
+    list.forEach((name, x) => {
+      const projects = new Set(D.projects.map((p, j) => j).filter(j => has(D.projects[j], x)));
+      if (!projects.size) return;
+      const sites = new Set([...projects].map(j => siteOf[j]));
+      const cost = [...projects].reduce((a, j) => a + (D.projects[j].cost || 0), 0);
+      add({ cat, id: x, label: name, n: plural(projects.size, "project", "projects"),
+        sub: `${plural(sites.size, "place", "places")}${cost ? " · " + money(cost) : ""}`, size: projects.size,
+        run: () => setQuery({ label: `${label}: ${name}`, sites, projects }) });
+    });
+  }
+  const places = new Map();
+  D.sites.forEach((s, i) => {
+    for (const name of [s.city, s.county ? s.county + " County" : ""]) {
+      if (!name) continue;
+      const k = norm(name);
+      (places.get(k) || places.set(k, { name, sites: new Set() }).get(k)).sites.add(i);
+    }
+  });
+  for (const { name, sites } of places.values())
+    add({ cat: "place", label: name, n: plural(sites.size, "place", "places"), sub: "", size: sites.size,
+      run: () => setQuery({ label: name, sites, projects: null }) });
+}
+function findEntries(q) {
+  const nq = norm(q), words = nq.split(" ").filter(Boolean);
+  if (!words.length) return [];
+  const out = [];
+  for (const [cat, , limit] of CATS) {
+    const hits = ENTRIES.filter(e => e.cat === cat && words.every(w => e.key.includes(w)))
+      .map(e => ({ e, rank: e.key.startsWith(nq) ? 0 : (" " + e.key).includes(" " + words[0]) ? 1 : 2 }))
+      .sort((a, b) => a.rank - b.rank || b.e.size - a.e.size || a.e.label.localeCompare(b.e.label));
+    out.push(...hits.slice(0, limit).map(h => h.e));
+  }
+  return out;
+}
+function highlight(label, q) {
+  let html = esc(label);
+  for (const w of norm(q).split(" ").filter(w => w.length > 1).sort((a, b) => b.length - a.length))
+    html = html.replace(new RegExp(`(${w.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")})(?![^<]*>)`, "ig"), "<mark>$1</mark>");
+  return html;
+}
+let shownEntries = [], active = -1;
+function renderSuggestions() {
+  const q = $("q").value, box = $("suggest");
+  shownEntries = q.trim().length >= 2 ? findEntries(q) : [];
+  active = -1;
+  if (q.trim().length < 2) { closeSuggestions(); return; }
+  let html = "", k = 0;
+  for (const [cat, title] of CATS) {
+    const es = shownEntries.filter(e => e.cat === cat);
+    if (!es.length) continue;
+    html += `<div class="grp" role="presentation">${title}</div>`;
+    for (const e of es) {
+      html += `<div class="opt" role="option" id="opt-${k}" data-k="${k}" aria-selected="false"><span class="l">${highlight(e.label, q)}</span>`
+        + `<span class="n">${esc(e.n)}</span>${e.sub ? `<span class="s">${esc(e.sub)}</span>` : ""}</div>`;
+      k++;
+    }
+  }
+  shownEntries = CATS.flatMap(([cat]) => shownEntries.filter(e => e.cat === cat));   // list order = screen order
+  box.innerHTML = html || `<div class="none">No matches. Press Enter to search every name and address for “${esc(q.trim())}”.</div>`;
+  box.hidden = false;
+  $("q").setAttribute("aria-expanded", "true");
+}
+function closeSuggestions() {
+  $("suggest").hidden = true; active = -1;
+  $("q").setAttribute("aria-expanded", "false"); $("q").removeAttribute("aria-activedescendant");
+}
+function moveActive(step) {
+  if ($("suggest").hidden || !shownEntries.length) return;
+  active += step;   // -1 = back in the text box
+  if (active >= shownEntries.length) active = -1;
+  else if (active < -1) active = shownEntries.length - 1;
+  document.querySelectorAll("#suggest .opt").forEach((o, k) => o.setAttribute("aria-selected", String(k === active)));
+  if (active >= 0) {
+    const o = $("opt-" + active); o.scrollIntoView({ block: "nearest" });
+    $("q").setAttribute("aria-activedescendant", o.id);
+  } else $("q").removeAttribute("aria-activedescendant");
+}
+function choose(e) {
+  closeSuggestions();
+  $("q").value = e.label;
+  e.run();
+}
+// Enter without picking a suggestion: a name typed in full runs that entry, anything else searches every name
 function search(q) {
   q = q.trim();
-  if (!q) { query = null; setStatus(""); apply(); return; }
-  const n = norm(q), words = n.split(" ");
-  const hits = new Set();
+  closeSuggestions();
+  if (!q) { clearQuery(); return; }
+  const exact = ENTRIES.filter(e => e.cat !== "fac" && e.key === norm(q));
+  if (exact.length === 1) { exact[0].run(); return; }
+  const words = norm(q).split(" ");
+  const sites = new Set();
   D.sites.forEach((s, i) => {
-    if (/^\d{5}$/.test(q)) { if (s.zip === q) hits.add(i); return; }
-    const hay = norm([s.n, s.city, s.county, s.county ? s.county + " county" : "", s.addr, ...s.pj.map(j => D.projects[j].name + " " + (D.projects[j].owner || ""))].join(" "));
-    if (words.every(w => hay.includes(w))) hits.add(i);
+    if (/^\d{5}$/.test(q)) { if (s.zip === q) sites.add(i); return; }
+    const hay = norm([s.n, s.city, s.county, s.county ? s.county + " county" : "", s.addr, ...systemNames(s),
+      ...s.pj.map(j => { const p = D.projects[j]; return [p.name, ownerName(p), firmName(p), ...builderNames(p)].join(" "); })].join(" "));
+    if (words.every(w => hay.includes(w))) sites.add(i);
   });
-  if (!$("detail").hidden) { selected = -1; $("detail").hidden = true; $("results").hidden = false; }
-  query = hits;
-  compute(); draw();
-  const shownHits = [...hits].filter(i => visible[i].on);
-  setStatus(hits.size ? `${fmt(shownHits.length)} of ${fmt(hits.size)} matches shown with your filters.` : `Nothing matches “${esc(q)}”.`, true);
-  if (shownHits.length) {
-    const b = L.latLngBounds(shownHits.map(i => [D.sites[i].lat, D.sites[i].lng]));
-    map.fitBounds(b, { padding: [40, 40], maxZoom: 14 });
-  }
-  chipCounts(); refreshList();
+  setQuery({ label: /^\d{5}$/.test(q) ? `ZIP ${q}` : `“${q}”`, sites, projects: null });
+}
+function setupSearch() {
+  buildEntries();
+  const input = $("q"), box = $("suggest");
+  let timer;
+  input.addEventListener("input", () => { clearTimeout(timer); timer = setTimeout(renderSuggestions, 80); });
+  input.addEventListener("focus", () => { if (input.value.trim().length >= 2) renderSuggestions(); });
+  input.addEventListener("blur", () => setTimeout(closeSuggestions, 150));
+  input.addEventListener("keydown", e => {
+    if (e.key === "ArrowDown") { e.preventDefault(); if (box.hidden) renderSuggestions(); moveActive(1); }
+    else if (e.key === "ArrowUp") { e.preventDefault(); moveActive(-1); }
+    else if (e.key === "Escape") { if (!box.hidden) { e.preventDefault(); closeSuggestions(); } }
+    else if (e.key === "Enter" && active >= 0 && !box.hidden) { e.preventDefault(); choose(shownEntries[active]); }
+  });
+  box.addEventListener("mousedown", e => e.preventDefault());   // keep focus in the box while clicking
+  box.addEventListener("click", e => { const o = e.target.closest(".opt"); if (o) choose(shownEntries[+o.dataset.k]); });
+  $("searchForm").addEventListener("submit", e => { e.preventDefault(); search(input.value); });
+  $("detail").addEventListener("click", e => {   // names in the details search for themselves
+    const b = e.target.closest(".linkbtn"); if (!b) return;
+    const entry = ENTRY_BY[b.dataset.entity];
+    if (entry) { $("q").value = entry.label; entry.run(); }
+  });
 }
 
 // ---------- CSV ----------
 function downloadCsv() {
-  const rows = [["Facility", "Facility type", "City", "County", "ZIP", "Project", "Stage", "Kind", "Cost", "Start", "Finish", "Owner", "Architect", "State filing", "Sources"]];
+  const rows = [["Facility", "Facility type", "Health system", "City", "County", "ZIP", "Project", "Stage", "Kind", "Cost",
+    "Start", "Finish", "Owner", "Architect", "Builder", "State filing", "Sources"]];
   listIdx.forEach(i => {
-    const s = D.sites[i], base = [s.n, D.types[s.t].label, s.city, s.county || "", s.zip || ""];
-    if (!visible[i].projects.length) rows.push([...base, "", "", "", "", "", "", "", "", "", ""]);
+    const s = D.sites[i], base = [s.n, D.types[s.t].label, systemNames(s).join("; "), s.city, s.county || "", s.zip || ""];
+    if (!visible[i].projects.length) rows.push([...base, "", "", "", "", "", "", "", "", "", "", ""]);
     for (const j of visible[i].projects) {
       const p = D.projects[j];
       rows.push([...base, p.name, STAGES.find(x => x.k === p.stage).label, KINDS.find(x => x.k === p.kind).label, p.cost || "",
-        p.start || "", p.end || "", p.owner || "", p.designer || "", p.num || "", (p.news || []).map(x => x[1]).join(" ")]);
+        p.start || "", p.end || "", ownerName(p), firmName(p), builderNames(p).join("; "), p.num || "",
+        (p.news || []).map(x => x[1]).join(" ")]);
     }
   });
   const csv = rows.map(r => r.map(v => /[",\n]/.test(String(v)) ? `"${String(v).replace(/"/g, '""')}"` : v).join(",")).join("\r\n");
@@ -684,7 +859,7 @@ async function boot() {
   compute();
   setupMap(base);
   apply();
-  $("searchForm").addEventListener("submit", e => { e.preventDefault(); search($("q").value); });
+  setupSearch();
   $("more").addEventListener("click", renderMore);
   const retheme = () => { readTokens(); if (mapStyle === "simple") styleBase(); draw(); };
   matchMedia("(prefers-color-scheme: dark)").addEventListener("change", retheme);

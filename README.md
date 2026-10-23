@@ -17,7 +17,11 @@ surgery centers that are filed with the state or announced but haven't broken gr
     state (permits filed, design firm under contract) or announced in the news.
   - **Everything**: all facilities, with rings on the ones that have projects.
 - **Filters** for facility type, construction stage, kind of project and minimum project cost.
-- **Search** by name, city, county, ZIP code, project name or owner.
+- **Search** for a hospital or surgery center, a **health system** (Baylor Scott & White, HCA, Texas Health
+  Resources, Memorial Hermann, CHRISTUS...), an **architect**, a **builder**, a project **owner**, or a city,
+  county or ZIP code. Suggestions appear as you type, grouped by kind; picking an architect, builder or owner
+  shows only that firm's projects. Names in a project's details (owner, architect, builder, health system) are
+  links that run the same search.
 - Click any place for its details and every project there: cost, estimated start and finish, square footage,
   owner, architect, builder (when reported), a link to the state filing and news sources.
 - **Download this list (CSV)** saves what's in the list with your filters.
@@ -69,6 +73,11 @@ Filings that were found but left off the map are listed with the reason in [data
 - **Dates in filings are estimates** made when the project was registered. A project marked "under construction"
   may have slipped, and some marked "filed" may have started early.
 - **Costs are the filer's estimate** of construction cost, not the total project budget news reports often quote.
+- **Builders aren't in state filings.** TABS lists the owner and the architect but not the contractor, so builders
+  come only from news reports and contractor announcements (in data/research/news_projects.csv) and cover a
+  handful of the largest projects.
+- **Health systems are matched by name** (and by town, for names like "Methodist" that several systems use), so a
+  facility whose name doesn't show its system may be missing from that system's list.
 - **Federal projects** (VA, military) don't file with TDLR, so they appear only if reported in the news.
 - **Medical office buildings and clinics on hospital campuses** count as hospital projects when they're on the
   hospital's address or right next to it.

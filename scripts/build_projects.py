@@ -414,8 +414,82 @@ def main():
         s["type"] = "New hospital" if "hosp" in s["types"] else "New surgery center"
         del s["tok"], s["types"], s["group"]
         sites.append(s)
+    for s in sites:   # new sites are also known by the names and owners on their filings
+        extra = [] if s["k"] == 0 else [x for j in s["pj"] for x in (projects[j]["facility_name"], projects[j]["owner"])]
+        s["sys"] = health_systems(" | ".join([s["n"], s.get("note", ""), *extra]), s["city"], s["type"])
 
     write(sites, projects, review)
+
+
+SA_AREA = {"san antonio", "live oak", "jourdanton", "boerne", "fredericksburg", "balcones heights", "schertz", "selma",
+           "new braunfels", "converse", "helotes", "universal city"}
+HOUSTON_AREA = {"houston", "sugar land", "katy", "cypress", "baytown", "nassau bay", "the woodlands", "webster", "pearland",
+                "spring", "tomball", "conroe", "humble", "kingwood", "bellaire", "pasadena", "league city", "texas city"}
+SYSTEM_RULES = [   # (health system, pattern on the facility's name and notes, towns it applies in or None)
+    ("CommonSpirit Health (St. Luke's Health, CHI St. Joseph)",
+     r"st\.? luke'?s(?! baptist)|\bchi st|st\.? joseph health|commonspirit|baylor st\.? luke|baylor college of medicine", None),
+    ("Baylor Scott & White Health", r"baylor scott|scott (&|and) white|\bbswh?\b|baylor (regional|medical center|university "
+     r"medical|all saints|surgicare|surgical|emergency|heart)|heart hospital baylor|mclane children", None),
+    ("Texas Health Resources", r"\btexas health\b(?! (system|and human|science|tech|east))|harris methodist|\bthr\b|"
+     r"huguley|presbyterian hospital", None),
+    ("Houston Methodist", r"houston methodist", None),
+    ("Methodist Health System", r"methodist (dallas|richardson|mansfield|charlton|southwest|celina|midlothian|mckinney|"
+     r"hospital for surgery)|\bmrmc\b|\bmlmc\b", None),
+    ("HCA Healthcare", r"\bhca\b|medical city|st\.? david'?s|corpus christi medical center|del sol|las palmas|rio grande "
+     r"regional|valley regional|conroe regional|heart hospital of austin|wom[ae]n'?s hospital of texas|texas orthopedic "
+     r"hospital|west houston medical|mainland|tops surgical|kingwood medical|north cypress|methodist", SA_AREA),
+    ("HCA Healthcare", r"\bhca\b|medical city|st\.? david'?s|corpus christi medical center|del sol medical|las palmas|"
+     r"rio grande regional|valley regional|heart hospital of austin|texas orthopedic hospital|tops surgical", None),
+    ("Memorial Hermann Health System", r"memorial hermann|\bmhhs\b", None),
+    ("CHRISTUS Health", r"christus|mother frances|spohn|good shepherd|santa rosa|st\.? michael|jasper memorial|"
+     r"st\.? elizabeth|\bctmf\b", None),
+    ("Ascension Seton", r"ascension|\bseton\b|dell seton|dell children", None),
+    ("Tenet Healthcare", r"hospitals of providence|valley baptist|resolute health|westover hills baptist|"
+     r"baptist (medical center|neighborhood|emergency)|(north central|northeast|mission trail|st\.? luke'?s) baptist", None),
+    ("Baptist Hospitals of Southeast Texas", r"baptist (beaumont|hospitals of southeast)", None),
+    ("Texas Children's Hospital", r"texas children'?s|texas childrens|\btch\b", None),
+    ("Children's Health", r"children'?s health|childrens? medical center (dallas|plano)|children'?s medical center (dallas|plano)|"
+     r"moody children", None),
+    ("Cook Children's", r"cook children", None),
+    ("UT Southwestern Medical Center", r"ut ?southwestern|\butsw\b|clements university|zale lipshy", None),
+    ("UT MD Anderson Cancer Center", r"anderson cancer|md anderson|m d anderson|\bmdacc\b|\butmda\b", None),
+    ("UTMB Health", r"\butmb\b|university of texas medical branch", None),
+    ("UT Health San Antonio", r"ut health san antonio|university of texas health science center at san antonio", None),
+    ("UTHealth Houston", r"uthealth houston|ut health houston", None),
+    ("UT Health East Texas", r"ut health east texas", None),
+    ("University Health (Bexar County)", r"university health|university hospital|bexar county hospital", SA_AREA),
+    ("Harris Health", r"harris health|lyndon b|\blbj\b|ben taub|harris county hospital", None),
+    ("Parkland Health", r"parkland", None),
+    ("JPS Health Network", r"\bjps\b|john peter smith|tarrant county hospital", None),
+    ("Covenant Health", r"covenant", None),
+    ("UMC Health System (Lubbock)", r"university medical center|\bumc\b|lubbock county hospital", {"lubbock"}),
+    ("University Medical Center of El Paso", r"university medical center|\bumc\b", {"el paso"}),
+    ("Hendrick Health", r"hendrick", None),
+    ("Driscoll Health System", r"driscoll", None),
+    ("DHR Health", r"\bdhr\b|doctors hospital at renaissance", None),
+    ("South Texas Health System", r"south texas health system", None),
+    ("Shannon Health", r"\bshannon\b", None),
+    ("Midland Health", r"midland memorial|midland health", None),
+    ("Medical Center Health System (Odessa)", r"medical center hospital", {"odessa"}),
+    ("Legent Health", r"\blegent\b", None),
+    ("USPI (United Surgical Partners)", r"surgicare|\buspi\b|united surgical partners", None),
+    ("SCA Health", r"\bsca\b|surgical care affiliates", None),
+]
+
+
+def health_systems(text, city, site_type):
+    """Health systems a facility belongs to (a few belong to two, e.g. a USPI surgery center co-owned by Baylor)."""
+    out = []
+    for name, pattern, towns in SYSTEM_RULES:
+        if (towns is None or city.lower() in towns) and re.search(pattern, text, re.I) and name not in out:
+            out.append(name)
+    if "Houston Methodist" in out:   # its names can also contain words of other systems' rules
+        out = [s for s in out if s != "Methodist Health System" and not (s == "HCA Healthcare" and city.lower() in HOUSTON_AREA)]
+    if site_type == "VA Hospital":
+        out.append("Veterans Health Administration")
+    if site_type == "Military Hospital":
+        out.append("Military Health System")
+    return out
 
 
 def site_name(p):

@@ -8,8 +8,10 @@ Also writes data/Texas_Hospital_Construction.xlsx.
 import argparse
 import datetime
 import json
+import re
 import shutil
 import sys
+from collections import Counter
 from pathlib import Path
 
 import xlsxwriter
@@ -23,20 +25,68 @@ STAGE = {"uc": "Under construction", "filed": "Filed, not started", "ann": "Anno
 KIND = {"new": "New hospital or surgery center", "exp": "Expansion / addition", "ren": "Renovation"}
 SITE_KEYS = ["k", "id", "n", "lat", "lng", "approx", "addr", "city", "zip", "county", "phone", "beds", "ors", "own",
              "spec", "since", "note", "pj"]
-PROJECT_KEYS = ["num", "name", "kind", "stage", "cost", "start", "end", "opens", "sqft", "work", "owner", "tenant",
-                "designer", "builder", "reg", "status", "scope", "addr", "news"]
+PROJECT_KEYS = ["num", "name", "kind", "stage", "cost", "start", "end", "opens", "sqft", "work", "tenant", "reg", "status",
+                "scope", "addr", "news"]
+FIRM_FILLER = set("""inc llc lp llp pllc pc corp corporation co company ltd limited the incorporated dba architects
+architect architecture architectural group design designs studio and""".split())
+
+
+def firm_key(name):
+    """'HKS, Inc.', 'HKS Architects' and 'hks inc' -> 'hks', so one firm is one search entry."""
+    s = re.sub(r"[^a-z0-9 ]", " ", (name or "").lower().replace("&", " and ").replace("+", " and "))
+    key = "".join(w for w in s.split() if w not in FIRM_FILLER)
+    key = re.sub(r"(inc|llc|pllc|ltd|corp)$", "", key) or key   # "HKSinc"
+    return "" if key in ("na", "n", "tbd", "none", "self", "owner", "unknown") else key
+
+
+class Names:
+    """Spelling variants of the same firm or owner, merged; each is shown by its most common spelling."""
+    def __init__(self):
+        self.keys, self.spellings = {}, []
+
+    def add(self, name):
+        name = re.sub(r"\s+", " ", (name or "").strip(" ,"))
+        key = firm_key(name)
+        if not key:
+            return None
+        if key not in self.keys:
+            self.keys[key] = len(self.spellings)
+            self.spellings.append(Counter())
+        i = self.keys[key]
+        self.spellings[i][name.title() if name.isupper() and len(name) > 4 else name] += 1
+        return i
+
+    def names(self):
+        return [c.most_common(1)[0][0] for c in self.spellings]
 
 
 def pack(data):
     type_idx = {t: i for i, (t, _) in enumerate(TYPES)}
+    systems = sorted({x for s in data["sites"] for x in s["sys"]})
+    sys_idx = {x: i for i, x in enumerate(systems)}
     sites = []
     for s in data["sites"]:
         o = {k: s[k] for k in SITE_KEYS if s.get(k) not in (None, "", False, [])}
         o["k"], o["pj"], o["t"] = s["k"], s["pj"], type_idx[s["type"]]
         o["lat"], o["lng"] = round(s["lat"], 5), round(s["lng"], 5)
+        if s["sys"]:
+            o["sys"] = [sys_idx[x] for x in s["sys"]]
         sites.append(o)
-    projects = [{k: p[k] for k in PROJECT_KEYS if p.get(k) not in (None, "", 0, [])} for p in data["projects"]]
-    return {"types": [{"label": t, "group": g} for t, g in TYPES], "sites": sites, "projects": projects}
+    firms, builders, owners = Names(), Names(), Names()
+    projects = []
+    for p in data["projects"]:
+        o = {k: p[k] for k in PROJECT_KEYS if p.get(k) not in (None, "", 0, [])}
+        d, ow = firms.add(p["designer"]), owners.add(p["owner"])
+        b = [i for i in (builders.add(x) for x in (p.get("builder") or "").split(";")) if i is not None]
+        if d is not None:
+            o["d"] = d
+        if ow is not None:
+            o["o"] = ow
+        if b:
+            o["b"] = b
+        projects.append(o)
+    return {"types": [{"label": t, "group": g} for t, g in TYPES], "sites": sites, "projects": projects,
+            "systems": systems, "firms": firms.names(), "builders": builders.names(), "owners": owners.names()}
 
 
 def spreadsheet(data, path, updated, cms_date):
@@ -55,7 +105,7 @@ def spreadsheet(data, path, updated, cms_date):
             ("Kind", 22), ("Estimated cost", 15), ("Est. start", 11), ("Est. finish", 11), ("Opens (news)", 12),
             ("Sq ft", 10), ("Owner", 28), ("Architect / design firm", 28), ("Builder (news)", 20),
             ("Scope of work", 60), ("Project address", 34), ("State filing", 16), ("Filed", 11), ("Filing status", 18),
-            ("News sources", 50)]
+            ("News sources", 50), ("Health system", 30)]
     for c, (h, w) in enumerate(cols):
         ws.write(0, c, h, head)
         ws.set_column(c, c, w)
@@ -66,7 +116,7 @@ def spreadsheet(data, path, updated, cms_date):
         row = [s["n"], s["type"], s["city"], s.get("county", ""), p["name"], STAGE[p["stage"]], KIND[p["kind"]],
                p["cost"] or None, p["start"], p["end"], p.get("opens", ""), p["sqft"] or None, p["owner"], p["designer"],
                p.get("builder", ""), p["scope"], p["addr"] or ", ".join(x for x in (p.get("city"),) if x), p["num"],
-               p["reg"], p["status"], " ; ".join(u for _, u in p["news"])]
+               p["reg"], p["status"], " ; ".join(u for _, u in p["news"]), "; ".join(s["sys"])]
         for c, v in enumerate(row):
             if c == 7 and v:
                 ws.write_number(r, c, v, money)
@@ -81,7 +131,8 @@ def spreadsheet(data, path, updated, cms_date):
     cols = [("Name", 40), ("Type", 24), ("Street address", 30), ("City", 14), ("ZIP", 7), ("County", 12),
             ("Phone", 15), ("Beds", 6), ("Operating rooms", 9), ("Ownership", 18), ("Surgery types", 30),
             ("CMS number", 11), ("Active projects", 9), ("Under construction", 11), ("Filed, not started", 11),
-            ("Announced", 10), ("Total est. cost", 15), ("Largest project", 50), ("Map position", 14), ("Note", 40)]
+            ("Announced", 10), ("Total est. cost", 15), ("Largest project", 50), ("Map position", 14), ("Note", 40),
+            ("Health system", 30)]
     for c, (h, w) in enumerate(cols):
         ws.write(0, c, h, head)
         ws.set_column(c, c, w)
@@ -93,7 +144,7 @@ def spreadsheet(data, path, updated, cms_date):
                s.get("beds", ""), s.get("ors", ""), s.get("own", ""), s.get("spec", ""), s.get("id", ""), len(ps),
                sum(p["stage"] == "uc" for p in ps), sum(p["stage"] == "filed" for p in ps),
                sum(p["stage"] == "ann" for p in ps), sum(p["cost"] for p in ps) or None, big,
-               "ZIP/city center" if s.get("approx") else "Street address", s.get("note", "")]
+               "ZIP/city center" if s.get("approx") else "Street address", s.get("note", ""), "; ".join(s["sys"])]
         for c, v in enumerate(row):
             if c == 16 and v:
                 ws.write_number(r, c, v, money)
